@@ -1,0 +1,51 @@
+run grafting algorithm for data set: ../datas/LungCancer_M/lung-michigan.mat
+threshold = 0.100000
+grad =  0.1010373	j = 48     obj_val = 0.598131
+grad = -0.1559503	j = 75     obj_val = 0.487401
+grad = -0.1461551	j = 81     obj_val = 0.480713
+grad = -0.1504347	j = 84     obj_val = 0.470889
+grad = -0.1173107	j = 187    obj_val = 0.469960
+grad = -0.1047272	j = 217    obj_val = 0.468741
+grad = -0.1419764	j = 227    obj_val = 0.461425
+grad = -0.1230935	j = 235    obj_val = 0.463145
+grad = -0.1491366	j = 237    obj_val = 0.449267
+grad = -0.1035599	j = 550    obj_val = 0.449551
+grad = -0.1030670	j = 565    obj_val = 0.449173
+grad = -0.1104306	j = 955    obj_val = 0.447634
+grad = -0.1033613	j = 1014   obj_val = 0.455400
+grad = -0.1085814	j = 1261   obj_val = 0.452870
+grad = -0.1380278	j = 1462   obj_val = 0.436075
+grad = -0.1015479	j = 1512   obj_val = 0.438418
+
+selected features index:
+[   48.    75.    81.    84.   187.   217.   227.   235.   237.   550.
+   565.   955.  1014.  1261.  1462.  1512.]
+finish grafting algorithm
+********************************************************************************
+run classification:
+origin data
+size of data matrix:  (96, 7129)
+cross validation scores:  [ 1.  1.  1.  1.  1.] 1.0
+y_test: 
+[-1. -1. -1. -1. -1. -1. -1. -1. -1. -1. -1. -1.  1. -1. -1. -1. -1. -1.
+ -1. -1. -1. -1. -1.  1.]
+y_pred: 
+[-1. -1. -1. -1. -1. -1. -1. -1. -1. -1. -1. -1.  1. -1. -1. -1. -1. -1.
+ -1. -1. -1. -1. -1.  1.]
+[[22  0]
+ [ 0  2]]
+accuracy: 1.000000
+grafting
+size of data matrix:  (96, 16)
+cross validation scores:  [ 0.9         0.89473684  1.          1.          1.        ] 0.958947368421
+y_test: 
+[-1. -1. -1. -1. -1. -1. -1. -1. -1. -1. -1. -1.  1. -1. -1. -1. -1. -1.
+ -1. -1. -1. -1. -1.  1.]
+y_pred: 
+[-1. -1. -1. -1. -1. -1. -1. -1. -1. -1. -1. -1.  1. -1. -1. -1. -1. -1.
+ -1. -1. -1. -1. -1.  1.]
+[[22  0]
+ [ 0  2]]
+accuracy: 1.000000
+finish classifying
+DONE, end validating_grafting.py
