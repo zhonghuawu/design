@@ -56,24 +56,23 @@ def classifying(X, Y, X_test=None, Y_test=None, args={}):
             print info
             run_train_test_split(X[:, indexes], Y, X_test[:, indexes], Y_test)
 
-def run(*args):
-    print args
-    if len(args) == 1:
-        fname = args[0]
-        print 'deal with %s'%fname
-        print "origin data set"
-        X, Y = read_data(fname)
-        run_cross_validation(X, Y)
-        print "after sf using osfs "
-        indexes = [1278, 2416]
-        X_model = X[:, indexes]
-        run_cross_validation(X_model, Y)
-    elif len(args) == 1:
-        X_train, Y_train = read_data(args[0])
-        X_test, Y_test = read_data(args[1])
-        run_train_test_split(X_train, Y_train, X_test, Y_test)
-    else:
-        print "arguments for classified error"
+def run(fname, splited=False):
+    import os
+    data_fname = "%s.mat"%os.path.splitext(fname)[0]
+    print "classifying dataset: %s"%data_fname
+    X, Y = read_data(data_fname)
+    print "origin data: "
+    run_cross_validation(X, Y)
+
+    with open(fname, 'r') as f:
+        for line in f:
+            alg, indexes = line.split(":")[:2]
+            print "**"*50
+            print "after fs using %s: "%alg
+            print "selected features index: \n%s"%indexes
+            X_model = X[:, eval(indexes)]
+            run_cross_validation(X_model, Y)
+            print "**"*50
 
 if __name__ == "__main__":
     import sys
