@@ -1,15 +1,15 @@
 import scipy.io as sio
 import numpy as np
 
-def read_data(fname):
+def read_data(fname, label_pos=-1):
     data = sio.loadmat(fname)['data']
-    X = data[:, :-1]
-    y = data[:, -1]
+    y = data[:, label_pos]
     numberOfClasses=len(set(y))
     numberOfSamples=len(y)
     Y = np.matrix(np.zeros((numberOfSamples, numberOfClasses)))
     for i in range(numberOfSamples):
         Y[i, int(y[i])] = 1
+    X = np.delete(data, label_pos, axis=1)
     return np.matrix(X), np.matrix(Y)
 
 def Loss_fro(W, X, Y):

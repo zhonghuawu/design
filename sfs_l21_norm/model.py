@@ -55,7 +55,7 @@ def J_grad(W, X, Y, threshold):
 
 def gradient_validation(x, W, X, Y, threshold):
     X_new = np.hstack((X, x))
-    eps = 0.1
+    eps = 0.05
     points = it.product((-eps, eps), repeat=Y.shape[1])
     eps = np.sqrt(np.finfo(float).eps)
     eps_matrix = np.matrix(W)*eps
@@ -75,16 +75,16 @@ def gradient_validation(x, W, X, Y, threshold):
     return False
 
 def update_weight(W, X, Y, threshold):
-    #W = opt.fmin_bfgs(J, W, args=(X, Y, threshold))
-    W = opt.fmin_cg(J, W, args=(X, Y, threshold))
-    return np.matrix(W).reshape((X.shape[1], Y.shape[1]))
+    W, obj_value = opt.fmin_bfgs(J, W, args=(X, Y, threshold), full_output=1)[:2]
+    #W, obj_value = opt.fmin_cg(J, W, args=(X, Y, threshold), full_output=1)[:2]
+    return np.matrix(W).reshape((X.shape[1], Y.shape[1])), obj_value
 
 def refresh_selected(W, X, X_index, epsilon):
     X_zero, X = X[:, 0], X[:, 1:]
     W_zero, W = W[0, :], W[1:, :]
     df_x = pd.DataFrame(X.transpose(), index=X_index) 
     df_w = pd.DataFrame(W, index=X_index)
-    RowScore = pd.Series(np.linalg.norm(W, axis=1), index=X_index)
+    RowScore = pd.Series(np.linalg.norm(W, ord=1, axis=1), index=X_index)
     RowScore = RowScore[RowScore > epsilon]
     X_index = np.array(RowScore.index)
     X = df_x.ix[X_index].get_values().transpose()
