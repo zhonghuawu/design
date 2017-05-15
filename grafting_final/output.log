@@ -178,3 +178,101 @@
 2017-05-08 15:17:58,119: objective function values: [ 0.95018334  0.60914092  0.60398337  0.60097651]
 2017-05-08 15:17:58,119: ************************************************************
 2017-05-08 15:17:58,119: DONE
+2017-05-15 15:04:09,344: deal with ../datas/ColonTumor/colonTumor.mat...
+2017-05-15 15:04:09,474: X shape: (62, 2000)
+2017-05-15 15:04:33,949: deal with ../datas/ColonTumor/colonTumor.mat...
+2017-05-15 15:04:33,975: X shape: (62, 2000)
+2017-05-15 15:05:10,221: ************************************************************
+2017-05-15 15:05:10,221: threshold = 0.2, epsilon= = 0.1
+2017-05-15 15:05:10,222: selected features index retained: []
+2017-05-15 15:05:10,222: selected features weight: [ 1.]
+2017-05-15 15:05:10,223: selected features index: []
+2017-05-15 15:05:10,223: objective function values: []
+2017-05-15 15:05:10,223: ************************************************************
+2017-05-15 15:05:10,223: DONE
+2017-05-15 15:05:34,459: deal with ../datas/ColonTumor/colonTumor.mat...
+2017-05-15 15:05:34,487: X shape: (62, 2000)
+2017-05-15 15:06:09,974: ************************************************************
+2017-05-15 15:06:09,975: threshold = 0.2, epsilon= = 0.01
+2017-05-15 15:06:09,975: selected features index retained: []
+2017-05-15 15:06:09,976: selected features weight: [ 1.]
+2017-05-15 15:06:09,976: selected features index: []
+2017-05-15 15:06:09,976: objective function values: []
+2017-05-15 15:06:09,976: ************************************************************
+2017-05-15 15:06:09,976: DONE
+2017-05-15 15:06:32,727: deal with ../datas/ColonTumor/colonTumor.mat...
+2017-05-15 15:06:32,754: X shape: (62, 2000)
+2017-05-15 15:07:09,623: ************************************************************
+2017-05-15 15:07:09,623: threshold = 0.1, epsilon= = 0.01
+2017-05-15 15:07:09,623: selected features index retained: []
+2017-05-15 15:07:09,624: selected features weight: [ 1.]
+2017-05-15 15:07:09,624: selected features index: []
+2017-05-15 15:07:09,624: objective function values: []
+2017-05-15 15:07:09,624: ************************************************************
+2017-05-15 15:07:09,624: DONE
+2017-05-15 15:08:25,268: deal with ../datas/ColonTumor/colonTumor.mat
+2017-05-15 15:08:25,295: X shape: (62, 2000)
+2017-05-15 15:09:01,220: ************************************************************
+2017-05-15 15:09:01,220: threshold = 0.2, epsilon = 0.1
+2017-05-15 15:09:01,220: selected features index retained: []
+2017-05-15 15:09:01,221: selected features weight: [ 1.]
+2017-05-15 15:09:01,221: selected features index: []
+2017-05-15 15:09:01,221: objective function values: []
+2017-05-15 15:09:01,221: ************************************************************
+2017-05-15 15:09:01,222: DONE
+2017-05-15 16:25:17,861: deal with ../datas/ColonTumor/colonTumor.mat
+2017-05-15 16:25:17,893: X shape: (62, 2000)
+2017-05-15 16:25:58,708: deal with ../datas/ColonTumor/colonTumor.mat
+2017-05-15 16:25:58,738: X shape: (62, 2000)
+2017-05-15 16:26:20,261: deal with ../datas/ColonTumor/colonTumor.mat
+2017-05-15 16:26:20,292: X shape: (62, 2000)
+2017-05-15 16:29:21,659: deal with ../datas/ColonTumor/colonTumor.mat
+2017-05-15 16:29:21,697: X shape: (62, 2000)
+2017-05-15 16:31:17,346: deal with ../datas/ColonTumor/colonTumor.mat
+2017-05-15 16:31:17,381: X shape: (62, 2000)
+2017-05-15 16:31:44,894: deal with ../datas/ColonTumor/colonTumor.mat
+2017-05-15 16:31:44,926: X shape: (62, 2000)
+2017-05-15 16:36:35,727: deal with ../datas/ColonTumor/colonTumor.mat
+2017-05-15 16:36:35,754: X shape: (62, 2000)
+2017-05-15 16:44:37,905: deal with ../datas/ColonTumor/colonTumor.mat
+2017-05-15 16:44:38,056: X shape: (62, 2000)
+2017-05-15 16:44:54,130: deal with ../datas/ColonTumor/colonTumor.mat
+2017-05-15 16:44:54,157: X shape: (62, 2000)
+2017-05-15 16:55:00,805: deal with ../datas/ColonTumor/colonTumor.mat
+2017-05-15 16:55:00,807: X shape: (62, 2000)
+2017-05-15 16:55:37,154: deal with ../datas/ColonTumor/colonTumor.mat
+2017-05-15 16:55:37,156: X shape: (62, 2000)
+2017-05-15 16:55:57,511: deal with ../datas/ColonTumor/colonTumor.mat
+2017-05-15 16:55:57,513: X shape: (62, 2000)
+2017-05-15 16:56:09,133: deal with ../datas/ColonTumor/colonTumor.mat
+2017-05-15 16:56:09,135: X shape: (62, 2000)
+2017-05-15 16:56:38,223: ************************************************************
+2017-05-15 16:56:38,224: threshold = 0.2, epsilon = 0.1
+2017-05-15 16:56:38,224: selected features index retained: []
+2017-05-15 16:56:38,224: selected features weight: [[1]]
+2017-05-15 16:56:38,225: selected features index: []
+2017-05-15 16:56:38,225: objective function values: []
+2017-05-15 16:56:38,225: ************************************************************
+2017-05-15 16:56:38,225: DONE
+2017-05-15 16:58:04,447: deal with ../datas/ColonTumor/colonTumor.mat
+2017-05-15 16:58:04,449: X shape: (62, 2000)
+2017-05-15 16:58:28,701: deal with ../datas/ColonTumor/colonTumor.mat
+2017-05-15 16:58:28,703: X shape: (62, 2000)
+2017-05-15 16:58:59,055: ************************************************************
+2017-05-15 16:58:59,055: threshold = 0.2, epsilon = 0.1
+2017-05-15 16:58:59,055: selected features index retained: []
+2017-05-15 16:58:59,056: selected features weight: [[1]]
+2017-05-15 16:58:59,057: selected features index: []
+2017-05-15 16:58:59,057: objective function values: []
+2017-05-15 16:58:59,057: ************************************************************
+2017-05-15 16:58:59,057: DONE
+2017-05-15 17:00:24,262: deal with ../datas/ColonTumor/colonTumor.mat
+2017-05-15 17:00:24,264: X shape: (62, 2000)
+2017-05-15 17:00:54,155: ************************************************************
+2017-05-15 17:00:54,155: threshold = 0.1, epsilon = 0.01
+2017-05-15 17:00:54,155: selected features index retained: []
+2017-05-15 17:00:54,156: selected features weight: [[1]]
+2017-05-15 17:00:54,156: selected features index: []
+2017-05-15 17:00:54,156: objective function values: []
+2017-05-15 17:00:54,157: ************************************************************
+2017-05-15 17:00:54,157: DONE
