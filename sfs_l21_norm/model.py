@@ -53,10 +53,9 @@ def J_grad(W, X, Y, threshold):
     grad_regularized_term = 2*threshold*np.sum(np.dot(D, W)[-1, :])
     return grad_loss + grad_regularized_term
 
-def gradient_validation(x, W, X, Y, threshold):
+def gradient_validation(x, W, X, Y, threshold, epsilon):
     X_new = np.hstack((X, x))
-    eps = 0.05
-    points = it.product((-eps, eps), repeat=Y.shape[1])
+    points = it.product((-epsilon, epsilon), repeat=Y.shape[1])
     eps = np.sqrt(np.finfo(float).eps)
     eps_matrix = np.matrix(W)*eps
     for point in points:
@@ -79,7 +78,7 @@ def update_weight(W, X, Y, threshold):
     #W, obj_value = opt.fmin_cg(J, W, args=(X, Y, threshold), full_output=1)[:2]
     return np.matrix(W).reshape((X.shape[1], Y.shape[1])), obj_value
 
-def refresh_selected(W, X, X_index, epsilon):
+def refresh_selected(W, X, X_index, epsilon=1e-3):
     X_zero, X = X[:, 0], X[:, 1:]
     W_zero, W = W[0, :], W[1:, :]
     df_x = pd.DataFrame(X.transpose(), index=X_index) 
