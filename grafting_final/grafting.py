@@ -15,16 +15,11 @@ X: data matrix, n*d dimension
 Y: labels vector, n*1 dimension
 w: features weight vector, d*1 dimension
 '''
-import logging
-import logging.config
-
-logging.config.fileConfig("logging.conf")
-logger = logging.getLogger('main')
 
 def grafting(X, Y, threshold, epsilon):
     X_model = np.ones_like(X[:, 0])
-    #w = np.ones(1)
-    w = np.matrix((1))
+    w = np.ones(1)
+    #w, obj_value = update_wegiht(w, X_model, Y, threshold)
 
     X_index = np.array([], dtype=int)
     X_index_retained = np.array([], dtype=int)
@@ -36,32 +31,33 @@ def grafting(X, Y, threshold, epsilon):
         if C_grad_std(x, w, X_model, Y, threshold, epsilon):
             X_index_retained = np.hstack((X_index_retained, j))
             X_model = np.hstack((X_model, x))
-            w = np.vstack((w, 1))
+            w = np.hstack((w, 1))
             w, obj_value = update_wegiht(w, X_model, Y, threshold)
             w, X_model, X_index_retained = refresh_selected(w, X_model, X_index_retained, 1e-3)
-            logger.info("j = %-6d obj_value = %f"%(j, obj_value))
-            logger.info("X_index_retained = %s"%str(X_index_retained))
-            logger.info("weight_vector = %s"%str(w))
+            print("j = %-6d obj_value = %f"%(j, obj_value))
+            print("X_index_retained = %s"%str(X_index_retained))
+            print("weight_vector = %s"%str(w))
+            print "***"*30
             X_index = np.hstack((X_index, j))
             obj_values = np.hstack((obj_values, obj_value))
     return X_index_retained, w, X_index, obj_values
 
 def run(fname, threshold, epsilon, label_pos):
-    logger.info("deal with %s"%fname)
+    print("deal with %s"%fname)
     from util import read_data
     X, Y = read_data(fname, label_pos)
-    logger.info("X shape: %s"%str(X.shape))
+    print("X shape: %s"%str(X.shape))
     results = grafting(np.matrix(X), np.matrix(Y).T, threshold, epsilon)
     X_index_retained, w, X_index, obj_values = results
     
-    logger.info(str("**"*30))
-    logger.info("threshold = %s, epsilon = %s"%(str(threshold), str(epsilon)))
-    logger.info("selected features index retained: %s"%str(X_index_retained))
-    logger.info("selected features weight: %s"%str(w))
-    logger.info("selected features index: %s"%str(X_index))
-    logger.info("objective function values: %s"%str(obj_values))
-    logger.info(str("**"*30))
-    logger.info("DONE")
+    print(str("**"*30))
+    print("threshold = %s, epsilon = %s"%(str(threshold), str(epsilon)))
+    print("selected features index retained: %s"%str(list(X_index_retained)))
+    print("selected features weight: %s"%str(w))
+    print("selected features index: %s"%str(X_index))
+    print("objective function values: %s"%str(obj_values))
+    print(str("**"*30))
+    print("DONE")
 
     obj_values_df = DataFrame(obj_values, index=X_index, columns=["obj values"])
     weights_df = DataFrame(w, index=np.hstack((-1, X_index_retained)), columns=["weight"])
@@ -75,7 +71,7 @@ def get_options(args):
     opt.add_option('-t', '--threshold', type='float', dest='threshold', help='coefficient of regularization term')
     opt.add_option('-e', '--epsilon', type='float', dest='epsilon', help='scope of sample point')
     opt.add_option('-p', '--label_pos', type='int', dest='label_pos', help='position of label in data set')
-    opt.set_defaults(threshold=0.2, epsilon=0.1, label_pos=-1)
+    opt.set_defaults(threshold=0.2, epsilon=0.01, label_pos=-1)
     return opt.parse_args(args)[0]
 
 if __name__ == '__main__':

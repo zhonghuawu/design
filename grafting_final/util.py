@@ -5,6 +5,7 @@ def read_data(fname, label_pos=-1):
     data = sio.loadmat(fname)['data']
     X = data[:, :label_pos]
     Y = data[:, label_pos]
+    Y[Y==0]=-1
     return X, Y
 
 def fprime(xk, f, epsilon, *args):

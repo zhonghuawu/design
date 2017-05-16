@@ -10,26 +10,19 @@ from scipy import optimize
 
 from functools import partial
 
-from util import fprime
-
 '''
 establishing model for problem, 
 solve the problem using grafting algorithm 
 '''
-import logging
-import logging.config
-
-logging.config.fileConfig("logging.conf")
-logger = logging.getLogger('main')
 
 def normalize(x): 
     return (x-np.mean(x))/np.std(x)
 
 def f(w, x):
-    return np.dot(x, w)[0, 0]
+    return np.dot(w, x.T)[0, 0]
 
 def loss(w, x, y):
-    return np.log(1+np.exp(-y*(np.dot(x, w)[0, 0])))  #f(w, x)))
+    return np.log(1+np.exp(-y*(np.dot(w, x.T)[0, 0])))  #f(w, x)))
 
 def Loss(w, X, Y):
     n = X.shape[0]
@@ -47,7 +40,6 @@ def Loss_grad(x, w, X, Y):
     return result/n
 
 def C(w, X, Y, threshold):
-    w = w.reshape((X.shape[1], Y.shape[1]))
     return Loss(w, X, Y) + threshold*np.linalg.norm(w, 1)
 
 def C_grad(x, w, X, Y, threshold):
@@ -68,20 +60,19 @@ def C_grad_std(x, w, X, Y, threshold, epsilon):
     eps = np.sqrt(np.finfo(float).eps)
     eps_array = w*eps
     for point in points:
-        w_new = np.vstack((w, point))
-        eps_array_new = np.vstack((eps_array, eps*point))
-        grad = fprime(w_new, C, eps_array_new, X_new, Y, threshold)[-1, 0]
+        w_new = np.hstack((w, point))
+        eps_array_new = np.hstack((eps_array, eps*point))
+        grad = optimize.approx_fprime(w_new, Loss, eps_array_new, X_new, Y)[-1]
         #if abs(grad)>threshold:
-        #if np.sign(point)*grad + threshold < 0:
-        if np.sign(point)*grad < 0:
-            logger.info("grad = %10.7f\t"%grad)
+        if np.sign(point)*grad + threshold < 0:
+            print("grad = %10.7f\t"%grad)
             return True
     return False
  
 def update_wegiht(w, X, Y, threshold):
     #wopt, fopt = optimize.fmin_bfgs(C, w, args=(X, Y, threshold), full_output=1)[:2]
     wopt, fopt = optimize.fmin_cg(C, w, args=(X, Y, threshold), full_output=1)[:2]
-    return wopt.reshape((X.shape[1], Y.shape[1])), fopt
+    return wopt, fopt
 
 def refresh_selected(w, X_model, X_index, epsilon):
     X_model_zero, X_model = X_model[:, 0], X_model[:, 1:]
