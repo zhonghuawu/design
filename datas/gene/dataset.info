@@ -49,6 +49,12 @@ Prostate_GE.mat: set([1, 2]) (102, 5966)
 	label 1: 50
 	label 2: 52
 
+TOX_171.mat: set([1, 2, 3, 4]) (171, 5748)
+	label 1: 45
+	label 2: 45
+	label 3: 39
+	label 4: 42
+
 lung_discrete.mat: set([1, 2, 3, 4, 5, 6, 7]) (73, 325)
 	label 1: 6
 	label 2: 5

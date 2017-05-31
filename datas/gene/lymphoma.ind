@@ -1,0 +1,3 @@
+fast_osfs_z alpha = 0.01: np.array([71, 498, 1119, 1615, 1785, 3751])-1
+fast_osfs_z alpha = 0.05: np.array([71, 498, 1119, 1615, 1785, 2516, 3751])-1
+Alpha_investing: np.array([1])-1
