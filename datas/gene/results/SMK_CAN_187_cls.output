@@ -4,9 +4,9 @@ origin data:
 size of data matrix:  (187, 19993)
 size of label matrix:  (187,)
 cross validation scores:  [ 0.47368421  0.73684211  0.59459459  0.72972973  0.72972973] 0.652916073969
-[[16  6]
- [12 13]]
-accuracy: 0.617021
+[[12 10]
+ [ 1 24]]
+accuracy: 0.765957
 ****************************************************************************************************
 after fs using grafting l1-norm threshold = 0.2, epsilon = 0.1: 
 selected features index: 
@@ -14,9 +14,9 @@ selected features index:
 size of data matrix:  (187, 5)
 size of label matrix:  (187,)
 cross validation scores:  [ 0.60526316  0.86842105  0.83783784  0.67567568  0.75675676] 0.748790896159
-[[16  6]
- [ 4 21]]
-accuracy: 0.787234
+[[17  5]
+ [ 7 18]]
+accuracy: 0.744681
 ****************************************************************************************************
 after fs using grafting l21-norm threshold = 0.2, epsilon = 0.1: 
 selected features index: 
@@ -24,9 +24,9 @@ selected features index:
 size of data matrix:  (187, 7)
 size of label matrix:  (187,)
 cross validation scores:  [ 0.73684211  0.86842105  0.7027027   0.67567568  0.67567568] 0.73186344239
-[[15  7]
- [ 4 21]]
-accuracy: 0.765957
+[[16  6]
+ [14 11]]
+accuracy: 0.574468
 ****************************************************************************************************
 after fs using grafting l21-norm threshold = 0.1, epsilon = 0.1: 
 selected features index: 
@@ -34,9 +34,9 @@ selected features index:
 size of data matrix:  (187, 6)
 size of label matrix:  (187,)
 cross validation scores:  [ 0.60526316  0.73684211  0.67567568  0.72972973  0.78378378] 0.706258890469
-[[15  7]
- [ 6 19]]
-accuracy: 0.723404
+[[14  8]
+ [ 3 22]]
+accuracy: 0.765957
 ****************************************************************************************************
 after fs using grafting l21-norm threshold = 0.2, epsilon = 0.05: 
 selected features index: 
@@ -44,31 +44,11 @@ selected features index:
 size of data matrix:  (187, 24)
 size of label matrix:  (187,)
 cross validation scores:  [ 0.55263158  0.89473684  0.89189189  0.75675676  0.91891892] 0.802987197724
-[[21  1]
- [11 14]]
-accuracy: 0.744681
-****************************************************************************************************
-after fs using grafting l21-norm threshold = 0.3, epsilon = 0.1: 
-selected features index: 
-[7, 13, 405, 687, 5701]
-size of data matrix:  (187, 5)
-size of label matrix:  (187,)
-cross validation scores:  [ 0.63157895  0.63157895  0.67567568  0.75675676  0.7027027 ] 0.679658605974
-[[13  9]
- [ 7 18]]
-accuracy: 0.659574
-****************************************************************************************************
-after fs using grafting l21-norm threshold = 0.3, epsilon = 0.05: 
-selected features index: 
-[4, 7, 18, 43, 139, 285, 298, 405, 627, 838, 984, 1024, 1198, 1259, 1261, 1491, 1883, 2784, 3590, 4786, 5701, 11148, 11249, 15919]
-size of data matrix:  (187, 24)
-size of label matrix:  (187,)
-cross validation scores:  [ 0.78947368  0.89473684  0.81081081  0.89189189  0.81081081] 0.839544807966
-[[22  0]
- [ 3 22]]
+[[20  2]
+ [ 1 24]]
 accuracy: 0.936170
 ****************************************************************************************************
-after fs using grafting l21-norm threshold = 0.25, epsilon = 0.1: 
+after fs using grafting l21-norm threshold = 0.3, epsilon = 0.1: 
 selected features index: 
 [7, 13, 405, 687, 5701]
 size of data matrix:  (187, 5)
@@ -78,15 +58,35 @@ cross validation scores:  [ 0.63157895  0.63157895  0.67567568  0.75675676  0.70
  [ 9 16]]
 accuracy: 0.659574
 ****************************************************************************************************
+after fs using grafting l21-norm threshold = 0.3, epsilon = 0.05: 
+selected features index: 
+[4, 7, 18, 43, 139, 285, 298, 405, 627, 838, 984, 1024, 1198, 1259, 1261, 1491, 1883, 2784, 3590, 4786, 5701, 11148, 11249, 15919]
+size of data matrix:  (187, 24)
+size of label matrix:  (187,)
+cross validation scores:  [ 0.78947368  0.89473684  0.81081081  0.89189189  0.81081081] 0.839544807966
+[[19  3]
+ [ 0 25]]
+accuracy: 0.936170
+****************************************************************************************************
+after fs using grafting l21-norm threshold = 0.25, epsilon = 0.1: 
+selected features index: 
+[7, 13, 405, 687, 5701]
+size of data matrix:  (187, 5)
+size of label matrix:  (187,)
+cross validation scores:  [ 0.63157895  0.63157895  0.67567568  0.75675676  0.7027027 ] 0.679658605974
+[[13  9]
+ [ 5 20]]
+accuracy: 0.702128
+****************************************************************************************************
 after fs using grafting l21-norm threshold = 0.25, epsilon = 0.05: 
 selected features index: 
 [4, 7, 18, 43, 139, 285, 298, 405, 627, 838, 984, 1024, 1198, 1259, 1261, 1491, 1883, 2784, 3590, 4786, 5701, 6032, 10704, 11357]
 size of data matrix:  (187, 24)
 size of label matrix:  (187,)
 cross validation scores:  [ 0.76315789  0.89473684  0.86486486  0.86486486  0.83783784] 0.845092460882
-[[21  1]
- [ 2 23]]
-accuracy: 0.936170
+[[17  5]
+ [ 0 25]]
+accuracy: 0.893617
 ****************************************************************************************************
 after fs using fast_osfs_z alpha = 0.01: 
 selected features index: 
@@ -94,9 +94,9 @@ selected features index:
 size of data matrix:  (187, 5)
 size of label matrix:  (187,)
 cross validation scores:  [ 0.68421053  0.81578947  0.67567568  0.62162162  0.7027027 ] 0.7
-[[18  4]
- [ 4 21]]
-accuracy: 0.829787
+[[20  2]
+ [ 5 20]]
+accuracy: 0.851064
 ****************************************************************************************************
 after fs using fast_osfs_z alpha = 0.05: 
 selected features index: 
@@ -104,9 +104,9 @@ selected features index:
 size of data matrix:  (187, 10)
 size of label matrix:  (187,)
 cross validation scores:  [ 0.76315789  0.81578947  0.81081081  0.81081081  0.86486486] 0.813086770982
-[[12 10]
+[[15  7]
  [ 0 25]]
-accuracy: 0.787234
+accuracy: 0.851064
 ****************************************************************************************************
 after fs using Alpha_investing: 
 selected features index: 
@@ -114,8 +114,8 @@ selected features index:
 size of data matrix:  (187, 6)
 size of label matrix:  (187,)
 cross validation scores:  [ 0.63157895  0.73684211  0.75675676  0.72972973  0.64864865] 0.700711237553
-[[ 9 13]
+[[ 7 15]
  [ 0 25]]
-accuracy: 0.723404
+accuracy: 0.680851
 ****************************************************************************************************
 DONE

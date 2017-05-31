@@ -8,6 +8,26 @@ cross validation scores:  [ 1.          1.          1.          0.78571429  0.92
  [ 1  4]]
 accuracy: 0.777778
 ****************************************************************************************************
+after fs using grafting l1-norm threshold = 0.2, epsilon = 0.1: 
+selected features index: 
+[1744, 1778, 1833, 1881, 2019, 2287, 3251, 4195, 4846, 4950, 6538, 6796, 6854, 6918, 6921, 7000, 7019, 7045, 7118]
+size of data matrix:  (72, 19)
+size of label matrix:  (72,)
+cross validation scores:  [ 1.          0.86666667  1.          1.          0.92857143] 0.959047619048
+[[13  0]
+ [ 1  4]]
+accuracy: 0.944444
+****************************************************************************************************
+after fs using grafting l21-norm threshold = 0.3, epsilon = 0.1: 
+selected features index: 
+[3, 47, 87, 128, 141, 261, 1206, 1766]
+size of data matrix:  (72, 8)
+size of label matrix:  (72,)
+cross validation scores:  [ 1.          0.93333333  0.92857143  0.92857143  0.92857143] 0.94380952381
+[[13  0]
+ [ 0  5]]
+accuracy: 1.000000
+****************************************************************************************************
 after fs using grafting l21-norm threshold = 0.2, epsilon = 0.1: 
 selected features index: 
 [3, 16, 64, 87, 128, 139, 141, 449, 1778]
