@@ -1,15 +1,30 @@
 import scipy.io as sio
 import numpy as np
 
-def read_data(fname, label_pos=-1):
-    data = sio.loadmat(fname)['data']
-    y = data[:, label_pos]
-    numberOfClasses=len(set(y))
-    numberOfSamples=len(y)
-    Y = np.matrix(np.zeros((numberOfSamples, numberOfClasses)))
-    for i in range(numberOfSamples):
-        Y[i, int(y[i])] = 1
-    X = np.delete(data, label_pos, axis=1)
+def read_data(fname, label_pos):
+    data = sio.loadmat(fname)
+    X, y = None, None
+    if 'data' in data.keys():
+        data = data['data']
+        y = data[:, label_pos]
+        X = np.delete(data, label_pos, axis=1)
+        #convert y for column vector to matrix with c columns
+        numberOfClasses=len(set(y))
+        numberOfSamples=len(y)
+        Y = np.matrix(np.zeros((numberOfSamples, numberOfClasses)))
+        for i in range(numberOfSamples):
+            Y[i, int(y[i])] = 1
+    else :
+        X = data['X']
+        y = data['Y'][:, 0]
+        labels = set(y)
+        n, c = len(y), len(labels)
+        labels_dict = {}
+        for k, label in enumerate(labels):
+            labels_dict[label] = k
+        Y = np.matrix(np.zeros((n, c)))
+        for i, label in enumerate(y):
+            Y[i, labels_dict[y[i]]] = 1
     return np.matrix(X), np.matrix(Y)
 
 def Loss_fro(W, X, Y):

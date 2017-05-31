@@ -23,7 +23,7 @@ c is number of label catergories
 
 """
 features selection model:
-    J(W, X, Y, threshold) = ||X*W-Y||(fro, 2) + threshold*||W||(2,1)
+  J(W, X, Y, threshold) = ||X*W-Y||(fro, 2) + threshold*||W||(2,1)
 """
 
 def normalizate(x):
@@ -33,12 +33,10 @@ def L21_norm(W):
     vec = np.linalg.norm(W, ord=2, axis=1)
     return np.linalg.norm(vec, ord=1, axis=0)
 
-def L21_norm_prime(W):
-    pass
-
 def Loss_Fro(W, X, Y):
     mat = np.dot(X, W) - Y
     return np.linalg.norm(mat, ord='fro')
+    #return L21_norm(mat)
 
 def J(W, X, Y, threshold):
     W = np.matrix(W).reshape((X.shape[1], Y.shape[1]))
@@ -52,6 +50,29 @@ def J_grad(W, X, Y, threshold):
     D = np.diag(D_vector)
     grad_regularized_term = 2*threshold*np.sum(np.dot(D, W)[-1, :])
     return grad_loss + grad_regularized_term
+
+def gradient_validation_new(x, W, X, Y, threshold, epsilon):
+    X_new = np.hstack((X, x))
+    #points = it.product((-epsilon, epsilon), repeat=Y.shape[1])
+    points = np.array((-epsilon, epsilon))
+    eps = np.sqrt(np.finfo(float).eps)
+    eps_matrix = np.matrix(W)*eps
+    for p in points:
+        point = np.array((p, 0))
+        eps_matrix_new = np.vstack((eps_matrix, eps*np.matrix(point)))
+        W_new = np.vstack((W, point))
+        grad = fprime(W_new, J, eps_matrix_new, X_new, Y, threshold)[-1, 0]
+        if np.sign(p)*grad < 0:
+            print "point = %s"%str(point)
+            return True
+        point = np.array((0, p))
+        W_new = np.vstack((W, point))
+        eps_matrix_new = np.vstack((eps_matrix, eps*np.matrix(point)))
+        grad = fprime(W_new, J, eps_matrix_new, X_new, Y, threshold)[-1, 1]
+        if np.sign(p)*grad < 0:
+            print "point = %s"%str(point)
+            return True
+    return False
 
 def gradient_validation(x, W, X, Y, threshold, epsilon):
     X_new = np.hstack((X, x))
@@ -74,8 +95,8 @@ def gradient_validation(x, W, X, Y, threshold, epsilon):
     return False
 
 def update_weight(W, X, Y, threshold):
-    W, obj_value = opt.fmin_bfgs(J, W, args=(X, Y, threshold), full_output=1)[:2]
-    #W, obj_value = opt.fmin_cg(J, W, args=(X, Y, threshold), full_output=1)[:2]
+    #W, obj_value = opt.fmin_bfgs(J, W, args=(X, Y, threshold), full_output=1)[:2]
+    W, obj_value = opt.fmin_cg(J, W, args=(X, Y, threshold), full_output=1)[:2]
     return np.matrix(W).reshape((X.shape[1], Y.shape[1])), obj_value
 
 def refresh_selected(W, X, X_index, epsilon=1e-3):
