@@ -44,11 +44,10 @@ def fprime(xk, f, epsilon, *args):
     grad = np.zeros((xk.shape), float)
     ei = np.zeros((xk.shape), float)
     for i in range(xk.shape[0]):
-        for j in range(xk.shape[1]):
-            ei[i, j] = 1.0
-            d = np.multiply(epsilon, ei)
-            grad[i, j] = (f(*((xk+d,)+args))-f0)/d[i, j]
-            ei[i, j] = 0.0
+        ei[i, -1] = 1.0
+        d = np.multiply(epsilon, ei)
+        grad[i, -1] = (f(*((xk+d,)+args))-f0)/d[i, -1]
+        ei[i, -1] = 0.0
     return grad
 
 if __name__ == "__main__":
