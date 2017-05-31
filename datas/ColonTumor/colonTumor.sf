@@ -1,0 +1,128 @@
+(62, 2000) (62, 2)
+X shape: (62, 2000)
+threshold = 0.2
+epsilon = 0.1
+Optimization terminated successfully.
+         Current function value: 5.473496
+         Iterations: 6
+         Function evaluations: 32
+         Gradient evaluations: 8
+point = (-0.1, 0.1)
+grad_mat = [[ 0.03740847 -0.03740907]]
+grad_sum = -0.0748175382614
+Optimization terminated successfully.
+         Current function value: 5.348391
+         Iterations: 9
+         Function evaluations: 84
+         Gradient evaluations: 14
+j = 2 obj_value = 5.34839086499
+X_index_retained = [2]
+weight matrix: 
+[[ 0.3467931   0.6305333 ]
+ [-0.10312622  0.10312635]]
+******************************************************************************************
+point = (-0.1, 0.1)
+grad_mat = [[ 0.07260978 -0.07260919]]
+grad_sum = -0.145218968391
+Optimization terminated successfully.
+         Current function value: 5.205156
+         Iterations: 11
+         Function evaluations: 144
+         Gradient evaluations: 18
+j = 10 obj_value = 5.2051558659
+X_index_retained = [ 2 10]
+weight matrix: 
+[[ 0.34705399  0.63100789]
+ [-0.07828949  0.07828983]
+ [-0.11149536  0.11149657]]
+******************************************************************************************
+point = (0.1, -0.1)
+grad_mat = [[-1.03717327  1.03717864]]
+grad_sum = -2.07435190678
+Optimization terminated successfully.
+         Current function value: 4.738974
+         Iterations: 15
+         Function evaluations: 220
+         Gradient evaluations: 22
+j = 13 obj_value = 4.73897440707
+X_index_retained = [ 2 10 13]
+weight matrix: 
+[[ 0.34790081  0.63254693]
+ [-0.08702311  0.0870231 ]
+ [-0.17751843  0.17751841]
+ [ 0.20113931 -0.20113933]]
+******************************************************************************************
+point = (-0.1, 0.1)
+grad_mat = [[ 0.29566944 -0.29566944]]
+grad_sum = -0.59133887291
+Optimization terminated successfully.
+         Current function value: 4.064352
+         Iterations: 18
+         Function evaluations: 324
+         Gradient evaluations: 27
+j = 14 obj_value = 4.0643519869
+X_index_retained = [ 2 10 13 14]
+weight matrix: 
+[[ 0.34907776  0.63468683]
+ [-0.0569076   0.05690757]
+ [ 0.02743103 -0.02743105]
+ [ 0.32022552 -0.32022546]
+ [-0.35093499  0.35093493]]
+******************************************************************************************
+point = (-0.1, 0.1)
+grad_mat = [[ 0.20746082 -0.20746142]]
+grad_sum = -0.414922237396
+Optimization terminated successfully.
+         Current function value: 3.657967
+         Iterations: 20
+         Function evaluations: 420
+         Gradient evaluations: 30
+j = 163 obj_value = 3.6579669308
+X_index_retained = [  2  10  13  14 163]
+weight matrix: 
+[[ 0.34982333  0.63604242]
+ [-0.02237461  0.02237455]
+ [ 0.05781324 -0.05781323]
+ [ 0.40898203 -0.40898218]
+ [-0.31948295  0.31948297]
+ [-0.20458087  0.20458089]]
+******************************************************************************************
+point = (0.1, -0.1)
+grad_mat = [[-0.29182673  0.29182673]]
+grad_sum = -0.583653450012
+Optimization terminated successfully.
+         Current function value: 3.386596
+         Iterations: 21
+         Function evaluations: 496
+         Gradient evaluations: 31
+j = 1643 obj_value = 3.38659649915
+X_index_retained = [   2   10   13   14  163 1643]
+weight matrix: 
+[[ 0.350273    0.63685967]
+ [-0.03425941  0.03425946]
+ [ 0.04117212 -0.04117224]
+ [ 0.3848449  -0.38484472]
+ [-0.310869    0.31086889]
+ [-0.18516572  0.18516588]
+ [ 0.11914966 -0.11914935]]
+******************************************************************************************
+************************************************************
+selected features index: 
+grafting l21-nrom 
+threshold = 0.2, epsilon = 0.1:  [2, 10, 13, 14, 163, 1643]
+
+selected features weight: 
+[[ 0.350273    0.63685967]
+ [-0.03425941  0.03425946]
+ [ 0.04117212 -0.04117224]
+ [ 0.3848449  -0.38484472]
+ [-0.310869    0.31086889]
+ [-0.18516572  0.18516588]
+ [ 0.11914966 -0.11914935]]
+
+features index that through the gradient validation: 
+[   2   10   13   14  163 1643]
+
+************************************************************
+DONE
+

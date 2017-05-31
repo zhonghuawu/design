@@ -1,0 +1,13 @@
+origion datas:
+(38, 7129) (38,)
+[[19  1]
+ [ 0 14]]
+MCC: 0.941630
+ACC: 0.970588
+after features selection:
+(38, 44) (38,)
+[[18  2]
+ [ 1 13]]
+MCC: 0.821271
+ACC: 0.911765
+Done!

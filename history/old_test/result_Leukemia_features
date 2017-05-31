@@ -1,0 +1,279 @@
+(7129, 38) (38,)
+i = 0, grad = -0.049727
+Warning: Desired error not necessarily achieved due to precision loss.
+         Current function value: 0.536055
+         Iterations: 5
+         Function evaluations: 132
+         Gradient evaluations: 30
+i = 156, grad = -0.010401
+Warning: Desired error not necessarily achieved due to precision loss.
+         Current function value: 0.537003
+         Iterations: 2
+         Function evaluations: 47
+         Gradient evaluations: 7
+i = 172, grad = -0.013529
+Warning: Desired error not necessarily achieved due to precision loss.
+         Current function value: 0.538134
+         Iterations: 5
+         Function evaluations: 84
+         Gradient evaluations: 12
+i = 247, grad = -0.011185
+Warning: Desired error not necessarily achieved due to precision loss.
+         Current function value: 0.536382
+         Iterations: 14
+         Function evaluations: 780
+         Gradient evaluations: 111
+i = 311, grad = -0.010981
+Warning: Desired error not necessarily achieved due to precision loss.
+         Current function value: 0.536349
+         Iterations: 15
+         Function evaluations: 1109
+         Gradient evaluations: 138
+i = 460, grad = -0.013169
+Warning: Desired error not necessarily achieved due to precision loss.
+         Current function value: 0.536293
+         Iterations: 21
+         Function evaluations: 1060
+         Gradient evaluations: 117
+i = 963, grad = -0.010264
+Warning: Desired error not necessarily achieved due to precision loss.
+         Current function value: 0.536128
+         Iterations: 17
+         Function evaluations: 724
+         Gradient evaluations: 72
+i = 1246, grad = -0.010226
+Warning: Desired error not necessarily achieved due to precision loss.
+         Current function value: 0.536571
+         Iterations: 11
+         Function evaluations: 730
+         Gradient evaluations: 66
+i = 1248, grad = -0.010467
+Warning: Desired error not necessarily achieved due to precision loss.
+         Current function value: 0.537280
+         Iterations: 36
+         Function evaluations: 1613
+         Gradient evaluations: 134
+i = 1305, grad = 0.010351
+Warning: Desired error not necessarily achieved due to precision loss.
+         Current function value: 0.536106
+         Iterations: 51
+         Function evaluations: 3055
+         Gradient evaluations: 234
+i = 1744, grad = -0.010280
+Warning: Desired error not necessarily achieved due to precision loss.
+         Current function value: 0.536688
+         Iterations: 137
+         Function evaluations: 5615
+         Gradient evaluations: 400
+i = 1778, grad = -0.013830
+Warning: Desired error not necessarily achieved due to precision loss.
+         Current function value: 0.536168
+         Iterations: 35
+         Function evaluations: 2217
+         Gradient evaluations: 147
+i = 1795, grad = -0.011062
+Warning: Desired error not necessarily achieved due to precision loss.
+         Current function value: 0.535966
+         Iterations: 59
+         Function evaluations: 5981
+         Gradient evaluations: 373
+i = 1806, grad = -0.010565
+Warning: Desired error not necessarily achieved due to precision loss.
+         Current function value: 0.537109
+         Iterations: 80
+         Function evaluations: 4435
+         Gradient evaluations: 260
+i = 1833, grad = -0.011501
+Warning: Desired error not necessarily achieved due to precision loss.
+         Current function value: 0.536631
+         Iterations: 26
+         Function evaluations: 1902
+         Gradient evaluations: 105
+i = 1852, grad = -0.010229
+Warning: Desired error not necessarily achieved due to precision loss.
+         Current function value: 0.536040
+         Iterations: 52
+         Function evaluations: 7216
+         Gradient evaluations: 379
+i = 1881, grad = -0.010514
+Warning: Desired error not necessarily achieved due to precision loss.
+         Current function value: 0.536158
+         Iterations: 81
+         Function evaluations: 4662
+         Gradient evaluations: 233
+i = 1940, grad = -0.011644
+Warning: Desired error not necessarily achieved due to precision loss.
+         Current function value: 0.535696
+         Iterations: 79
+         Function evaluations: 9886
+         Gradient evaluations: 470
+i = 2019, grad = -0.012384
+Warning: Desired error not necessarily achieved due to precision loss.
+         Current function value: 0.534246
+         Iterations: 74
+         Function evaluations: 6153
+         Gradient evaluations: 279
+i = 2110, grad = -0.011301
+Warning: Desired error not necessarily achieved due to precision loss.
+         Current function value: 0.534895
+         Iterations: 147
+         Function evaluations: 7257
+         Gradient evaluations: 315
+i = 2118, grad = -0.010801
+Warning: Desired error not necessarily achieved due to precision loss.
+         Current function value: 0.535621
+         Iterations: 362
+         Function evaluations: 27064
+         Gradient evaluations: 1127
+i = 2241, grad = -0.010085
+Warning: Desired error not necessarily achieved due to precision loss.
+         Current function value: 0.534668
+         Iterations: 62
+         Function evaluations: 5489
+         Gradient evaluations: 219
+i = 2266, grad = -0.011021
+Warning: Desired error not necessarily achieved due to precision loss.
+         Current function value: 0.534502
+         Iterations: 312
+         Function evaluations: 20867
+         Gradient evaluations: 802
+i = 2287, grad = -0.011046
+Warning: Desired error not necessarily achieved due to precision loss.
+         Current function value: 0.534180
+         Iterations: 142
+         Function evaluations: 10865
+         Gradient evaluations: 402
+i = 2348, grad = -0.010956
+Warning: Desired error not necessarily achieved due to precision loss.
+         Current function value: 0.534526
+         Iterations: 60
+         Function evaluations: 7865
+         Gradient evaluations: 280
+i = 2401, grad = -0.010295
+Warning: Desired error not necessarily achieved due to precision loss.
+         Current function value: 0.534310
+         Iterations: 317
+         Function evaluations: 22486
+         Gradient evaluations: 775
+i = 3319, grad = -0.012647
+Warning: Desired error not necessarily achieved due to precision loss.
+         Current function value: 0.533438
+         Iterations: 129
+         Function evaluations: 8351
+         Gradient evaluations: 278
+i = 3773, grad = -0.010127
+Warning: Desired error not necessarily achieved due to precision loss.
+         Current function value: 0.533580
+         Iterations: 355
+         Function evaluations: 23793
+         Gradient evaluations: 767
+i = 3846, grad = -0.011722
+Warning: Desired error not necessarily achieved due to precision loss.
+         Current function value: 0.533407
+         Iterations: 234
+         Function evaluations: 13678
+         Gradient evaluations: 427
+i = 3897, grad = -0.010807
+Warning: Desired error not necessarily achieved due to precision loss.
+         Current function value: 0.534178
+         Iterations: 119
+         Function evaluations: 9979
+         Gradient evaluations: 302
+i = 4051, grad = -0.010353
+Warning: Desired error not necessarily achieved due to precision loss.
+         Current function value: 0.536556
+         Iterations: 213
+         Function evaluations: 14772
+         Gradient evaluations: 434
+i = 4185, grad = 0.011281
+Warning: Desired error not necessarily achieved due to precision loss.
+         Current function value: 0.534815
+         Iterations: 175
+         Function evaluations: 16884
+         Gradient evaluations: 482
+i = 4498, grad = -0.010354
+Warning: Desired error not necessarily achieved due to precision loss.
+         Current function value: 0.534054
+         Iterations: 892
+         Function evaluations: 64055
+         Gradient evaluations: 1779
+i = 4846, grad = -0.010320
+Warning: Desired error not necessarily achieved due to precision loss.
+         Current function value: 0.534842
+         Iterations: 788
+         Function evaluations: 52779
+         Gradient evaluations: 1426
+i = 4950, grad = -0.011265
+Warning: Desired error not necessarily achieved due to precision loss.
+         Current function value: 0.534807
+         Iterations: 173
+         Function evaluations: 14719
+         Gradient evaluations: 387
+i = 5001, grad = 0.010890
+Warning: Desired error not necessarily achieved due to precision loss.
+         Current function value: 0.534294
+         Iterations: 187
+         Function evaluations: 20097
+         Gradient evaluations: 515
+i = 5038, grad = -0.013451
+Warning: Desired error not necessarily achieved due to precision loss.
+         Current function value: 0.533046
+         Iterations: 435
+         Function evaluations: 38379
+         Gradient evaluations: 959
+i = 5597, grad = -0.010248
+Warning: Desired error not necessarily achieved due to precision loss.
+         Current function value: 0.533045
+         Iterations: 586
+         Function evaluations: 42492
+         Gradient evaluations: 1036
+i = 5765, grad = 0.010293
+Warning: Desired error not necessarily achieved due to precision loss.
+         Current function value: 0.533079
+         Iterations: 214
+         Function evaluations: 20255
+         Gradient evaluations: 482
+i = 5953, grad = -0.010833
+Warning: Desired error not necessarily achieved due to precision loss.
+         Current function value: 0.534129
+         Iterations: 184
+         Function evaluations: 12353
+         Gradient evaluations: 287
+i = 6168, grad = -0.010618
+Warning: Desired error not necessarily achieved due to precision loss.
+         Current function value: 0.534559
+         Iterations: 277
+         Function evaluations: 20825
+         Gradient evaluations: 473
+i = 6404, grad = -0.012178
+Warning: Desired error not necessarily achieved due to precision loss.
+         Current function value: 0.536018
+         Iterations: 154
+         Function evaluations: 12432
+         Gradient evaluations: 276
+i = 6431, grad = -0.010235
+Warning: Desired error not necessarily achieved due to precision loss.
+         Current function value: 0.534578
+         Iterations: 706
+         Function evaluations: 62435
+         Gradient evaluations: 1357
+i = 6538, grad = -0.011061
+Warning: Desired error not necessarily achieved due to precision loss.
+         Current function value: 0.534963
+         Iterations: 408
+         Function evaluations: 32634
+         Gradient evaluations: 694
+[0, 156, 172, 247, 311, 460, 963, 1246, 1248, 1305, 1744, 1778, 1795, 1806, 1833, 1852, 1881, 1940, 2019, 2110, 2118, 2241, 2266, 2287, 2348, 2401, 3319, 3773, 3846, 3897, 4051, 4185, 4498, 4846, 4950, 5001, 5038, 5597, 5765, 5953, 6168, 6404, 6431, 6538]
+[  1.77906360e-03  -1.12841393e-09  -2.89809965e-09   2.82759774e-09
+  -2.33947812e-09  -8.59184653e-09   1.72135592e-01   1.58020296e-09
+  -3.01789024e-09  -2.31171964e-09  -1.08025250e-07   1.67656248e-03
+   9.35982655e-02  -5.19074985e-09  -1.83922980e-09   1.27993589e-01
+  -3.40069278e-09   1.26785968e-04  -1.10836024e-09   1.25481377e-01
+  -9.55440958e-10   8.26182530e-05  -1.33724145e-09  -1.97422607e-09
+   1.70642707e-04   1.93217119e-03   4.39341664e-03   4.18973961e-01
+  -8.54226188e-10   5.97541839e-03  -9.17838345e-10  -1.33308812e-09
+  -1.47271646e-04   8.14049502e-04   2.41222046e-01   9.38378632e-09
+  -1.33635876e-08   2.84632689e-01  -7.72147474e-10  -3.10938069e-08
+   2.29017472e-01   4.24217867e-01   4.03585192e-01   4.28747883e-10
+   8.07034601e-01]
+Done
