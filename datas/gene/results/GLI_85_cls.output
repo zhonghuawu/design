@@ -25,8 +25,8 @@ size of data matrix:  (85, 9)
 size of label matrix:  (85,)
 cross validation scores:  [ 0.94444444  1.          0.82352941  1.          0.9375    ] 0.941094771242
 [[ 3  0]
- [ 0 19]]
-accuracy: 1.000000
+ [ 2 17]]
+accuracy: 0.909091
 ****************************************************************************************************
 after fs using grafting l21-norm threshold = 0.1, epsilon = 0.05: 
 selected features index: 
@@ -54,9 +54,9 @@ selected features index:
 size of data matrix:  (85, 8)
 size of label matrix:  (85,)
 cross validation scores:  [ 0.88888889  1.          0.88235294  0.94117647  1.        ] 0.942483660131
-[[ 3  0]
- [11  8]]
-accuracy: 0.500000
+[[ 0  3]
+ [ 0 19]]
+accuracy: 0.863636
 ****************************************************************************************************
 after fs using fast_osfs_z alpha = 0.01: 
 selected features index: 
@@ -64,8 +64,8 @@ selected features index:
 size of data matrix:  (85, 5)
 size of label matrix:  (85,)
 cross validation scores:  [ 0.94444444  1.          0.94117647  0.94117647  1.        ] 0.965359477124
-[[ 0  3]
- [ 1 18]]
+[[ 3  0]
+ [ 4 15]]
 accuracy: 0.818182
 ****************************************************************************************************
 after fs using osfd_z alpha = 0.05: 
@@ -74,9 +74,9 @@ selected features index:
 size of data matrix:  (85, 3)
 size of label matrix:  (85,)
 cross validation scores:  [ 0.94444444  1.          1.          0.94117647  1.        ] 0.977124183007
-[[ 3  0]
- [15  4]]
-accuracy: 0.318182
+[[ 0  3]
+ [ 0 19]]
+accuracy: 0.863636
 ****************************************************************************************************
 after fs using osfs_z alpha = 0.01: 
 selected features index: 
@@ -87,5 +87,17 @@ cross validation scores:  [ 1.          0.82352941  1.          0.94117647  0.87
 [[ 0  3]
  [ 0 19]]
 accuracy: 0.863636
+****************************************************************************************************
+after fs using Alpha_investing: 
+selected features index: 
+[    0     1     2     3     5    12    13    15    19    26    32    41
+    46    85    96    98   101   104   165  1449  1772  2227  3484  3564
+  6435 13687 14766]
+size of data matrix:  (85, 27)
+size of label matrix:  (85,)
+cross validation scores:  [ 1.          0.88235294  0.94117647  0.82352941  0.9375    ] 0.916911764706
+[[ 3  0]
+ [ 7 12]]
+accuracy: 0.681818
 ****************************************************************************************************
 DONE
