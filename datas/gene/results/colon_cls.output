@@ -1,0 +1,91 @@
+classifying dataset: datas/gene/colon
+****************************************************************************************************
+origin data: 
+size of data matrix:  (62, 2000)
+size of label matrix:  (62,)
+cross validation scores:  [ 0.76923077  0.76923077  0.91666667  0.75        0.66666667] 0.774358974359
+[[6 3]
+ [1 6]]
+accuracy: 0.750000
+****************************************************************************************************
+after fs using grafting l1-norm threshold = 0.2, epsilon = 0.1: 
+selected features index: 
+[512, 764, 1324, 1413, 1422, 1581, 1634, 1729, 1771, 1973]
+size of data matrix:  (62, 10)
+size of label matrix:  (62,)
+cross validation scores:  [ 0.92307692  0.92307692  0.91666667  0.83333333  0.75      ] 0.869230769231
+[[7 2]
+ [1 6]]
+accuracy: 0.812500
+****************************************************************************************************
+after fs using grafting l21-norm threshold = 0.2, epsilon = 0.1: 
+selected features index: 
+[8, 13, 14, 16, 466]
+size of data matrix:  (62, 5)
+size of label matrix:  (62,)
+cross validation scores:  [ 0.84615385  0.84615385  0.91666667  0.75        0.58333333] 0.788461538462
+[[7 2]
+ [2 5]]
+accuracy: 0.750000
+****************************************************************************************************
+after fs using grafting l21-norm threshold = 0.2, epsilon = 0.05: 
+selected features index: 
+[2, 10, 13, 16, 43, 56, 69, 142, 174, 202, 653, 1225, 1317]
+size of data matrix:  (62, 13)
+size of label matrix:  (62,)
+cross validation scores:  [ 0.76923077  1.          1.          0.83333333  0.83333333] 0.887179487179
+[[8 1]
+ [2 5]]
+accuracy: 0.812500
+****************************************************************************************************
+after fs using grafting l21-norm threshold = 0.1, epsilon = 0.05: 
+selected features index: 
+[2, 4, 9, 10, 13, 16, 56, 69, 88, 95, 142, 160, 202, 787]
+size of data matrix:  (62, 14)
+size of label matrix:  (62,)
+cross validation scores:  [ 0.92307692  1.          1.          1.          0.91666667] 0.967948717949
+[[8 1]
+ [0 7]]
+accuracy: 0.937500
+****************************************************************************************************
+after fs using grafting l21-norm threshold = 0.1, epsilon = 0.1: 
+selected features index: 
+[8, 12, 13, 14, 16, 896, 1962]
+size of data matrix:  (62, 7)
+size of label matrix:  (62,)
+cross validation scores:  [ 0.92307692  1.          0.91666667  0.91666667  0.58333333] 0.867948717949
+[[8 1]
+ [1 6]]
+accuracy: 0.875000
+****************************************************************************************************
+after fs using Alpha_Investing: 
+selected features index: 
+[ 0 13 14 16]
+size of data matrix:  (62, 4)
+size of label matrix:  (62,)
+cross validation scores:  [ 0.84615385  0.84615385  0.91666667  0.75        0.66666667] 0.805128205128
+[[7 2]
+ [1 6]]
+accuracy: 0.812500
+****************************************************************************************************
+after fs using osfs_z apha alpha = 0.01: 
+selected features index: 
+[1422 1992]
+size of data matrix:  (62, 2)
+size of label matrix:  (62,)
+cross validation scores:  [ 0.84615385  0.92307692  0.83333333  0.75        0.83333333] 0.837179487179
+[[7 2]
+ [2 5]]
+accuracy: 0.750000
+****************************************************************************************************
+after fs using osfs_z apha alpha = 0.05: 
+selected features index: 
+[ 764 1771]
+size of data matrix:  (62, 2)
+size of label matrix:  (62,)
+cross validation scores:  [ 1.          0.92307692  0.83333333  0.91666667  0.75      ] 0.884615384615
+[[8 1]
+ [2 5]]
+accuracy: 0.812500
+****************************************************************************************************
+DONE

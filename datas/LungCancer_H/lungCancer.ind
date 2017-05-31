@@ -1,0 +1,6 @@
+grafting l21-nrom threshold = 0.2, epsilon = 0.1:  [3, 5, 15, 28, 32, 46, 84, 917]
+grafting l21-norm threshold = 0.2, epsilon = 0.05:  [4, 15, 18, 22, 25, 33, 38, 44, 50, 151, 351, 1549]
+grafting l1-norm threshold = 0.2, epsilon = 0.01:  [1135, 7248, 8536, 11014, 11367, 11840]
+Alpha_investing: np.array([1, 4, 34, 47])-1
+osfs_z alpha = 0.01: np.array([2039, 7249])-1
+osfs_z alpha = 0.05: np.array([7249, 11368])-1
