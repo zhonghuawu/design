@@ -63,8 +63,8 @@ def C_grad_std(x, w, X, Y, threshold, epsilon):
         w_new = np.hstack((w, point))
         eps_array_new = np.hstack((eps_array, eps*point))
         grad = optimize.approx_fprime(w_new, Loss, eps_array_new, X_new, Y)[-1]
-        #if abs(grad)>threshold:
-        if np.sign(point)*grad + threshold < 0:
+        if abs(grad)>threshold:
+        #if np.sign(point)*grad + threshold < 0:
             print("grad = %10.7f\t"%grad)
             return True
     return False

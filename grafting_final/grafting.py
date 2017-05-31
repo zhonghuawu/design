@@ -7,7 +7,8 @@ from pandas import Series, DataFrame
 import pandas as pd
 import matplotlib.pyplot as plt
 
-from model import *
+#from model import *
+from model_new import *
 
 '''
 run grafting algorithm on data set from file fname
@@ -28,12 +29,13 @@ def grafting(X, Y, threshold, epsilon):
     n, d = X.shape
     for j in range(d):
         x = normalize(X[:, j])
-        if C_grad_std(x, w, X_model, Y, threshold, epsilon):
+        #if C_grad_std(x, w, X_model, Y, threshold, epsilon):
+        if C_grad(x, w, X_model, Y, threshold, epsilon):
             X_index_retained = np.hstack((X_index_retained, j))
             X_model = np.hstack((X_model, x))
             w = np.hstack((w, 1))
             w, obj_value = update_wegiht(w, X_model, Y, threshold)
-            w, X_model, X_index_retained = refresh_selected(w, X_model, X_index_retained, 1e-3)
+            w, X_model, X_index_retained = refresh_selected(w, X_model, X_index_retained, 1e-5)
             print("j = %-6d obj_value = %f"%(j, obj_value))
             print("X_index_retained = %s"%str(X_index_retained))
             print("weight_vector = %s"%str(w))
@@ -51,8 +53,10 @@ def run(fname, threshold, epsilon, label_pos):
     X_index_retained, w, X_index, obj_values = results
     
     print(str("**"*30))
-    print("threshold = %s, epsilon = %s"%(str(threshold), str(epsilon)))
-    print("selected features index retained: %s"%str(list(X_index_retained)))
+    print("selected features index retained: ")
+    print("grafting l1-norm ")
+    print("threshold = %s, epsilon = %s: "%(str(threshold), str(epsilon))),
+    print("%s"%str(list(X_index_retained)))
     print("selected features weight: %s"%str(w))
     print("selected features index: %s"%str(X_index))
     print("objective function values: %s"%str(obj_values))
@@ -71,7 +75,7 @@ def get_options(args):
     opt.add_option('-t', '--threshold', type='float', dest='threshold', help='coefficient of regularization term')
     opt.add_option('-e', '--epsilon', type='float', dest='epsilon', help='scope of sample point')
     opt.add_option('-p', '--label_pos', type='int', dest='label_pos', help='position of label in data set')
-    opt.set_defaults(threshold=0.2, epsilon=0.01, label_pos=-1)
+    opt.set_defaults(threshold=0.2, epsilon=0.1, label_pos=-1)
     return opt.parse_args(args)[0]
 
 if __name__ == '__main__':

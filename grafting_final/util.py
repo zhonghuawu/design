@@ -2,10 +2,19 @@ import scipy.io as sio
 import numpy as np
 
 def read_data(fname, label_pos=-1):
-    data = sio.loadmat(fname)['data']
-    X = data[:, :label_pos]
-    Y = data[:, label_pos]
-    Y[Y==0]=-1
+    data = sio.loadmat(fname)
+    X, Y = None, None
+    if 'data' in data.keys():
+        data = data['data']
+        X = data[:, :label_pos]
+        y = data[:, label_pos]
+        Y = np.ones(y.shape)
+        Y[y==0]=-1
+    else :
+        X = data['X']
+        y = data['Y'][:, 0]
+        Y = np.ones(y.shape)
+        Y[y==2]=-1
     return X, Y
 
 def fprime(xk, f, epsilon, *args):
