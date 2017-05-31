@@ -1,8 +1,0 @@
-grafting l1-norm threshold = 0.2, epsilon = 1e-05:  [42, 46, 137, 244, 248]
-grafting l1-norm with model_new threshold = 0.2, epsilon = 0.1:  [248, 492, 1422, 1971, 1973, 1992]
-grafting l1-norm with model_new threshold = 0.2, epsilon = 0.1:  [248, 492, 764, 1422, 1869, 1891, 1992]
-grafting l21-norm threshold = 0.2, epsilon = 0.1: [2, 10, 13, 14, 163, 1643]
-grafting l21-norm threshold = 0.1, epsilon = 0.1: [2, 10, 13, 14, 117, 1643]
-Alpha-investing: np.array([1, 3, 43, 66])-1
-osfs_z alpha = 0.01: np.array([1974, 1993])-1
-osfs_z alpha = 0.05: np.array([765, 1993])-1
