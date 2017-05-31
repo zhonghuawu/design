@@ -52,6 +52,7 @@ def run(fname, epsilon, threshold, label_pos):
     X_index_retained, W, X_index, obj_values = sfs_l21_norm(X, Y, threshold, epsilon)
     
     print "**"*30
+    print "data set name: %s"%fname
     print "selected features index: "
     print "grafting l21-norm "
     print "threshold = %s, epsilon = %s: "%(str(threshold), str(epsilon)),

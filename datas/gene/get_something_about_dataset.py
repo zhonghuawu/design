@@ -3,9 +3,10 @@ import os
 
 def get_info(fname):
     data = sio.loadmat(fname)
+    X = data['X']
     Y = data['Y'][:, 0]
     labels = set(Y)
-    print "%s: %s"%(fname, str(labels))
+    print "%s: %s %s"%(fname, str(labels), X.shape)
     labels_dict = {}
     for label in labels:
         labels_dict[label]=0
