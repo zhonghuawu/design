@@ -1,0 +1,73 @@
+classifying dataset: datas/LungCancer_H/lungCancer
+****************************************************************************************************
+origin data: 
+size of train data matrix:  (32, 12533)
+size of test data matrix:  (149, 12533)
+[[ 15   0]
+ [  2 132]]
+accuracy: 0.986577
+****************************************************************************************************
+after fs using grafting l1-norm threshold = 0.2, epsilon = 0.01: 
+selected features index: 
+[1135, 7248, 8536, 11014, 11367, 11840]
+size of train data matrix:  (32, 6)
+size of test data matrix:  (149, 6)
+[[ 13   2]
+ [  2 132]]
+accuracy: 0.973154
+****************************************************************************************************
+after fs using grafting l1-norm threshold = 0.2, epsilon = 0.1: 
+selected features index: 
+[2038, 7248, 7764, 8536, 11014, 11367, 11840, 12247, 12253, 12496, 12508, 12512, 12522, 12531]
+size of train data matrix:  (32, 14)
+size of test data matrix:  (149, 14)
+[[ 14   1]
+ [  3 131]]
+accuracy: 0.973154
+****************************************************************************************************
+after fs using grafting l21-nrom threshold = 0.2, epsilon = 0.1: 
+selected features index: 
+[3, 5, 15, 28, 32, 46, 84, 917]
+size of train data matrix:  (32, 8)
+size of test data matrix:  (149, 8)
+[[ 14   1]
+ [  8 126]]
+accuracy: 0.939597
+****************************************************************************************************
+after fs using grafting l21-norm threshold = 0.2, epsilon = 0.05: 
+selected features index: 
+[4, 15, 18, 22, 25, 33, 38, 44, 50, 151, 351, 1549]
+size of train data matrix:  (32, 12)
+size of test data matrix:  (149, 12)
+[[ 14   1]
+ [ 23 111]]
+accuracy: 0.838926
+****************************************************************************************************
+after fs using Alpha_investing: 
+selected features index: 
+[ 0  3 33 46]
+size of train data matrix:  (32, 4)
+size of test data matrix:  (149, 4)
+[[ 15   0]
+ [  9 125]]
+accuracy: 0.939597
+****************************************************************************************************
+after fs using osfs_z alpha = 0.01: 
+selected features index: 
+[2038 7248]
+size of train data matrix:  (32, 2)
+size of test data matrix:  (149, 2)
+[[ 12   3]
+ [  4 130]]
+accuracy: 0.953020
+****************************************************************************************************
+after fs using osfs_z alpha = 0.05: 
+selected features index: 
+[ 7248 11367]
+size of train data matrix:  (32, 2)
+size of test data matrix:  (149, 2)
+[[ 14   1]
+ [  8 126]]
+accuracy: 0.939597
+****************************************************************************************************
+DONE

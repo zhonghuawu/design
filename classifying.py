@@ -27,7 +27,7 @@ def read_data(fname, pos):
 def run_cross_validation(X, y):
     print "size of data matrix: ", X.shape 
     print "size of label matrix: ", y.shape 
-    #clf = svm.SVC()
+    #clf = svm.SVC(kernel='poly')
     clf = svm.SVC(kernel='linear')
     scores = model_selection.cross_val_score(clf, X, y, cv=5, scoring="accuracy")
     print "cross validation scores: ", scores, scores.mean()
@@ -50,10 +50,9 @@ def run_train_test_split(X_train, y_train, X_test, y_test):
     clf.fit(X_train, y_train)
     y_pred = clf.predict(X_test)
 
-    print "y_test: \n", y_test
-    print "y_pred: \n", y_pred
+    #print "y_test: \n", y_test
+    #print "y_pred: \n", y_pred
     print confusion_matrix(y_test, y_pred)
-
     print "accuracy: %f"%accuracy_score(y_test, y_pred)
 
 # run interface

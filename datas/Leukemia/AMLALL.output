@@ -1,0 +1,91 @@
+classifying dataset: datas/Leukemia/AMLALL
+****************************************************************************************************
+origin data: 
+size of train data matrix:  (38, 7129)
+size of test data matrix:  (34, 7129)
+[[19  1]
+ [ 0 14]]
+accuracy: 0.970588
+****************************************************************************************************
+after fs using grafting l21-nrom threshold = 0.2, epsilon = 0.1: 
+selected features index: 
+[3, 7, 16, 18, 19, 47, 399]
+size of train data matrix:  (38, 7)
+size of test data matrix:  (34, 7)
+[[11  9]
+ [ 1 13]]
+accuracy: 0.705882
+****************************************************************************************************
+after fs using grafting l21-nrom threshold = 0.2, epsilon = 0.05: 
+selected features index: 
+[0, 3, 7, 15, 16, 18, 19, 24, 26, 33, 47, 53, 399, 2172]
+size of train data matrix:  (38, 14)
+size of test data matrix:  (34, 14)
+[[14  6]
+ [ 2 12]]
+accuracy: 0.764706
+****************************************************************************************************
+after fs using grafting l21-nrom threshold = 0.1, epsilon = 0.1: 
+selected features index: 
+[3, 7, 16, 18, 19, 47, 399]
+size of train data matrix:  (38, 7)
+size of test data matrix:  (34, 7)
+[[11  9]
+ [ 1 13]]
+accuracy: 0.705882
+****************************************************************************************************
+after fs using grafting l21-nrom threshold = 0.2, epsilon = 0.01: 
+selected features index: 
+[3, 6, 15, 18, 19, 21, 24, 26, 28, 29, 33, 40, 47, 57, 58, 60, 67, 68, 72, 80, 87, 127, 200, 301, 304]
+size of train data matrix:  (38, 25)
+size of test data matrix:  (34, 25)
+[[13  7]
+ [ 3 11]]
+accuracy: 0.705882
+****************************************************************************************************
+after fs using grafting l21-nrom threshold = 0.2, epsilon = 0.2: 
+selected features index: 
+[26, 48, 1828]
+size of train data matrix:  (38, 3)
+size of test data matrix:  (34, 3)
+[[19  1]
+ [ 7  7]]
+accuracy: 0.764706
+****************************************************************************************************
+after fs using grafting l1-norm threshold = 0.2, epsilon = 0.01: 
+selected features index: 
+[2019, 3319, 4846, 5038]
+size of train data matrix:  (38, 4)
+size of test data matrix:  (34, 4)
+[[18  2]
+ [ 1 13]]
+accuracy: 0.911765
+****************************************************************************************************
+after fs using Alpha_investing: 
+selected features index: 
+[  0   1   3 460 485]
+size of train data matrix:  (38, 5)
+size of test data matrix:  (34, 5)
+[[18  2]
+ [ 7  7]]
+accuracy: 0.735294
+****************************************************************************************************
+after fs using osfs_z alpha = 0.01: 
+selected features index: 
+[4846 5038]
+size of train data matrix:  (38, 2)
+size of test data matrix:  (34, 2)
+[[18  2]
+ [ 1 13]]
+accuracy: 0.911765
+****************************************************************************************************
+after fs using osfs_z alpha = 0.05: 
+selected features index: 
+[4846 5038]
+size of train data matrix:  (38, 2)
+size of test data matrix:  (34, 2)
+[[18  2]
+ [ 1 13]]
+accuracy: 0.911765
+****************************************************************************************************
+DONE

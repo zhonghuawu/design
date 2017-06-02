@@ -53,6 +53,7 @@ def run(fname, threshold, epsilon, label_pos):
     X_index_retained, w, X_index, obj_values = results
     
     print(str("**"*30))
+    print("dataset name: %s"%fname)
     print("selected features index retained: ")
     print("grafting l1-norm ")
     print("threshold = %s, epsilon = %s: "%(str(threshold), str(epsilon))),
