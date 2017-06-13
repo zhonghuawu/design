@@ -44,45 +44,26 @@ def J(W, X, Y, threshold):
 
 def J_grad(W, X, Y, threshold):
     W = np.matrix(W).reshape((X.shape[1], Y.shape[1]))
-    x = X[:, -1]
-    grad_loss = 2*np.sum(np.dot(x.T, np.dot(X, W)-Y))
+    mat = np.dot(X, W) - Y
+    loss = np.linalg.norm(mat, ord='fro')
+    mat = np.dot(X.T, mat)
+    grad_loss = mat[-1, :]/loss
     D_vector = 0.5/np.linalg.norm(W, axis=1)
     D = np.diag(D_vector)
     grad_regularized_term = 2*threshold*np.sum(np.dot(D, W)[-1, :])
     return grad_loss + grad_regularized_term
 
-def gradient_validation_new(x, W, X, Y, threshold, epsilon):
-    X_new = np.hstack((X, x))
-    #points = it.product((-epsilon, epsilon), repeat=Y.shape[1])
-    points = np.array((-epsilon, epsilon))
-    eps = np.sqrt(np.finfo(float).eps)
-    eps_matrix = np.matrix(W)*eps
-    for p in points:
-        point = np.array((p, 0))
-        eps_matrix_new = np.vstack((eps_matrix, eps*np.matrix(point)))
-        W_new = np.vstack((W, point))
-        grad = fprime(W_new, J, eps_matrix_new, X_new, Y, threshold)[-1, 0]
-        if np.sign(p)*grad < 0:
-            print "point = %s"%str(point)
-            return True
-        point = np.array((0, p))
-        W_new = np.vstack((W, point))
-        eps_matrix_new = np.vstack((eps_matrix, eps*np.matrix(point)))
-        grad = fprime(W_new, J, eps_matrix_new, X_new, Y, threshold)[-1, 1]
-        if np.sign(p)*grad < 0:
-            print "point = %s"%str(point)
-            return True
-    return False
 
 def gradient_validation(x, W, X, Y, threshold, epsilon):
     X_new = np.hstack((X, x))
     points = it.product((-epsilon, epsilon), repeat=Y.shape[1])
-    eps = np.sqrt(np.finfo(float).eps)
-    eps_matrix = np.matrix(W)*eps
+    #eps = np.sqrt(np.finfo(float).eps)
+    #eps_matrix = np.matrix(W)*eps
     for point in points:
         W_new = np.vstack((W, point))
-        eps_matrix_new = np.vstack((eps_matrix, eps*np.matrix(point)))
-        grad = fprime(W_new, J, eps_matrix_new, X_new, Y, threshold)[-1, :]
+        #eps_matrix_new = np.vstack((eps_matrix, eps*np.matrix(point)))
+        #grad = fprime(W_new, J, eps_matrix_new, X_new, Y, threshold)[-1, :]
+        grad = J_grad(W_new, X_new, Y, threshold)
         grad_mat = np.matrix(grad)
         sign_mat = np.matrix(np.sign(point)).T
         grad_sum = np.dot(grad_mat, sign_mat)[0, 0]
