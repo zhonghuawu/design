@@ -3,12 +3,15 @@ from __future__ import division
 from numpy import matrix
 import numpy as np
 
+import scipy.io as sio
+
 from pandas import Series, DataFrame
 import pandas as pd
 import matplotlib.pyplot as plt
 
 #from model import *
-from model_new import *
+#from model_new import *
+from model_multi import *
 
 '''
 run grafting algorithm on data set from file fname
@@ -17,10 +20,19 @@ Y: labels vector, n*1 dimension
 w: features weight vector, d*1 dimension
 '''
 
+def read_data(fname):
+    data = sio.loadmat(fname)
+    X = np.matrix(data['X'])
+    Y = np.matrix(data['Y'])
+    return X, Y
+
 def grafting(X, Y, threshold, epsilon):
+    print "threshold = %s"%str(threshold)
+    print "epsilon = %s"%str(epsilon)
     X_model = np.ones_like(X[:, 0])
-    w = np.ones(1)
-    #w, obj_value = update_wegiht(w, X_model, Y, threshold)
+    w = np.matrix(np.ones_like(Y[0, :]))
+    w, obj_value = update_wegiht(w, X_model, Y, threshold)
+    print "***"*30
 
     X_index = np.array([], dtype=int)
     X_index_retained = np.array([], dtype=int)
@@ -30,15 +42,15 @@ def grafting(X, Y, threshold, epsilon):
     for j in range(d):
         x = normalize(X[:, j])
         #if C_grad_std(x, w, X_model, Y, threshold, epsilon):
-        if C_grad(x, w, X_model, Y, threshold, epsilon):
+        if gradient_validation(x, w, X_model, Y, threshold):
             X_index_retained = np.hstack((X_index_retained, j))
             X_model = np.hstack((X_model, x))
-            w = np.hstack((w, 1))
+            w = np.vstack((w, 1))
             w, obj_value = update_wegiht(w, X_model, Y, threshold)
             w, X_model, X_index_retained = refresh_selected(w, X_model, X_index_retained, 1e-5)
-            print("j = %-6d obj_value = %f"%(j, obj_value))
-            print("X_index_retained = %s"%str(X_index_retained))
-            print("weight_vector = %s"%str(w))
+            print("j = %d obj_value: %f"%(j, obj_value))
+            print("X_index_retained: %s"%str(X_index_retained))
+            print("weight_vector: \n%s"%str(w))
             print "***"*30
             X_index = np.hstack((X_index, j))
             obj_values = np.hstack((obj_values, obj_value))
@@ -46,13 +58,14 @@ def grafting(X, Y, threshold, epsilon):
 
 def run(fname, threshold, epsilon, label_pos):
     print("deal with %s"%fname)
-    from util import read_data
-    X, Y = read_data(fname, label_pos)
+    #from util import read_data_multi
+    X, Y = read_data(fname)
     print("X shape: %s"%str(X.shape))
-    results = grafting(np.matrix(X), np.matrix(Y).T, threshold, epsilon)
+    print("Y shape: %s"%str(Y.shape))
+    results = grafting(np.matrix(X), np.matrix(Y), threshold, epsilon)
     X_index_retained, w, X_index, obj_values = results
     
-    print(str("**"*30))
+    print(str("***"*30))
     print("dataset name: %s"%fname)
     print("selected features index retained: ")
     print("grafting l1-norm ")
@@ -61,7 +74,7 @@ def run(fname, threshold, epsilon, label_pos):
     print("selected features weight: %s"%str(w))
     print("selected features index: %s"%str(X_index))
     print("objective function values: %s"%str(obj_values))
-    print(str("**"*30))
+    print(str("***"*30))
     print("DONE")
 
     obj_values_df = DataFrame(obj_values, index=X_index, columns=["obj values"])

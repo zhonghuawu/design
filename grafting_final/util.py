@@ -6,15 +6,27 @@ def read_data(fname, label_pos=-1):
     X, Y = None, None
     if 'data' in data.keys():
         data = data['data']
-        X = data[:, :label_pos]
         y = data[:, label_pos]
-        Y = np.ones(y.shape)
-        Y[y==0]=-1
+        X = np.delete(data, label_pos, axis=1)
+        #Y = np.ones(y.shape)
+        #Y[y==0]=-1
     else :
         X = data['X']
         y = data['Y'][:, 0]
         Y = np.ones(y.shape)
         Y[y==2]=-1
+    return X, Y
+
+def read_data_multi(fname, label_pos=-1):
+    data = sio.loadmat(fname)
+    X, Y = None, None
+    if 'data' in data.keys():
+        data = data['data']
+        Y = data[:, label_pos]
+        X = np.delete(data, label_pos, axis=1)
+    else :
+        X = data['X']
+        Y = data['Y'][:, 0]
     return X, Y
 
 def fprime(xk, f, epsilon, *args):
