@@ -1,3 +1,5 @@
+grafting l1-norm threshold = 0.2, epsilon = 0.1:  [2, 12, 14, 48, 65, 764]
+grafting l21-norm threshold = 0.2, epsilon = 0.1:  [2, 10, 13, 14, 69, 117]
 grafting l1-norm threshold = 0.2, epsilon = 0.1:  [248, 266, 376, 492, 764, 1422, 1581, 1771, 1866, 1869, 1973]
 grafting l21-norm threshold = 0.2, epsilon = 0.1: [2, 10, 13, 14, 163, 1643]
 grafting l21-norm threshold = 0.1, epsilon = 0.1: [2, 10, 13, 14, 117, 1643]

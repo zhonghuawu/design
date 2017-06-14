@@ -1,7 +1,9 @@
-osfs_z alpha = 0.01: np.array([2968, 6044, 6544, 6901])-1
-Alpha_investing: np.array([1,2,3,4,6,10,13,26,28,31,32,37,40,41,49,53,55,82,105,173,205,218,244,256,1080,1553,6914])-1
+grafting l1-norm threshold = 0.2, epsilon = 0.1:  [70, 75, 81, 227]
+grafting l21-norm threshold = 0.2, epsilon = 0.1:  [35, 70, 75, 81]
 grafting_l1  threshold = 0.2, epsilon = 0.01: [1462]
 grafting l1-norm threshold = 0.2, epsilon = 1e-05:  [237, 1462, 1512, 4816]
 grafting l1-norm threshold = 0.2, epsilon = 1e-06:  [4816]
 grafting_L21 threshold = 0.2, epsilon = 0.1: np.array([ 48 , 75 , 81, 227])
 grafting_L21 threshold = 0.01, esiplon = 0.05: np.array([9,14,18,22,24,32,35,36,70,75,81,133, 224])
+osfs_z alpha = 0.01: np.array([2968, 6044, 6544, 6901])-1
+Alpha_investing: np.array([1,2,3,4,6,10,13,26,28,31,32,37,40,41,49,53,55,82,105,173,205,218,244,256,1080,1553,6914])-1

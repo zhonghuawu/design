@@ -29,8 +29,9 @@ def run_cross_validation(X, y):
     print "size of label matrix: ", y.shape 
     #clf = svm.SVC(kernel='poly')
     clf = svm.SVC(kernel='linear')
-    scores = model_selection.cross_val_score(clf, X, y, cv=5, scoring="accuracy")
-    print "cross validation scores: ", scores, scores.mean()
+    scores = model_selection.cross_val_score(clf, X, y, cv=10, scoring="accuracy")
+    print "cross validation scores: ", scores
+    print "cross validation accuracy: ", scores.mean()
     clf = svm.LinearSVC()
     X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=1)
     clf.fit(X_train, y_train)
