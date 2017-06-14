@@ -42,7 +42,7 @@ def grafting(X, Y, threshold, epsilon):
     for j in range(d):
         x = normalize(X[:, j])
         #if C_grad_std(x, w, X_model, Y, threshold, epsilon):
-        if gradient_validation(x, w, X_model, Y, threshold):
+        if gradient_validation(x, w, X_model, Y, threshold, epsilon):
             X_index_retained = np.hstack((X_index_retained, j))
             X_model = np.hstack((X_model, x))
             w = np.vstack((w, 1))

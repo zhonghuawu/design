@@ -55,7 +55,7 @@ def gradient_validation_std(x, w, X, Y, threshold):
             return True
     return False
 
-def gradient_validation(x, w, X, Y, threshold, epsilon=0.1):
+def gradient_validation(x, w, X, Y, threshold, epsilon):
     X_new = np.hstack((X, x))
     points = np.array((-epsilon, epsilon))
     #eps = np.sqrt(np.finfo(float).eps)
