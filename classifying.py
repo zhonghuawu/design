@@ -26,11 +26,11 @@ def read_data(fname, pos):
 # whole data set, use cross validation to classify
 def run_cross_validation(X, y):
     print "size of data matrix: ", X.shape 
-    print "size of label matrix: ", y.shape 
+    #print "size of label matrix: ", y.shape 
     #clf = svm.SVC(kernel='poly')
     clf = svm.SVC(kernel='linear')
-    scores = model_selection.cross_val_score(clf, X, y, cv=10, scoring="accuracy")
-    print "cross validation scores: ", scores
+    scores = model_selection.cross_val_score(clf, X, y, cv=5, scoring="accuracy")
+    #print "cross validation scores: ", scores
     print "cross validation accuracy: ", scores.mean()
     clf = svm.LinearSVC()
     X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=1)
@@ -39,8 +39,8 @@ def run_cross_validation(X, y):
 
     #print "y_test: \n", y_test
     #print "y_pred: \n", y_pred
-    print confusion_matrix(y_test, y_pred)
-    print "accuracy: %f"%accuracy_score(y_test, y_pred)
+    #print confusion_matrix(y_test, y_pred)
+    #print "accuracy: %f"%accuracy_score(y_test, y_pred)
 
 # already split train and test data set
 def run_train_test_split(X_train, y_train, X_test, y_test):
@@ -83,7 +83,7 @@ def run(fname, pos, splited):
                 alg, indexes = line.split(":")[:2]
                 print "after fs using %s: "%alg
                 indexes = eval(indexes)
-                print "selected features index: \n%s"%indexes
+                #print "selected features index: \n%s"%indexes
                 run_cross_validation(X[:, indexes], Y)
                 print "**"*50
     else:
