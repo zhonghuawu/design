@@ -1,8 +1,5 @@
-grafting l1-norm threshold = 0.2, epsilon = 0.1:  [512, 764, 1324, 1413, 1422, 1581, 1634, 1729, 1771, 1973]
-grafting l21-norm threshold = 0.2, epsilon = 0.1:  [8, 13, 14, 16, 466]
-grafting l21-norm threshold = 0.2, epsilon = 0.05:  [2, 10, 13, 16, 43, 56, 69, 142, 174, 202, 653, 1225, 1317]
-grafting l21-norm threshold = 0.1, epsilon = 0.05:  [2, 4, 9, 10, 13, 16, 56, 69, 88, 95, 142, 160, 202, 787]
-grafting l21-norm threshold = 0.1, epsilon = 0.1:  [8, 12, 13, 14, 16, 896, 1962]
+grafting l1-norm threshold = 0.2, epsilon = 0.1:  [2, 13, 14, 43, 84, 142, 174, 185, 202, 341, 1093, 1220, 1809]
+grafting l21-norm threshold = 0.1, epsilon = 0.05:  [2, 9, 10, 13, 16, 19, 66, 69, 88, 95, 142, 160, 185, 202]
+fast_osfs_z apha alpha = 0.01: np.array([14, 513, 1473])-1
+fast_osfs_z apha alpha = 0.05: np.array([249, 513, 1473])-1
 Alpha_Investing: np.array([1, 14, 15 ,17])-1
-osfs_z apha alpha = 0.01: np.array([1423, 1993])-1
-osfs_z apha alpha = 0.05: np.array([765, 1772])-1
