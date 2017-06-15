@@ -25,7 +25,7 @@ def convert_to_std_mat(fname, label_pos):
     Y = np.matrix(np.zeros_like(y)).T
     for i, label in enumerate(y):
         Y[i, 0] = labels_dict[label]
-    data_dict = {"X":np.matrix(X), "Y":np.matrix(Y)}
+    data_dict = {"X":np.matrix(X), "Y":np.matrix(Y).astype(np.int32)}
     sio.savemat("old_gene/%s"%os.path.split(fname)[-1], data_dict)
 
 if __name__ == '__main__':
