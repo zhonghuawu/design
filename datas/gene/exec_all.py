@@ -1,7 +1,5 @@
 import os
 
-command = "python classifying.py %s.ind > results/%s_cls.output"
-
 def exec_command(fname):
     os.system("python classifying.py %s.ind > result_tmp/%s_cls.output"%(fname, fname))
 
