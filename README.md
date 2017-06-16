@@ -1,4 +1,4 @@
-![image](https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/all_1.png)
+![image](https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/all_3.png)
 
 ### dataset
         0         TOX_171
