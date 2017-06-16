@@ -13,3 +13,7 @@
         9     Lung_Cancer
         10          SRBCT
         11          DLBCL
+
+### result
+[accuracy](https://github.com/zhonghuawu/design/datas/gene/all_result/all_cls.csv)
+[feature number](https://github.com/zhonghuawu/design/datas/gene/all_result/all_nfs.csv)
