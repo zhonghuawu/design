@@ -13,7 +13,9 @@ nfs = nfs.drop('dataset', axis=1)
 
 fig, axes = plt.subplots(2, 1)
 
-cls.plot(ax=axes[0], ylim=(0.4, 1.0))
-nfs.plot(ax=axes[1], ylim=(0, 50))
+style='o- ^- x- *- .-'.split(' ')
+cls.plot(ax=axes[0], style=style, ylim=(0.4, 1.0), title='Prediction accuracy')
+nfs.plot(ax=axes[1], style=style, ylim=(0, 60), title='The number of selected features')
 
+plt.xlabel("12 datasets")
 plt.show()

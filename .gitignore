@@ -1,6 +1,6 @@
 history/
 LOFS/
 FS_package_DMML
-*.py[cod]
+*.py[cod~]
 
 *.zip
