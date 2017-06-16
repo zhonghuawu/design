@@ -15,8 +15,8 @@
         11          DLBCL
 
 ### result
->>[dataset attribute](https://github.com/zhonghuawu/design/blob/master/datas/gene/all_result/all_attribute.csv)
+* [dataset attribute](https://github.com/zhonghuawu/design/blob/master/datas/gene/all_result/all_attribute.csv)
 <br>
->>[accuracy](https://github.com/zhonghuawu/design/blob/master/datas/gene/all_result/all_cls.csv)
+* [accuracy](https://github.com/zhonghuawu/design/blob/master/datas/gene/all_result/all_cls.csv)
 <br>
->>[feature number](https://github.com/zhonghuawu/design/blob/master/datas/gene/all_result/all_cls.csv)
+* [feature number](https://github.com/zhonghuawu/design/blob/master/datas/gene/all_result/all_cls.csv)
