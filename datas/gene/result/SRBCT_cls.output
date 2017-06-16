@@ -1,0 +1,27 @@
+classifying dataset: SRBCT
+**********************************************************************
+origin data: 
+size of data matrix:  (83, 2308)
+cross validation accuracy:  1.0
+**********************************************************************
+after fs using grafting l1-norm threshold = 0.2, epsilon = 0.1: 
+size of data matrix:  (83, 21)
+cross validation accuracy:  0.880441176471
+**********************************************************************
+after fs using grafting l21-norm threshold = 0.2, epsilon = 0.05: 
+size of data matrix:  (83, 17)
+cross validation accuracy:  0.93795751634
+**********************************************************************
+after fs using osfs alpha=0.01: 
+size of data matrix:  (83, 4)
+cross validation accuracy:  0.879052287582
+**********************************************************************
+after fs using osfs alpha=0.05: 
+size of data matrix:  (83, 6)
+cross validation accuracy:  0.912859477124
+**********************************************************************
+after fs using Alpha-investing: 
+size of data matrix:  (83, 26)
+cross validation accuracy:  0.939444444444
+**********************************************************************
+DONE

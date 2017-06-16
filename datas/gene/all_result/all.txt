@@ -1,0 +1,94 @@
+                                          ALLAML_cls  ALLAML_nfs
+origin data:                                0.942857        7129
+l1-norm threshold = 0.2, epsilon = 0.1:     0.959048          19
+l21-norm threshold = 0.2, epsilon = 0.1:    1.000000          11
+fast_osfs_z alpha = 0.01:                   0.985714           6
+fast_osfs_z alpha = 0.05:                   0.985714           8
+Alpha_investing:                            0.652381           1
+
+                                          DLBCL_cls  DLBCL_nfs
+origin data:                               0.950000       5469
+l1-norm threshold = 0.2, epsilon = 0.1:    0.925000          7
+l21-norm threshold = 0.2, epsilon = 0.1:   0.934881          6
+fast_osfs_z alpha = 0.01:                  0.908095          6
+fast_osfs_z alpha = 0.05:                  0.909048          6
+
+                                           lymphoma_cls  lymphoma_nfs
+origin data:                                   0.920556          4026
+l1-norm threshold = 0.2, epsilon = 0.2:        0.729722            26
+l21-norm threshold = 0.2, epsilon = 0.05:      0.735833             8
+fast_osfs_z alpha = 0.01:                      0.691667             6
+fast_osfs_z alpha = 0.05:                      0.680000             7
+Alpha_investing:                               0.485833             1
+
+                                           SMK_CAN_187_cls  SMK_CAN_187_nfs
+origin data:                                      0.652916            19993
+l1-norm threshold = 0.2, epsilon = 0.1:           0.731863                7
+l21-norm threshold = 0.2, epsilon = 0.05:         0.807681               26
+fast_osfs_z alpha = 0.01:                         0.700000                5
+fast_osfs_z alpha = 0.05:                         0.813087               10
+Alpha_investing:                                  0.700711                6
+
+                                           SRBCT_cls  SRBCT_nfs
+origin data:                                1.000000       2308
+l1-norm threshold = 0.2, epsilon = 0.1:     0.880441         21
+l21-norm threshold = 0.2, epsilon = 0.05:   0.937958         17
+osfs alpha=0.01:                            0.879052          4
+osfs alpha=0.05:                            0.912859          6
+Alpha-investing:                            0.939444         26
+
+                                           TOX_171_cls  TOX_171_nfs
+origin data:                                  0.655360         5748
+l1-norm threshold = 0.2, epsilon = 0.1:       0.537790           30
+l21-norm threshold = 0.2, epsilon = 0.05:     0.695182           20
+osfs_z alpha = 0.01:                          0.580046            9
+Alpha_Investing:                              0.667105           45
+
+                                           GLIOMA_cls  GLIOMA_nfs
+origin data:                                 0.785909        4434
+l1-norm threshold = 0.2, epsilon = 0.1:      0.742727          14
+l21-norm threshold = 0.2, epsilon = 0.05:    0.845909          18
+fast_osfs_z alpha = 0.01:                    0.623182           5
+fast_osfs_z alpha = 0.05:                    0.830909           7
+Alpha_investing:                             0.571818           4
+
+                                           GLI_85_cls  GLI_85_nfs
+origin data:                                 0.845507       22283
+l1-norm threshold = 0.2, epsilon = 0.1:      0.918219           9
+l21-norm threshold = 0.2, epsilon = 0.05:    0.963971          24
+fast_osfs_z alpha = 0.01:                    0.965359           5
+fast_osfs_z alpha = 0.05:                    0.942484           8
+Alpha_investing:                             0.916912          27
+
+                                           Lung_Cancer_cls  Lung_Cancer_nfs
+origin data:                                      0.930301            12600
+l1-norm threshold = 0.2, epsilon = 0.1:           0.886620               29
+l21-norm threshold = 0.2, epsilon = 0.05:         0.891120               10
+fast_osfs_z alpha = 0.01:                         0.875479                9
+fast_osfs_z alpha = 0.05:                         0.886335               12
+Alpha_investing:                                  0.846450               41
+
+                                           lung_cls  lung_nfs
+origin data:                               0.960208      3312
+l1-norm threshold = 0.2, epsilon = 0.1:    0.920544        23
+l21-norm threshold = 0.2, epsilon = 0.02:  0.960563        36
+Alpha_investing:                           0.944952        45
+fast_osfs_z alpha = 0.01:                  0.846934        11
+fast_osfs_z alpha = 0.05:                  0.876841        16
+
+                                           colon_cls  colon_nfs
+origin data:                                0.774359       2000
+l1-norm threshold = 0.2, epsilon = 0.1:     0.934615         13
+l21-norm threshold = 0.1, epsilon = 0.05:   0.919231         14
+fast_osfs_z apha alpha = 0.01:              0.852564          3
+fast_osfs_z apha alpha = 0.05:              0.883333          3
+Alpha_Investing:                            0.805128          4
+
+                                          Prostate_GE_cls  Prostate_GE_nfs
+origin data:                                     0.921905             5966
+l1-norm threshold = 0.2, epsilon = 0.1:          0.931429                7
+l21-norm threshold = 0.2, epsilon = 0.1:         0.940952                7
+fast_osfs_z alpha = 0.01:                        0.940476                4
+fast_osfs_z alpha = 0.05:                        0.960476                5
+Alpha_investing:                                 0.940952               12
+

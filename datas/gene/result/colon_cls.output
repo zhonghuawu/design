@@ -1,0 +1,27 @@
+classifying dataset: colon
+**********************************************************************
+origin data: 
+size of data matrix:  (62, 2000)
+cross validation accuracy:  0.774358974359
+**********************************************************************
+after fs using grafting l1-norm threshold = 0.2, epsilon = 0.1: 
+size of data matrix:  (62, 13)
+cross validation accuracy:  0.934615384615
+**********************************************************************
+after fs using grafting l21-norm threshold = 0.1, epsilon = 0.05: 
+size of data matrix:  (62, 14)
+cross validation accuracy:  0.919230769231
+**********************************************************************
+after fs using fast_osfs_z apha alpha = 0.01: 
+size of data matrix:  (62, 3)
+cross validation accuracy:  0.852564102564
+**********************************************************************
+after fs using fast_osfs_z apha alpha = 0.05: 
+size of data matrix:  (62, 3)
+cross validation accuracy:  0.883333333333
+**********************************************************************
+after fs using Alpha_Investing: 
+size of data matrix:  (62, 4)
+cross validation accuracy:  0.805128205128
+**********************************************************************
+DONE

@@ -1,0 +1,27 @@
+classifying dataset: lung
+**********************************************************************
+origin data: 
+size of data matrix:  (203, 3312)
+cross validation accuracy:  0.960208124264
+**********************************************************************
+after fs using grafting l1-norm threshold = 0.2, epsilon = 0.1: 
+size of data matrix:  (203, 23)
+cross validation accuracy:  0.920544453656
+**********************************************************************
+after fs using grafting l21-norm threshold = 0.2, epsilon = 0.02: 
+size of data matrix:  (203, 36)
+cross validation accuracy:  0.960563215382
+**********************************************************************
+after fs using Alpha_investing: 
+size of data matrix:  (203, 45)
+cross validation accuracy:  0.944951714007
+**********************************************************************
+after fs using fast_osfs_z alpha = 0.01: 
+size of data matrix:  (203, 11)
+cross validation accuracy:  0.846933548584
+**********************************************************************
+after fs using fast_osfs_z alpha = 0.05: 
+size of data matrix:  (203, 16)
+cross validation accuracy:  0.876841121631
+**********************************************************************
+DONE

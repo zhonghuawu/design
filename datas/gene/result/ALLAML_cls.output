@@ -1,0 +1,27 @@
+classifying dataset: ALLAML
+**********************************************************************
+origin data: 
+size of data matrix:  (72, 7129)
+cross validation accuracy:  0.942857142857
+**********************************************************************
+after fs using grafting l1-norm threshold = 0.2, epsilon = 0.1: 
+size of data matrix:  (72, 19)
+cross validation accuracy:  0.959047619048
+**********************************************************************
+after fs using grafting l21-norm threshold = 0.2, epsilon = 0.1: 
+size of data matrix:  (72, 11)
+cross validation accuracy:  1.0
+**********************************************************************
+after fs using fast_osfs_z alpha = 0.01: 
+size of data matrix:  (72, 6)
+cross validation accuracy:  0.985714285714
+**********************************************************************
+after fs using fast_osfs_z alpha = 0.05: 
+size of data matrix:  (72, 8)
+cross validation accuracy:  0.985714285714
+**********************************************************************
+after fs using Alpha_investing: 
+size of data matrix:  (72, 1)
+cross validation accuracy:  0.652380952381
+**********************************************************************
+DONE

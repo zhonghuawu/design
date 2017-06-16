@@ -1,0 +1,27 @@
+classifying dataset: TOX_171
+**********************************************************************
+origin data: 
+size of data matrix:  (171, 5748)
+cross validation accuracy:  0.655360325949
+**********************************************************************
+after fs using grafting l1-norm threshold = 0.2, epsilon = 0.1: 
+size of data matrix:  (171, 30)
+cross validation accuracy:  0.537789661319
+**********************************************************************
+after fs using grafting l21-norm threshold = 0.2, epsilon = 0.05: 
+size of data matrix:  (171, 20)
+cross validation accuracy:  0.695182072829
+**********************************************************************
+after fs using osfs_z alpha = 0.01: 
+size of data matrix:  (171, 3)
+cross validation accuracy:  0.543020117138
+**********************************************************************
+after fs using osfs_z alpha = 0.01: 
+size of data matrix:  (171, 9)
+cross validation accuracy:  0.580045836516
+**********************************************************************
+after fs using Alpha_Investing: 
+size of data matrix:  (171, 45)
+cross validation accuracy:  0.667104660046
+**********************************************************************
+DONE

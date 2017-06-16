@@ -1,0 +1,27 @@
+classifying dataset: SMK_CAN_187
+**********************************************************************
+origin data: 
+size of data matrix:  (187, 19993)
+cross validation accuracy:  0.652916073969
+**********************************************************************
+after fs using grafting l1-norm threshold = 0.2, epsilon = 0.1: 
+size of data matrix:  (187, 7)
+cross validation accuracy:  0.73186344239
+**********************************************************************
+after fs using grafting l21-norm threshold = 0.2, epsilon = 0.05: 
+size of data matrix:  (187, 26)
+cross validation accuracy:  0.807681365576
+**********************************************************************
+after fs using fast_osfs_z alpha = 0.01: 
+size of data matrix:  (187, 5)
+cross validation accuracy:  0.7
+**********************************************************************
+after fs using fast_osfs_z alpha = 0.05: 
+size of data matrix:  (187, 10)
+cross validation accuracy:  0.813086770982
+**********************************************************************
+after fs using Alpha_investing: 
+size of data matrix:  (187, 6)
+cross validation accuracy:  0.700711237553
+**********************************************************************
+DONE

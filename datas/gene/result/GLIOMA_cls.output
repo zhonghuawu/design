@@ -1,0 +1,27 @@
+classifying dataset: GLIOMA
+**********************************************************************
+origin data: 
+size of data matrix:  (50, 4434)
+cross validation accuracy:  0.785909090909
+**********************************************************************
+after fs using grafting l1-norm threshold = 0.2, epsilon = 0.1: 
+size of data matrix:  (50, 14)
+cross validation accuracy:  0.742727272727
+**********************************************************************
+after fs using grafting l21-norm threshold = 0.2, epsilon = 0.05: 
+size of data matrix:  (50, 18)
+cross validation accuracy:  0.845909090909
+**********************************************************************
+after fs using fast_osfs_z alpha = 0.01: 
+size of data matrix:  (50, 5)
+cross validation accuracy:  0.623181818182
+**********************************************************************
+after fs using fast_osfs_z alpha = 0.05: 
+size of data matrix:  (50, 7)
+cross validation accuracy:  0.830909090909
+**********************************************************************
+after fs using Alpha_investing: 
+size of data matrix:  (50, 4)
+cross validation accuracy:  0.571818181818
+**********************************************************************
+DONE
