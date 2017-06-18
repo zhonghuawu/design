@@ -1,5 +1,5 @@
 ## Result figure on 12 datasets
-![image](https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/all_3.png)
+![image](https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/all.png)
 
 ### dataset
         0         TOX_171
