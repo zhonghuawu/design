@@ -1,3 +1,4 @@
+## Result figure on 12 datasets
 ![image](https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/all_3.png)
 
 ### dataset
@@ -14,7 +15,11 @@
         10          SRBCT
         11          DLBCL
 
-### result
+### Result record on 12 datasets
 * [dataset attribute](https://github.com/zhonghuawu/design/blob/master/datas/gene/all_result/all_attribute.csv) <br>
 * [Prediction accuracy](https://github.com/zhonghuawu/design/blob/master/datas/gene/all_result/all_cls.csv) <br>
 * [The number of selected features](https://github.com/zhonghuawu/design/blob/master/datas/gene/all_result/all_nfs.csv)
+
+## parameter epsilon influence to algorithm
+#### on Prostate\_GE dataset
+![image](https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/opt_epsilon_on_Prostate_GE.png)
