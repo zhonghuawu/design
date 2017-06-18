@@ -28,7 +28,7 @@ if __name__ == '__main__':
     import sys
     fname = sys.argv[1]
     cls, nfs = read_output_epsilon(fname)
-    output_fname = "opt_epsilon_on_%s"%fname
+    output_fname = "opt_epsilon_on_%s"%fname.split('.')[0][:-4]
     cls.to_csv("%s_cls.csv"%output_fname)
     nfs.to_csv("%s_nfs.csv"%output_fname)
     draw(cls, nfs)
