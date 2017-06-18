@@ -23,3 +23,6 @@
 ## parameter epsilon influence to algorithm
 #### on Prostate\_GE dataset
 ![image](https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/opt_epsilon_on_Prostate_GE.png)
+
+#### on ALLAML dataset
+![image](https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/opt_epsilon_on_ALLAML.png)
