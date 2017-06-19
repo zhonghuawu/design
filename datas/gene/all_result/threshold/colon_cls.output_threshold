@@ -1,0 +1,43 @@
+classifying dataset: colon
+**********************************************************************
+origin data: 
+size of data matrix:  (62, 2000)
+cross validation accuracy:  0.774358974359
+**********************************************************************
+after fs using grafting l21-norm  threshold = 0.1, epsilon = 0.1: 
+size of data matrix:  (62, 6)
+cross validation accuracy:  0.870512820513
+**********************************************************************
+after fs using grafting l21-norm  threshold = 0.2, epsilon = 0.1: 
+size of data matrix:  (62, 6)
+cross validation accuracy:  0.870512820513
+**********************************************************************
+after fs using grafting l21-norm  threshold = 0.3, epsilon = 0.1: 
+size of data matrix:  (62, 6)
+cross validation accuracy:  0.870512820513
+**********************************************************************
+after fs using grafting l21-norm  threshold = 0.4, epsilon = 0.1: 
+size of data matrix:  (62, 6)
+cross validation accuracy:  0.870512820513
+**********************************************************************
+after fs using grafting l21-norm  threshold = 0.5, epsilon = 0.1: 
+size of data matrix:  (62, 7)
+cross validation accuracy:  0.885897435897
+**********************************************************************
+after fs using grafting l21-norm  threshold = 0.6, epsilon = 0.1: 
+size of data matrix:  (62, 6)
+cross validation accuracy:  0.823076923077
+**********************************************************************
+after fs using grafting l21-norm  threshold = 0.7, epsilon = 0.1: 
+size of data matrix:  (62, 7)
+cross validation accuracy:  0.821794871795
+**********************************************************************
+after fs using grafting l21-norm  threshold = 0.8, epsilon = 0.1: 
+size of data matrix:  (62, 8)
+cross validation accuracy:  0.951282051282
+**********************************************************************
+after fs using grafting l21-norm  threshold = 0.9, epsilon = 0.1: 
+size of data matrix:  (62, 9)
+cross validation accuracy:  0.869230769231
+**********************************************************************
+DONE
