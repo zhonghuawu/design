@@ -20,18 +20,12 @@
 * [Prediction accuracy](https://github.com/zhonghuawu/design/blob/master/datas/gene/all_result/all_cls.csv) <br>
 * [The number of selected features](https://github.com/zhonghuawu/design/blob/master/datas/gene/all_result/all_nfs.csv)
 
-## parameter epsilon influence to algorithm
-#### on Prostate\_GE dataset
+## parameter epsilon effect to algorithm
+#### on [Prostate\_GE](https://github.com/zhonghuawu/design/blob/master/datas/gene/all_result/opt_epsilon_on_Prostate_GE.csv) dataset
 ![image](https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/opt_epsilon_on_Prostate_GE.png)
-* [Prediction accuracy](https://github.com/zhonghuawu/design/blob/master/datas/gene/all_result/opt_epsilon_on_Prostate_GE_cls.csv)
-* [The number of selected features](https://github.com/zhonghuawu/design/blob/master/datas/gene/all_result/opt_epsilon_on_Prostate_GE_nfs.csv)
 
-#### on ALLAML dataset
+#### on [ALLAML](https://github.com/zhonghuawu/design/blob/master/datas/gene/all_result/opt_epsilon_on_ALLAML.csv) dataset
 ![image](https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/opt_epsilon_on_ALLAML.png)
-* [Prediction accuracy](https://github.com/zhonghuawu/design/blob/master/datas/gene/all_result/opt_epsilon_on_ALLAML_cls.csv)
-* [The number of selected features](https://github.com/zhonghuawu/design/blob/master/datas/gene/all_result/opt_epsilon_on_ALLAML_nfs.csv)
 
-#### on colon dataset
+#### on [colon](https://github.com/zhonghuawu/design/blob/master/datas/gene/all_result/opt_epsilon_on_colon.csv) dataset
 ![image](https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/opt_epsilon_on_colon.png)
-* [Prediction accuracy](https://github.com/zhonghuawu/design/blob/master/datas/gene/all_result/opt_epsilon_on_colon_cls.csv)
-* [The number of selected features](https://github.com/zhonghuawu/design/blob/master/datas/gene/all_result/opt_epsilon_on_colon_nfs.csv)
