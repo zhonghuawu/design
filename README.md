@@ -21,14 +21,17 @@
 * [The number of selected features](https://github.com/zhonghuawu/design/blob/master/datas/gene/all_result/all_nfs.csv)
 
 ## parameter epsilon effect to algorithm
-#### on [Prostate\_GE](https://github.com/zhonghuawu/design/blob/master/datas/gene/all_result/opt_epsilon_on_Prostate_GE.csv) dataset
-![image](https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/opt_epsilon_on_Prostate_GE.png)
+#### on [Prostate\_GE](https://github.com/zhonghuawu/design/blob/master/datas/gene/all_result/epsilon/opt_epsilon_on_Prostate_GE.csv) dataset
+![image](https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/epsilon/opt_epsilon_on_Prostate_GE.png)
 
-#### on [ALLAML](https://github.com/zhonghuawu/design/blob/master/datas/gene/all_result/opt_epsilon_on_ALLAML.csv) dataset
-![image](https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/opt_epsilon_on_ALLAML.png)
+#### on [ALLAML](https://github.com/zhonghuawu/design/blob/master/datas/gene/all_result/epsilon/opt_epsilon_on_ALLAML.csv) dataset
+![image](https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/epsilon/opt_epsilon_on_ALLAML.png)
 
-#### on [colon](https://github.com/zhonghuawu/design/blob/master/datas/gene/all_result/opt_epsilon_on_colon.csv) dataset
-![image](https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/opt_epsilon_on_colon.png)
+#### on [colon](https://github.com/zhonghuawu/design/blob/master/datas/gene/all_result/epsilon/opt_epsilon_on_colon.csv) dataset
+![image](https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/epsilon/opt_epsilon_on_colon.png)
 
-#### on [lung](https://github.com/zhonghuawu/design/blob/master/datas/gene/all_result/opt_epsilon_on_lung.csv) dataset
-![image](https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/opt_epsilon_on_lung.png)
+#### on [lung](https://github.com/zhonghuawu/design/blob/master/datas/gene/all_result/epsilon/opt_epsilon_on_lung.csv) dataset
+![image](https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/epsilon/opt_epsilon_on_lung.png)
+
+#### on [SRBCT](https://github.com/zhonghuawu/design/blob/master/datas/gene/all_result/epsilon/opt_epsilon_on_SRBCT.csv) dataset
+![image](https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/epsilon/opt_epsilon_on_SRBCT.png)
