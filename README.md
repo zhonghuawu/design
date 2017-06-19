@@ -21,33 +21,33 @@
 * [The number of selected features](https://github.com/zhonghuawu/design/blob/master/datas/gene/all_result/all_nfs.csv)
 
 ## 2. parameter epsilon effect to algorithm
-#### on [Prostate\_GE](https://github.com/zhonghuawu/design/blob/master/datas/gene/all_result/epsilon/opt_epsilon_on_Prostate_GE.csv) dataset
+#### 2.1 on [Prostate\_GE](https://github.com/zhonghuawu/design/blob/master/datas/gene/all_result/epsilon/opt_epsilon_on_Prostate_GE.csv) dataset
 ![image](https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/epsilon/opt_epsilon_on_Prostate_GE.png)
 
-#### on [ALLAML](https://github.com/zhonghuawu/design/blob/master/datas/gene/all_result/epsilon/opt_epsilon_on_ALLAML.csv) dataset
+#### 2.2 on [ALLAML](https://github.com/zhonghuawu/design/blob/master/datas/gene/all_result/epsilon/opt_epsilon_on_ALLAML.csv) dataset
 ![image](https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/epsilon/opt_epsilon_on_ALLAML.png)
 
-#### on [colon](https://github.com/zhonghuawu/design/blob/master/datas/gene/all_result/epsilon/opt_epsilon_on_colon.csv) dataset
+#### 2.3 on [colon](https://github.com/zhonghuawu/design/blob/master/datas/gene/all_result/epsilon/opt_epsilon_on_colon.csv) dataset
 ![image](https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/epsilon/opt_epsilon_on_colon.png)
 
-#### on [lung](https://github.com/zhonghuawu/design/blob/master/datas/gene/all_result/epsilon/opt_epsilon_on_lung.csv) dataset
+#### 2.4 on [lung](https://github.com/zhonghuawu/design/blob/master/datas/gene/all_result/epsilon/opt_epsilon_on_lung.csv) dataset
 ![image](https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/epsilon/opt_epsilon_on_lung.png)
 
-#### on [SRBCT](https://github.com/zhonghuawu/design/blob/master/datas/gene/all_result/epsilon/opt_epsilon_on_SRBCT.csv) dataset
+#### 2.5 on [SRBCT](https://github.com/zhonghuawu/design/blob/master/datas/gene/all_result/epsilon/opt_epsilon_on_SRBCT.csv) dataset
 ![image](https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/epsilon/opt_epsilon_on_SRBCT.png)
 
 ## 3. parameter threshold effect to algorithm
-#### on [Prostate\_GE](https://github.com/zhonghuawu/design/blob/master/datas/gene/all_result/threshold/opt_threshold_on_Prostate_GE.csv) dataset
+#### 3.1 on [Prostate\_GE](https://github.com/zhonghuawu/design/blob/master/datas/gene/all_result/threshold/opt_threshold_on_Prostate_GE.csv) dataset
 ![image](https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/threshold/opt_threshold_on_Prostate_GE.png)
 
-#### on [ALLAML](https://github.com/zhonghuawu/design/blob/master/datas/gene/all_result/threshold/opt_threshold_on_ALLAML.csv) dataset
+#### 3.2 on [ALLAML](https://github.com/zhonghuawu/design/blob/master/datas/gene/all_result/threshold/opt_threshold_on_ALLAML.csv) dataset
 ![image](https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/threshold/opt_threshold_on_ALLAML.png)
 
-#### on [colon](https://github.com/zhonghuawu/design/blob/master/datas/gene/all_result/threshold/opt_threshold_on_colon.csv) dataset
+#### 3.3 on [colon](https://github.com/zhonghuawu/design/blob/master/datas/gene/all_result/threshold/opt_threshold_on_colon.csv) dataset
 ![image](https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/threshold/opt_threshold_on_colon.png)
 
-#### on [lung](https://github.com/zhonghuawu/design/blob/master/datas/gene/all_result/threshold/opt_threshold_on_lung.csv) dataset
+#### 3.4 on [lung](https://github.com/zhonghuawu/design/blob/master/datas/gene/all_result/threshold/opt_threshold_on_lung.csv) dataset
 ![image](https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/threshold/opt_threshold_on_lung.png)
 
-#### on [SRBCT](https://github.com/zhonghuawu/design/blob/master/datas/gene/all_result/threshold/opt_threshold_on_SRBCT.csv) dataset
+#### 3.5 on [SRBCT](https://github.com/zhonghuawu/design/blob/master/datas/gene/all_result/threshold/opt_threshold_on_SRBCT.csv) dataset
 ![image](https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/threshold/opt_threshold_on_SRBCT.png)
