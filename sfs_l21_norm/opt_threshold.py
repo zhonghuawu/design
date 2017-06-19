@@ -14,6 +14,6 @@ def opt_threshold(fname, epsilon):
 
 if __name__ == '__main__':
     import sys
-    epsilon = 0.1
+    epsilon = 0.05
     fname = sys.argv[1]
     opt_threshold(fname, epsilon)
