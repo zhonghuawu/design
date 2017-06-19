@@ -28,5 +28,10 @@
 
 #### on ALLAML dataset
 ![image](https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/opt_epsilon_on_ALLAML.png)
-* [Prediction accuracy](https://github.com/zhonghuawu/design/blob/master/datas/gene/all_result/opt_epsilon_on_ALL_AML_cls.csv)
-* [The number of selected features](https://github.com/zhonghuawu/design/blob/master/datas/gene/all_result/opt_epsilon_on_ALL_AML_nfs.csv)
+* [Prediction accuracy](https://github.com/zhonghuawu/design/blob/master/datas/gene/all_result/opt_epsilon_on_ALLAML_cls.csv)
+* [The number of selected features](https://github.com/zhonghuawu/design/blob/master/datas/gene/all_result/opt_epsilon_on_ALLAML_nfs.csv)
+
+#### on colon dataset
+![image](https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/opt_epsilon_on_colon.png)
+* [Prediction accuracy](https://github.com/zhonghuawu/design/blob/master/datas/gene/all_result/opt_epsilon_on_colon_cls.csv)
+* [The number of selected features](https://github.com/zhonghuawu/design/blob/master/datas/gene/all_result/opt_epsilon_on_colon_nfs.csv)
