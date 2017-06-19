@@ -22,7 +22,7 @@ def read_output_epsilon(fname):
 def draw(cls, nfs, fname):
     fig, axes = plt.subplots(2, 1)
     cls.plot(ax=axes[0], style='o-', ylim=(0.6, 1.0))
-    nfs.plot(ax=axes[1], style='*-', ylim=(0, 60))
+    nfs.plot(ax=axes[1], style='*-', ylim=(0, 90))
     axes[0].set_ylabel('Prediction accuracy')
     axes[1].set_ylabel('The number of selected features')
     axes[1].set_xlabel('epsilon')
@@ -36,11 +36,11 @@ if __name__ == '__main__':
     fname = sys.argv[1]
     cls, nfs = read_output_epsilon(fname)
     fname = fname.split('.')[0][:-4]
-    #draw(cls, nfs, fname)
+    draw(cls, nfs, fname)
     output_fname = "opt_epsilon_on_%s"%fname
     res = pd.concat((cls, nfs), axis=1)
     res.index.name = 'epsilon'
     res.to_csv("%s.csv"%output_fname)
     #cls.to_csv("%s_cls.csv"%output_fname)
     #nfs.to_csv("%s_nfs.csv"%output_fname)
-    #print cls, nfs
+    print cls, nfs
