@@ -36,6 +36,9 @@
 #### 2.5 on [SRBCT](https://github.com/zhonghuawu/design/blob/master/datas/gene/all_result/epsilon/opt_epsilon_on_SRBCT.csv) dataset
 ![image](https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/epsilon/opt_epsilon_on_SRBCT.png)
 
+#### 2.5 on [DLBCL](https://github.com/zhonghuawu/design/blob/master/datas/gene/all_result/epsilon/opt_epsilon_on_DLBCL.csv) dataset
+![image](https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/epsilon/opt_epsilon_on_DLBCL.png)
+
 ## 3. parameter threshold effect to algorithm
 #### 3.1 on [Prostate\_GE](https://github.com/zhonghuawu/design/blob/master/datas/gene/all_result/threshold/opt_threshold_on_Prostate_GE.csv) dataset
 ![image](https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/threshold/opt_threshold_on_Prostate_GE.png)
@@ -51,3 +54,6 @@
 
 #### 3.5 on [SRBCT](https://github.com/zhonghuawu/design/blob/master/datas/gene/all_result/threshold/opt_threshold_on_SRBCT.csv) dataset
 ![image](https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/threshold/opt_threshold_on_SRBCT.png)
+
+#### 3.6 on [DLBCL](https://github.com/zhonghuawu/design/blob/master/datas/gene/all_result/threshold/opt_threshold_on_DLBCL.csv) dataset
+![image](https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/threshold/opt_threshold_on_DLBCL.png)
