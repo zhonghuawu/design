@@ -14,8 +14,8 @@ def read_output_epsilon(fname):
                 res_cls[epsilon] = float(line_list[-1])
             if line_list[0] == 'size' and line_list[2] == 'data':
                 res_nfs[epsilon] = int(line_list[-1][:-1])
-    res_cls.name = 'accuracy'
-    res_nfs.name = 'number'
+    res_cls.name = 'prediction accuracy'
+    res_nfs.name = 'number of selected features'
     return res_cls.drop(0.0), res_nfs.drop(0.0)
     
 
@@ -36,11 +36,11 @@ if __name__ == '__main__':
     fname = sys.argv[1]
     cls, nfs = read_output_epsilon(fname)
     fname = fname.split('.')[0][:-4]
-    draw(cls, nfs, fname)
+    #draw(cls, nfs, fname)
     output_fname = "opt_epsilon_on_%s"%fname
     res = pd.concat((cls, nfs), axis=1)
     res.index.name = 'epsilon'
     res.to_csv("%s.csv"%output_fname)
     #cls.to_csv("%s_cls.csv"%output_fname)
     #nfs.to_csv("%s_nfs.csv"%output_fname)
-    print cls, nfs
+    #print cls, nfs

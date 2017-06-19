@@ -1,4 +1,4 @@
-epsilon,accuracy,number
+epsilon,prediction accuracy,number of selected features
 0.2,0.862857142857,2
 0.19,0.911428571429,3
 0.18,0.801904761905,2
