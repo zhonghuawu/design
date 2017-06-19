@@ -19,7 +19,6 @@ nfs.plot(ax=axes[1], style=style, ylim=(0, 60))
 
 axes[0].set_ylabel('Prediction accuracy')
 axes[1].set_ylabel('The number of selected features')
-fig.suptitle('Result on 12 datasets')
 
 plt.xlabel("12 datasets")
 plt.show()
