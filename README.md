@@ -1,4 +1,4 @@
-## Result figure on 12 datasets
+## 1. Result figure on 12 datasets
 ![image](https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/all.png)
 
 ### dataset
@@ -20,7 +20,7 @@
 * [Prediction accuracy](https://github.com/zhonghuawu/design/blob/master/datas/gene/all_result/all_cls.csv) <br>
 * [The number of selected features](https://github.com/zhonghuawu/design/blob/master/datas/gene/all_result/all_nfs.csv)
 
-## parameter epsilon effect to algorithm
+## 2. parameter epsilon effect to algorithm
 #### on [Prostate\_GE](https://github.com/zhonghuawu/design/blob/master/datas/gene/all_result/epsilon/opt_epsilon_on_Prostate_GE.csv) dataset
 ![image](https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/epsilon/opt_epsilon_on_Prostate_GE.png)
 
@@ -36,7 +36,7 @@
 #### on [SRBCT](https://github.com/zhonghuawu/design/blob/master/datas/gene/all_result/epsilon/opt_epsilon_on_SRBCT.csv) dataset
 ![image](https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/epsilon/opt_epsilon_on_SRBCT.png)
 
-## parameter threshold effect to algorithm
+## 3. parameter threshold effect to algorithm
 #### on [Prostate\_GE](https://github.com/zhonghuawu/design/blob/master/datas/gene/all_result/threshold/opt_threshold_on_Prostate_GE.csv) dataset
 ![image](https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/threshold/opt_threshold_on_Prostate_GE.png)
 
