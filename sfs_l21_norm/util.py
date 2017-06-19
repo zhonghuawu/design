@@ -1,7 +1,21 @@
 import scipy.io as sio
 import numpy as np
 
-def read_data(fname, label_pos):
+def read_data(fname):
+    data = sio.loadmat(fname)
+    X = data['X']
+    y = data['Y'][:, 0]
+    labels = set(y)
+    n, c = len(y), len(labels)
+    labels_dict = {}
+    for k, label in enumerate(labels):
+        labels_dict[label] = k
+    Y = np.matrix(np.zeros((n, c)))
+    for i, label in enumerate(y):
+        Y[i, labels_dict[y[i]]] = 1
+    return np.matrix(X), np.matrix(Y)
+
+def read_data_old(fname, label_pos):
     data = sio.loadmat(fname)
     X, y = None, None
     if 'data' in data.keys():

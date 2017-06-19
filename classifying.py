@@ -32,10 +32,10 @@ def run_cross_validation(X, y):
     scores = model_selection.cross_val_score(clf, X, y, cv=5, scoring="accuracy")
     #print "cross validation scores: ", scores
     print "cross validation accuracy: ", scores.mean()
-    clf = svm.LinearSVC()
-    X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=1)
-    clf.fit(X_train, y_train)
-    y_pred = clf.predict(X_test)
+    #clf = svm.LinearSVC()
+    #X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=1)
+    #clf.fit(X_train, y_train)
+    #y_pred = clf.predict(X_test)
 
     #print "y_test: \n", y_test
     #print "y_pred: \n", y_pred

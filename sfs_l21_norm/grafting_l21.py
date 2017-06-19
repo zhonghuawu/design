@@ -15,8 +15,10 @@ d is number of features
 c is categories of labels
 '''
 def sfs_l21_norm(X, Y, threshold, epsilon):
+    '''
     print "threshold = %s"%str(threshold)
     print "epsilon = %s"%str(epsilon)
+    '''
     X, Y = np.matrix(X), np.matrix(Y)
     X_model = np.ones_like(X[:, 0])
     W = np.ones_like(Y[0,:])
@@ -36,17 +38,19 @@ def sfs_l21_norm(X, Y, threshold, epsilon):
             W= np.vstack((W, np.ones(c)))
             W, obj_value = update_weight(W, X_model, Y, threshold)
             W, X_model, X_index_retained = refresh_selected(W, X_model, X_index_retained)
+            '''
             print "j = %s obj_value = %s"%(str(j), str(obj_value))
             print "X_index_retained = %s"%str(X_index_retained)
             print "weight matrix: \n%s"%str(W)
             print "***"*30
+            '''
             X_index = np.hstack((X_index, j))
             obj_values = np.hstack((obj_values, obj_value))
     return X_index_retained, W, X_index, obj_values
 
 def run(fname, epsilon, threshold, label_pos):
     from util import read_data
-    X, Y = read_data(fname, label_pos)
+    X, Y = read_data(fname)
     print X.shape, Y.shape
     print "X shape: %s"%str(X.shape)
     X_index_retained, W, X_index, obj_values = sfs_l21_norm(X, Y, threshold, epsilon)
@@ -74,7 +78,7 @@ def get_options(args):
     opt = OptionParser(usage='%prog data_file(.mat) [options]')
     opt.add_option('-t', '--threshold', action='store', type='float', dest='threshold', help='coefficient of regularization term(default 0.1)')
     opt.add_option('-e', '--epsilon', action='store', type='float', dest='epsilon', help='value of sample point(default 0.1)')
-    opt.add_option('-p', '--label_pos', action='store', type='int', dest='label_pos', help='label pos in data set')
+    #opt.add_option('-p', '--label_pos', action='store', type='int', dest='label_pos', help='label pos in data set')
     opt.set_defaults(threshold=0.2, epsilon=0.1, label_pos=-1)
     return opt.parse_args(args)
 

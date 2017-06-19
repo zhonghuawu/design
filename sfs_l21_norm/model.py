@@ -69,15 +69,17 @@ def gradient_validation(x, W, X, Y, threshold, epsilon):
         grad_sum = np.dot(grad_mat, sign_mat)[0, 0]
         #grad = J_grad(W_new, X_new, Y, threshold)
         if grad_sum < 0:
+            '''
             print "point = %s"%str(point)
             print "grad_mat = %s"%str(grad_mat)
             print "grad_sum = %s"%str(grad_sum)
+            '''
             return True
     return False
 
 def update_weight(W, X, Y, threshold):
     #W, obj_value = opt.fmin_bfgs(J, W, args=(X, Y, threshold), full_output=1)[:2]
-    W, obj_value = opt.fmin_cg(J, W, args=(X, Y, threshold), full_output=1)[:2]
+    W, obj_value = opt.fmin_cg(J, W, args=(X, Y, threshold), full_output=1, disp=0)[:2]
     return np.matrix(W).reshape((X.shape[1], Y.shape[1])), obj_value
 
 def refresh_selected(W, X, X_index, epsilon=1e-3):
