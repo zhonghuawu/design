@@ -25,8 +25,8 @@ def draw(cls, nfs, fname):
     nfs.plot(ax=axes[1], style='*-', ylim=(0, 90))
     axes[0].set_ylabel('Prediction accuracy')
     axes[1].set_ylabel('The number of selected features')
-    axes[1].set_xlabel('threshold')
-    fig.suptitle('Effect of threshold on dataset %s'%fname)
+    axes[1].set_xlabel('lambda')
+    fig.suptitle('Effect of lambda on dataset %s'%fname)
     plt.show()
     plt.close()
 
@@ -39,7 +39,7 @@ if __name__ == '__main__':
     draw(cls, nfs, fname)
     output_fname = "opt_threshold_on_%s"%fname
     res = pd.concat((cls, nfs), axis=1)
-    res.index.name = 'threshold'
+    res.index.name = 'lambda'
     res.to_csv("%s.csv"%output_fname)
     #cls.to_csv("%s_cls.csv"%output_fname)
     #nfs.to_csv("%s_nfs.csv"%output_fname)

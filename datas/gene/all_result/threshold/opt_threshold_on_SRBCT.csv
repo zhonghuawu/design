@@ -1,4 +1,4 @@
-threshold,prediction accuracy,number of selected features
+lambda,prediction accuracy,number of selected features
 0.1,0.902009803922,5
 0.2,0.877385620915,6
 0.3,0.877385620915,6
