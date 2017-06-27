@@ -1,11 +1,22 @@
 ## 0. Result figure on 8 datasets
 ![image](https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/all_8_datasets.png)
 
+#### note: sfs\_l21(streaming features selection regularized by l21-norm) is our algorithm
+
+### datasets
+        1        TOX_171
+        2         GLIOMA
+        3         ALLAML
+        4          colon
+        5     Prostat_GE
+        6    Lung_Cancer
+        7          SRBCT
+        8          DLBCL
 
 ## 1. Result figure on 12 datasets
 ![image](https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/all.png)
 
-### dataset
+### datasets
         0         TOX_171
         1        lymphoma
         2     SMK_CAN_187
