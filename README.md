@@ -1,3 +1,7 @@
+## 0. Result figure on 8 datasets
+![image](https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/all_8_datasets.png)
+
+
 ## 1. Result figure on 12 datasets
 ![image](https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/all.png)
 

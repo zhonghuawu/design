@@ -1,3 +1,5 @@
+# -*- coding:utf-8 -*-
+
 import pandas as pd
 import matplotlib.pyplot as plt
 
@@ -25,8 +27,8 @@ def draw(cls, nfs, fname):
     nfs.plot(ax=axes[1], style='*-', ylim=(0, 90))
     axes[0].set_ylabel('Prediction accuracy')
     axes[1].set_ylabel('The number of selected features')
-    axes[1].set_xlabel('epsilon')
-    fig.suptitle('Effect of epsilon on dataset %s'%fname)
+    axes[1].set_xlabel(u'ɛ')
+    fig.suptitle(u'Effect of ɛ on dataset %s'%fname)
     plt.show()
     plt.close()
 
@@ -39,6 +41,7 @@ if __name__ == '__main__':
     draw(cls, nfs, fname)
     output_fname = "opt_epsilon_on_%s"%fname
     res = pd.concat((cls, nfs), axis=1)
+    #res.index.name = 'epsilon'
     res.index.name = 'epsilon'
     res.to_csv("%s.csv"%output_fname)
     #cls.to_csv("%s_cls.csv"%output_fname)
