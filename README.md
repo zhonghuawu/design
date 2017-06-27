@@ -30,7 +30,7 @@
 
 
 ## 1. Result figure on 12 datasets
-![image](https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/all_std.svg)
+![image](https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/all_std.png)
 
 ### datasets
         0         TOX_171

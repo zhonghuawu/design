@@ -3,13 +3,7 @@ import matplotlib.pyplot as plt
 
 def draw(cls, nfs):
     #dataset = cls['dataset']
-    print pd.Series(cls.index, index=range(1,9))
-    #cls = cls.drop('dataset', axis=1)
-    cls = cls.drop('osfs5', axis=1)
-    if 'origin_data' in cls.columns:
-        cls = cls.drop('origin_data', axis=1)
-    #nfs = nfs.drop('dataset', axis=1)
-    nfs = nfs.drop('osfs5', axis=1)
+    #print pd.Series(cls.index, index=range(1,9))
 
     fig, axes = plt.subplots(2, 1)
 
@@ -21,12 +15,37 @@ def draw(cls, nfs):
     axes[1].set_ylabel('The number of selected features')
 
     plt.xlabel("datasets")
-    plt.show()
+    #plt.show()
+    fig.set_size_inches(12, 8)
+    fig.savefig("all_std.png", bbox_inches='tight')
+    plt.close()
+
+def get_cls_nfs_1():
+    cls = pd.read_csv('all_cls.csv')
+    if 'origin_data' in cls.columns:
+        cls = cls.drop('origin_data', axis=1)
+    nfs = pd.read_csv('all_nfs.csv')
+
+    cls = cls.drop('dataset', axis=1)
+    nfs = nfs.drop('dataset', axis=1)
+    return cls, nfs
+
+def get_cls_nfs_2():
+    cls = pd.read_csv('all_cls.csv', index_col=0)
+    if 'origin_data' in cls.columns:
+        cls = cls.drop('origin_data', axis=1)
+    nfs = pd.read_csv('all_nfs.csv', index_col=0)
+    # remove osfs alpha=0.05 result
+    cls = cls.drop('osfs5', axis=1)
+    nfs = nfs.drop('osfs5', axis=1)
+
+    # remove some datasets
+    drop_dataset = "lymphoma SMK_CAN_187 GLI_85 lung".split(" ")
+    cls = cls.drop(drop_dataset)
+    nfs = nfs.drop(drop_dataset)
+
+    return cls, nfs
 
 if __name__=='__main__':
-    drop_dataset = "lymphoma SMK_CAN_187 GLI_85 lung".split(" ")
-    nfs = pd.read_csv('all_nfs.csv', index_col=0)
-    nfs = nfs.drop(drop_dataset)
-    cls = pd.read_csv('all_cls.csv', index_col=0)
-    cls = cls.drop(drop_dataset)
+    cls, nfs = get_cls_nfs_1()
     draw(cls, nfs)
