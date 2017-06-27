@@ -1,7 +1,7 @@
 ## 0. Result figure on 8 datasets
 ![image](https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/all_8_datasets.png)
 
-#### note: sfs\_l21(streaming features selection regularized by l21-norm) is our algorithm
+        note: sfs\_l21(streaming features selection regularized by l21-norm) is our algorithm
 
 ### datasets
         1        TOX_171
