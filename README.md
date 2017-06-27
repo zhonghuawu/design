@@ -1,7 +1,7 @@
 ## 0. Result figure on 8 datasets
 ![image](https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/all_8_datasets.png)
 
-        note: sfs\_l21(streaming features selection regularized by l21-norm) is our algorithm
+        note: sfs_l21(streaming feature selection regularized by l21-norm) is our algorithm
 
 ### datasets
         1        TOX_171
@@ -12,6 +12,22 @@
         6    Lung_Cancer
         7          SRBCT
         8          DLBCL
+
+### 0.1 epsilon
+![image](https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/epsilon/fig/accuracy_on_Prostate_GE.png)
+![image](https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/epsilon/fig/accuracy_on_ALLAML.png)
+![image](https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/epsilon/fig/accuracy_on_colon.png)
+![image](https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/epsilon/fig/accuracy_on_SRBCT.png)
+![image](https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/epsilon/fig/accuracy_on_DLBCL.png)
+
+### 0.2 lambda
+![image](https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/threshold/fig/accuracy_on_Prostate_GE.png)
+![image](https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/threshold/fig/accuracy_on_ALLAML.png)
+![image](https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/threshold/fig/accuracy_on_colon.png)
+![image](https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/threshold/fig/accuracy_on_SRBCT.png)
+![image](https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/threshold/fig/accuracy_on_DLBCL.png)
+
+
 
 ## 1. Result figure on 12 datasets
 ![image](https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/all.png)

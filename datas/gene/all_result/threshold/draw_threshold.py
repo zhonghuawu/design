@@ -30,17 +30,28 @@ def draw(cls, nfs, fname):
     plt.show()
     plt.close()
 
+def draw_accuracy(cls, fname):
+    fig, ax = plt.subplots(1, 1)
+    cls.plot(ax=ax, style='*-', ylim=(0.6, 1.0))
+    ax.set_ylabel('Prediction accuracy')
+    ax.set_xlabel("lambda")
+    ax.set_title("Prediction accuracy as lambda changes on dataset %s"%fname)
+    plt.show()
+    plt.close()
 
 if __name__ == '__main__':
     import sys
     fname = sys.argv[1]
     cls, nfs = read_output_threshold(fname)
     fname = fname.split('.')[0][:-4]
-    draw(cls, nfs, fname)
-    output_fname = "opt_threshold_on_%s"%fname
-    res = pd.concat((cls, nfs), axis=1)
-    res.index.name = 'lambda'
-    res.to_csv("%s.csv"%output_fname)
+    draw_accuracy(cls, fname)
+    #draw(cls, nfs, fname)
+    #output_fname = "opt_threshold_on_%s"%fname
+    #res = pd.concat((cls, nfs), axis=1)
+    #res.index.name = 'lambda'
+    #res.to_csv("%s.csv"%output_fname)
+    #print res
+
+
     #cls.to_csv("%s_cls.csv"%output_fname)
     #nfs.to_csv("%s_nfs.csv"%output_fname)
-    print res
