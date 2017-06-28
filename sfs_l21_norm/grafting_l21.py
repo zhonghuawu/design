@@ -2,6 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 from model import *
+from util import read_data
 
 '''
 streaming features selection regularized by l21-norm
@@ -48,8 +49,36 @@ def sfs_l21_norm(X, Y, threshold, epsilon):
             obj_values = np.hstack((obj_values, obj_value))
     return X_index_retained, W, X_index, obj_values
 
+def sfs_l21_norm_streaming(X, Y, threshold, epsilon):
+    X_model = np.ones_like(X[:, 0])
+    W = np.ones_like(Y[0, :])
+    W = update_weight(W, X_model, Y, threshold)[0]
+
+    X_index_retained = np.array((), dtype=int)
+
+    n, d = X.shape
+    n, c = Y.shape
+    d_part = (d+9)/10
+    for j in np.arange(d):
+        x = normalizate(X[:, j])
+        if gradient_validation(x, W, X_model, Y, threshold, epsilon):
+            X_index_retained = np.hstack((X_index_retained, j))
+            X_model = np.hstack((X_model, x))
+            W = np.vstack((W, np.ones(c)))
+            W = update_weight(W, X_model, Y, threshold)[0]
+            W, X_model, X_index_retained = refresh_selected(W, X_model, X_index_retained)
+        if not (j+1)%d_part:
+            print "%2d0%% "%((j+1)/d_part),
+            print "grafting l21-norm ",
+            print "threshold = %s, epsilon = %s: "%(str(threshold), str(epsilon)),
+            print "%s"%str(list(X_index_retained))
+    print "100% ",
+    print "grafting l21-norm ",
+    print "threshold = %s, epsilon = %s: "%(str(threshold), str(epsilon)),
+    print "%s"%str(list(X_index_retained))
+    return X_index_retained, W
+
 def run(fname, epsilon, threshold, label_pos):
-    from util import read_data
     X, Y = read_data(fname)
     print X.shape, Y.shape
     print "X shape: %s"%str(X.shape)
