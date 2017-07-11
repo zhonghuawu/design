@@ -78,7 +78,7 @@ def sfs_l21_norm_streaming(X, Y, threshold, epsilon):
     print "%s"%str(list(X_index_retained))
     return X_index_retained, W
 
-def run(fname, epsilon, threshold, label_pos):
+def run(fname, threshold, epsilon):
     X, Y = read_data(fname)
     print X.shape, Y.shape
     print "X shape: %s"%str(X.shape)
@@ -107,7 +107,6 @@ def get_options(args):
     opt = OptionParser(usage='%prog data_file(.mat) [options]')
     opt.add_option('-t', '--threshold', action='store', type='float', dest='threshold', help='coefficient of regularization term(default 0.1)')
     opt.add_option('-e', '--epsilon', action='store', type='float', dest='epsilon', help='value of sample point(default 0.1)')
-    #opt.add_option('-p', '--label_pos', action='store', type='int', dest='label_pos', help='label pos in data set')
     opt.set_defaults(threshold=0.2, epsilon=0.1, label_pos=-1)
     return opt.parse_args(args)
 
@@ -116,4 +115,4 @@ if __name__ == "__main__":
     args = sys.argv[1:]
     fname = args[0]
     options, args= get_options(args[1:])
-    run(fname, options.epsilon, options.threshold, options.label_pos)
+    run(fname, options.threshold, options.epsilon)
