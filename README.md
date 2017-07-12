@@ -91,7 +91,7 @@
 
 ## 4. streaming
 <figure class="third">
-    <img src="https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/streaming/TOX_171.png">
-    <img src="https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/streaming/lymphoma.png">
-    <img src="https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/streaming/SMK_CAN_187.png">
+<img src="https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/streaming/TOX_171.png">
+<img src="https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/streaming/lymphoma.png">
+<img src="https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/streaming/SMK_CAN_187.png">
 </figure>
