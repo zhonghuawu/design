@@ -1,0 +1,47 @@
+classifying dataset: Prostate_GE
+**********************************************************************
+origin data: 
+size of data matrix:  (102, 5966)
+cross validation accuracy:  0.921904761905
+**********************************************************************
+after fs using  10%  grafting l21-norm  threshold = 0.2, epsilon = 0.1: 
+size of data matrix:  (102, 7)
+cross validation accuracy:  0.96
+**********************************************************************
+after fs using  20%  grafting l21-norm  threshold = 0.2, epsilon = 0.1: 
+size of data matrix:  (102, 7)
+cross validation accuracy:  0.96
+**********************************************************************
+after fs using  30%  grafting l21-norm  threshold = 0.2, epsilon = 0.1: 
+size of data matrix:  (102, 7)
+cross validation accuracy:  0.96
+**********************************************************************
+after fs using  40%  grafting l21-norm  threshold = 0.2, epsilon = 0.1: 
+size of data matrix:  (102, 7)
+cross validation accuracy:  0.96
+**********************************************************************
+after fs using  50%  grafting l21-norm  threshold = 0.2, epsilon = 0.1: 
+size of data matrix:  (102, 7)
+cross validation accuracy:  0.96
+**********************************************************************
+after fs using  60%  grafting l21-norm  threshold = 0.2, epsilon = 0.1: 
+size of data matrix:  (102, 7)
+cross validation accuracy:  0.96
+**********************************************************************
+after fs using  70%  grafting l21-norm  threshold = 0.2, epsilon = 0.1: 
+size of data matrix:  (102, 7)
+cross validation accuracy:  0.96
+**********************************************************************
+after fs using  80%  grafting l21-norm  threshold = 0.2, epsilon = 0.1: 
+size of data matrix:  (102, 7)
+cross validation accuracy:  0.96
+**********************************************************************
+after fs using  90%  grafting l21-norm  threshold = 0.2, epsilon = 0.1: 
+size of data matrix:  (102, 7)
+cross validation accuracy:  0.96
+**********************************************************************
+after fs using 100%  grafting l21-norm  threshold = 0.2, epsilon = 0.1: 
+size of data matrix:  (102, 7)
+cross validation accuracy:  0.96
+**********************************************************************
+DONE
