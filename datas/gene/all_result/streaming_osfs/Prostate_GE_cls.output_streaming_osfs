@@ -1,0 +1,47 @@
+classify dataset: Prostate_GE
+**********************************************************************
+origin data: 
+size of data matrix: (102L, 5966L)
+cross validation accuracy: 0.921904761905
+**********************************************************************
+after fs using  10% fast_osfs alpha=0.01: 
+size of data matrix: (102L, 3L)
+cross validation accuracy: 0.794285714286
+**********************************************************************
+after fs using  20% fast_osfs alpha=0.01: 
+size of data matrix: (102L, 3L)
+cross validation accuracy: 0.794285714286
+**********************************************************************
+after fs using  30% fast_osfs alpha=0.01: 
+size of data matrix: (102L, 4L)
+cross validation accuracy: 0.901904761905
+**********************************************************************
+after fs using  40% fast_osfs alpha=0.01: 
+size of data matrix: (102L, 5L)
+cross validation accuracy: 0.930952380952
+**********************************************************************
+after fs using  50% fast_osfs alpha=0.01: 
+size of data matrix: (102L, 3L)
+cross validation accuracy: 0.930952380952
+**********************************************************************
+after fs using  60% fast_osfs alpha=0.01: 
+size of data matrix: (102L, 3L)
+cross validation accuracy: 0.930952380952
+**********************************************************************
+after fs using  70% fast_osfs alpha=0.01: 
+size of data matrix: (102L, 3L)
+cross validation accuracy: 0.930952380952
+**********************************************************************
+after fs using  80% fast_osfs alpha=0.01: 
+size of data matrix: (102L, 3L)
+cross validation accuracy: 0.941428571429
+**********************************************************************
+after fs using  90% fast_osfs alpha=0.01: 
+size of data matrix: (102L, 4L)
+cross validation accuracy: 0.940476190476
+**********************************************************************
+after fs using 100% fast_osfs alpha=0.01: 
+size of data matrix: (102L, 4L)
+cross validation accuracy: 0.940476190476
+**********************************************************************
+DONE

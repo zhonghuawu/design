@@ -1,0 +1,47 @@
+classify dataset: SMK_CAN_187
+**********************************************************************
+origin data: 
+size of data matrix: (187L, 19993L)
+cross validation accuracy: 0.652916073969
+**********************************************************************
+after fs using  10% fast_osfs alpha=0.01: 
+size of data matrix: (187L, 4L)
+cross validation accuracy: 0.7213371266
+**********************************************************************
+after fs using  20% fast_osfs alpha=0.01: 
+size of data matrix: (187L, 4L)
+cross validation accuracy: 0.7213371266
+**********************************************************************
+after fs using  30% fast_osfs alpha=0.01: 
+size of data matrix: (187L, 4L)
+cross validation accuracy: 0.753627311522
+**********************************************************************
+after fs using  40% fast_osfs alpha=0.01: 
+size of data matrix: (187L, 4L)
+cross validation accuracy: 0.753627311522
+**********************************************************************
+after fs using  50% fast_osfs alpha=0.01: 
+size of data matrix: (187L, 5L)
+cross validation accuracy: 0.737980085349
+**********************************************************************
+after fs using  60% fast_osfs alpha=0.01: 
+size of data matrix: (187L, 5L)
+cross validation accuracy: 0.737980085349
+**********************************************************************
+after fs using  70% fast_osfs alpha=0.01: 
+size of data matrix: (187L, 5L)
+cross validation accuracy: 0.737980085349
+**********************************************************************
+after fs using  80% fast_osfs alpha=0.01: 
+size of data matrix: (187L, 4L)
+cross validation accuracy: 0.710810810811
+**********************************************************************
+after fs using  90% fast_osfs alpha=0.01: 
+size of data matrix: (187L, 4L)
+cross validation accuracy: 0.710810810811
+**********************************************************************
+after fs using 100% fast_osfs alpha=0.01: 
+size of data matrix: (187L, 5L)
+cross validation accuracy: 0.7
+**********************************************************************
+DONE

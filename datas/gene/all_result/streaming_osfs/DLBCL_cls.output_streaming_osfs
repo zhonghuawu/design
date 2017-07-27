@@ -1,0 +1,47 @@
+classify dataset: DLBCL
+**********************************************************************
+origin data: 
+size of data matrix: (77L, 5469L)
+cross validation accuracy: 0.95
+**********************************************************************
+after fs using  10% fast_osfs alpha=0.01: 
+size of data matrix: (77L, 4L)
+cross validation accuracy: 0.949166666667
+**********************************************************************
+after fs using  20% fast_osfs alpha=0.01: 
+size of data matrix: (77L, 4L)
+cross validation accuracy: 0.910833333333
+**********************************************************************
+after fs using  30% fast_osfs alpha=0.01: 
+size of data matrix: (77L, 4L)
+cross validation accuracy: 0.910833333333
+**********************************************************************
+after fs using  40% fast_osfs alpha=0.01: 
+size of data matrix: (77L, 4L)
+cross validation accuracy: 0.910833333333
+**********************************************************************
+after fs using  50% fast_osfs alpha=0.01: 
+size of data matrix: (77L, 4L)
+cross validation accuracy: 0.910833333333
+**********************************************************************
+after fs using  60% fast_osfs alpha=0.01: 
+size of data matrix: (77L, 4L)
+cross validation accuracy: 0.9125
+**********************************************************************
+after fs using  70% fast_osfs alpha=0.01: 
+size of data matrix: (77L, 5L)
+cross validation accuracy: 0.87
+**********************************************************************
+after fs using  80% fast_osfs alpha=0.01: 
+size of data matrix: (77L, 6L)
+cross validation accuracy: 0.908095238095
+**********************************************************************
+after fs using  90% fast_osfs alpha=0.01: 
+size of data matrix: (77L, 6L)
+cross validation accuracy: 0.908095238095
+**********************************************************************
+after fs using 100% fast_osfs alpha=0.01: 
+size of data matrix: (77L, 6L)
+cross validation accuracy: 0.908095238095
+**********************************************************************
+DONE

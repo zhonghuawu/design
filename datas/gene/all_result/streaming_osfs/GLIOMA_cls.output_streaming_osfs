@@ -1,0 +1,47 @@
+classify dataset: GLIOMA
+**********************************************************************
+origin data: 
+size of data matrix: (50L, 4434L)
+cross validation accuracy: 0.785909090909
+**********************************************************************
+after fs using  10% fast_osfs alpha=0.01: 
+size of data matrix: (50L, 3L)
+cross validation accuracy: 0.628181818182
+**********************************************************************
+after fs using  20% fast_osfs alpha=0.01: 
+size of data matrix: (50L, 3L)
+cross validation accuracy: 0.628181818182
+**********************************************************************
+after fs using  30% fast_osfs alpha=0.01: 
+size of data matrix: (50L, 5L)
+cross validation accuracy: 0.626363636364
+**********************************************************************
+after fs using  40% fast_osfs alpha=0.01: 
+size of data matrix: (50L, 5L)
+cross validation accuracy: 0.626363636364
+**********************************************************************
+after fs using  50% fast_osfs alpha=0.01: 
+size of data matrix: (50L, 5L)
+cross validation accuracy: 0.626363636364
+**********************************************************************
+after fs using  60% fast_osfs alpha=0.01: 
+size of data matrix: (50L, 5L)
+cross validation accuracy: 0.626363636364
+**********************************************************************
+after fs using  70% fast_osfs alpha=0.01: 
+size of data matrix: (50L, 5L)
+cross validation accuracy: 0.623181818182
+**********************************************************************
+after fs using  80% fast_osfs alpha=0.01: 
+size of data matrix: (50L, 5L)
+cross validation accuracy: 0.623181818182
+**********************************************************************
+after fs using  90% fast_osfs alpha=0.01: 
+size of data matrix: (50L, 5L)
+cross validation accuracy: 0.623181818182
+**********************************************************************
+after fs using 100% fast_osfs alpha=0.01: 
+size of data matrix: (50L, 5L)
+cross validation accuracy: 0.623181818182
+**********************************************************************
+DONE

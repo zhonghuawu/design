@@ -1,0 +1,47 @@
+classify dataset: SRBCT
+**********************************************************************
+origin data: 
+size of data matrix: (83L, 2308L)
+cross validation accuracy: 1.0
+**********************************************************************
+after fs using  10% fast_osfs alpha=0.01: 
+size of data matrix: (83L, 4L)
+cross validation accuracy: 0.773480392157
+**********************************************************************
+after fs using  20% fast_osfs alpha=0.01: 
+size of data matrix: (83L, 7L)
+cross validation accuracy: 0.904803921569
+**********************************************************************
+after fs using  30% fast_osfs alpha=0.01: 
+size of data matrix: (83L, 8L)
+cross validation accuracy: 0.893039215686
+**********************************************************************
+after fs using  40% fast_osfs alpha=0.01: 
+size of data matrix: (83L, 8L)
+cross validation accuracy: 0.893039215686
+**********************************************************************
+after fs using  50% fast_osfs alpha=0.01: 
+size of data matrix: (83L, 8L)
+cross validation accuracy: 0.893039215686
+**********************************************************************
+after fs using  60% fast_osfs alpha=0.01: 
+size of data matrix: (83L, 8L)
+cross validation accuracy: 0.893039215686
+**********************************************************************
+after fs using  70% fast_osfs alpha=0.01: 
+size of data matrix: (83L, 8L)
+cross validation accuracy: 0.893039215686
+**********************************************************************
+after fs using  80% fast_osfs alpha=0.01: 
+size of data matrix: (83L, 8L)
+cross validation accuracy: 0.893039215686
+**********************************************************************
+after fs using  90% fast_osfs alpha=0.01: 
+size of data matrix: (83L, 8L)
+cross validation accuracy: 0.893039215686
+**********************************************************************
+after fs using 100% fast_osfs alpha=0.01: 
+size of data matrix: (83L, 8L)
+cross validation accuracy: 0.893039215686
+**********************************************************************
+DONE

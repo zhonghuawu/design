@@ -1,0 +1,47 @@
+classify dataset: ALLAML
+**********************************************************************
+origin data: 
+size of data matrix: (72L, 7129L)
+cross validation accuracy: 0.942857142857
+**********************************************************************
+after fs using  10% fast_osfs alpha=0.01: 
+size of data matrix: (72L, 3L)
+cross validation accuracy: 0.900952380952
+**********************************************************************
+after fs using  20% fast_osfs alpha=0.01: 
+size of data matrix: (72L, 4L)
+cross validation accuracy: 0.917142857143
+**********************************************************************
+after fs using  30% fast_osfs alpha=0.01: 
+size of data matrix: (72L, 5L)
+cross validation accuracy: 0.972380952381
+**********************************************************************
+after fs using  40% fast_osfs alpha=0.01: 
+size of data matrix: (72L, 5L)
+cross validation accuracy: 0.972380952381
+**********************************************************************
+after fs using  50% fast_osfs alpha=0.01: 
+size of data matrix: (72L, 5L)
+cross validation accuracy: 0.972380952381
+**********************************************************************
+after fs using  60% fast_osfs alpha=0.01: 
+size of data matrix: (72L, 4L)
+cross validation accuracy: 0.932380952381
+**********************************************************************
+after fs using  70% fast_osfs alpha=0.01: 
+size of data matrix: (72L, 5L)
+cross validation accuracy: 0.959047619048
+**********************************************************************
+after fs using  80% fast_osfs alpha=0.01: 
+size of data matrix: (72L, 6L)
+cross validation accuracy: 0.985714285714
+**********************************************************************
+after fs using  90% fast_osfs alpha=0.01: 
+size of data matrix: (72L, 6L)
+cross validation accuracy: 0.985714285714
+**********************************************************************
+after fs using 100% fast_osfs alpha=0.01: 
+size of data matrix: (72L, 6L)
+cross validation accuracy: 0.985714285714
+**********************************************************************
+DONE

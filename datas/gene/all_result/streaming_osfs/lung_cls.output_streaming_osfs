@@ -1,0 +1,43 @@
+classify dataset: lung
+**********************************************************************
+origin data: 
+size of data matrix: (203L, 3312L)
+cross validation accuracy: 0.960208124264
+**********************************************************************
+after fs using  10% fast_osfs alpha=0.01: 
+size of data matrix: (203L, 6L)
+cross validation accuracy: 0.827532542141
+**********************************************************************
+after fs using  20% fast_osfs alpha=0.01: 
+size of data matrix: (203L, 7L)
+cross validation accuracy: 0.832194467472
+**********************************************************************
+after fs using  30% fast_osfs alpha=0.01: 
+size of data matrix: (203L, 7L)
+cross validation accuracy: 0.852532542141
+**********************************************************************
+after fs using  40% fast_osfs alpha=0.01: 
+size of data matrix: (203L, 9L)
+cross validation accuracy: 0.887318163969
+**********************************************************************
+after fs using  50% fast_osfs alpha=0.01: 
+size of data matrix: (203L, 10L)
+cross validation accuracy: 0.877189958841
+**********************************************************************
+after fs using  60% fast_osfs alpha=0.01: 
+size of data matrix: (203L, 8L)
+cross validation accuracy: 0.837799714938
+**********************************************************************
+after fs using  70% fast_osfs alpha=0.01: 
+size of data matrix: (203L, 7L)
+cross validation accuracy: 0.818724275347
+**********************************************************************
+after fs using  80% fast_osfs alpha=0.01: 
+size of data matrix: (203L, 10L)
+cross validation accuracy: 0.833480372907
+**********************************************************************
+after fs using  90% fast_osfs alpha=0.01: 
+size of data matrix: (203L, 10L)
+cross validation accuracy: 0.846956818942
+**********************************************************************
+DONE

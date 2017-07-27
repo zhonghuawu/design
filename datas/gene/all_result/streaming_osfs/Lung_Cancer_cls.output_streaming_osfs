@@ -1,0 +1,47 @@
+classify dataset: Lung_Cancer
+**********************************************************************
+origin data: 
+size of data matrix: (203L, 12600L)
+cross validation accuracy: 0.930300551217
+**********************************************************************
+after fs using  10% fast_osfs alpha=0.01: 
+size of data matrix: (203L, 7L)
+cross validation accuracy: 0.831927294675
+**********************************************************************
+after fs using  20% fast_osfs alpha=0.01: 
+size of data matrix: (203L, 5L)
+cross validation accuracy: 0.85208502407
+**********************************************************************
+after fs using  30% fast_osfs alpha=0.01: 
+size of data matrix: (203L, 6L)
+cross validation accuracy: 0.857055499804
+**********************************************************************
+after fs using  40% fast_osfs alpha=0.01: 
+size of data matrix: (203L, 9L)
+cross validation accuracy: 0.852276131885
+**********************************************************************
+after fs using  50% fast_osfs alpha=0.01: 
+size of data matrix: (203L, 10L)
+cross validation accuracy: 0.866223366348
+**********************************************************************
+after fs using  60% fast_osfs alpha=0.01: 
+size of data matrix: (203L, 10L)
+cross validation accuracy: 0.891235874166
+**********************************************************************
+after fs using  70% fast_osfs alpha=0.01: 
+size of data matrix: (203L, 9L)
+cross validation accuracy: 0.851851884172
+**********************************************************************
+after fs using  80% fast_osfs alpha=0.01: 
+size of data matrix: (203L, 7L)
+cross validation accuracy: 0.861870645898
+**********************************************************************
+after fs using  90% fast_osfs alpha=0.01: 
+size of data matrix: (203L, 8L)
+cross validation accuracy: 0.901492284422
+**********************************************************************
+after fs using 100% fast_osfs alpha=0.01: 
+size of data matrix: (203L, 9L)
+cross validation accuracy: 0.875479151214
+**********************************************************************
+DONE
