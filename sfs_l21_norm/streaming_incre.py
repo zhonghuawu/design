@@ -4,7 +4,7 @@ import numpy as np
 import sys
 
 def sfs(fname, threshold, epsilon):
-    print "dataset: %s"%fname
+    # print "dataset: %s"%fname
     X, Y = read_data(fname)
     sfs_l21_norm_streaming(X, Y, threshold, epsilon)
 
@@ -19,7 +19,7 @@ def get_options(args):
     opt = OptionParser(usage='%prog data_file(.mat) [options]')
     opt.add_option('-t', '--threshold', action='store', type='float', dest='threshold', help='coefficient of regularization term(default 0.1)')
     opt.add_option('-e', '--epsilon', action='store', type='float', dest='epsilon', help='value of sample point(default 0.1)')
-    opt.set_defaults(threshold=0.2, epsilon=0.1, label_pos=-1)
+    opt.set_defaults(threshold=0.2, epsilon=0.05, label_pos=-1)
     return opt.parse_args(args)[0]
 
 if __name__ == '__main__':

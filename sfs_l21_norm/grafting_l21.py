@@ -59,10 +59,12 @@ def sfs_l21_norm_streaming(X, Y, threshold, epsilon):
     n, d = X.shape
     n, c = Y.shape
     d_part = (d+9)/10
+    idx = np.arange(d)
+    np.random.shuffle(idx)
     for j in np.arange(d):
-        x = normalizate(X[:, j])
+        x = normalizate(X[:, idx[j]])
         if gradient_validation(x, W, X_model, Y, threshold, epsilon):
-            X_index_retained = np.hstack((X_index_retained, j))
+            X_index_retained = np.hstack((X_index_retained, idx[j]))
             X_model = np.hstack((X_model, x))
             W = np.vstack((W, np.ones(c)))
             W = update_weight(W, X_model, Y, threshold)[0]

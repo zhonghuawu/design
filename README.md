@@ -90,9 +90,17 @@
 ![image](https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/threshold/opt_threshold_on_DLBCL.png)
 
 ## 4. streaming
-<center class="half">
+<center >
 <img src="https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/streaming/TOX_171.png" width='30%'> <img src="https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/streaming/lymphoma.png" width='30%'> <img src="https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/streaming/SMK_CAN_187.png" width='30%'>
 <img src="https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/streaming/GLIOMA.png" width='30%'> <img src="https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/streaming/ALLAML.png" width='30%'> <img src="https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/streaming/GLI_85.png" width='30%'> 
 <img src="https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/streaming/lung.png" width='30%'> <img src="https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/streaming/colon.png" width='30%'> <img src="https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/streaming/Prostate_GE.png" width='30%'>
 <img src="https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/streaming/Lung_Cancer.png" width='30%'> <img src="https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/streaming/SRBCT.png" width='30%'> <img src="https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/streaming/DLBCL.png" width='30%'>
+</center>
+
+## 5. streaming\_shuffle
+<center >
+<img src="https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/streaming_shuffle/TOX_171.png" width='30%'> <img src="https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/streaming_shuffle/lymphoma.png" width='30%'> <img src="https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/streaming_shuffle/SMK_CAN_187.png" width='30%'>
+<img src="https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/streaming_shuffle/GLIOMA.png" width='30%'> <img src="https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/streaming_shuffle/ALLAML.png" width='30%'> <img src="https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/streaming_shuffle/GLI_85.png" width='30%'> 
+<img src="https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/streaming_shuffle/lung.png" width='30%'> <img src="https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/streaming_shuffle/colon.png" width='30%'> <img src="https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/streaming_shuffle/Prostate_GE.png" width='30%'>
+<img src="https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/streaming_shuffle/Lung_Cancer.png" width='30%'> <img src="https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/streaming_shuffle/SRBCT.png" width='30%'> <img src="https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/streaming_shuffle/DLBCL.png" width='30%'>
 </center>
