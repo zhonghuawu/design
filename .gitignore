@@ -4,3 +4,5 @@ FS_package_DMML
 *.py[cod~]
 
 *.zip
+
+*[~]
