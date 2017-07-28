@@ -2,4 +2,4 @@ grafting l1-norm threshold = 0.2, epsilon = 0.1:  [2, 13, 14, 43, 84, 142, 174, 
 grafting l21-norm threshold = 0.1, epsilon = 0.05:  [2, 9, 10, 13, 16, 19, 66, 69, 88, 95, 142, 160, 185, 202]
 fast_osfs_z apha alpha = 0.01: np.array([14, 513, 1473])-1
 fast_osfs_z apha alpha = 0.05: np.array([249, 513, 1473])-1
-Alpha_Investing: np.array([1, 14, 15 ,17])-1
+Alpha_investing: np.array([1, 14, 15 ,17])-1

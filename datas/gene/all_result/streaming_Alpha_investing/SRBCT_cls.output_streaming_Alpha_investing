@@ -1,0 +1,47 @@
+classify dataset: SRBCT
+**********************************************************************
+origin data: 
+size of data matrix: (83L, 2308L)
+cross validation accuracy: 1.0
+**********************************************************************
+after fs using  10% Alpha_investing : 
+size of data matrix: (83L, 18L)
+cross validation accuracy: 0.898790849673
+**********************************************************************
+after fs using  20% Alpha_investing : 
+size of data matrix: (83L, 23L)
+cross validation accuracy: 0.951944444444
+**********************************************************************
+after fs using  30% Alpha_investing : 
+size of data matrix: (83L, 24L)
+cross validation accuracy: 0.964444444444
+**********************************************************************
+after fs using  40% Alpha_investing : 
+size of data matrix: (83L, 25L)
+cross validation accuracy: 0.951944444444
+**********************************************************************
+after fs using  50% Alpha_investing : 
+size of data matrix: (83L, 25L)
+cross validation accuracy: 0.951944444444
+**********************************************************************
+after fs using  60% Alpha_investing : 
+size of data matrix: (83L, 25L)
+cross validation accuracy: 0.951944444444
+**********************************************************************
+after fs using  70% Alpha_investing : 
+size of data matrix: (83L, 25L)
+cross validation accuracy: 0.951944444444
+**********************************************************************
+after fs using  80% Alpha_investing : 
+size of data matrix: (83L, 26L)
+cross validation accuracy: 0.939444444444
+**********************************************************************
+after fs using  90% Alpha_investing : 
+size of data matrix: (83L, 26L)
+cross validation accuracy: 0.939444444444
+**********************************************************************
+after fs using 100% Alpha_investing : 
+size of data matrix: (83L, 26L)
+cross validation accuracy: 0.939444444444
+**********************************************************************
+DONE

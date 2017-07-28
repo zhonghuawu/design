@@ -1,0 +1,47 @@
+classify dataset: lung
+**********************************************************************
+origin data: 
+size of data matrix: (203L, 3312L)
+cross validation accuracy: 0.960208124264
+**********************************************************************
+after fs using  10% Alpha_investing : 
+size of data matrix: (203L, 27L)
+cross validation accuracy: 0.896137193304
+**********************************************************************
+after fs using  20% Alpha_investing : 
+size of data matrix: (203L, 33L)
+cross validation accuracy: 0.930422502436
+**********************************************************************
+after fs using  30% Alpha_investing : 
+size of data matrix: (203L, 36L)
+cross validation accuracy: 0.935422502436
+**********************************************************************
+after fs using  40% Alpha_investing : 
+size of data matrix: (203L, 41L)
+cross validation accuracy: 0.935300551217
+**********************************************************************
+after fs using  50% Alpha_investing : 
+size of data matrix: (203L, 43L)
+cross validation accuracy: 0.935300551217
+**********************************************************************
+after fs using  60% Alpha_investing : 
+size of data matrix: (203L, 43L)
+cross validation accuracy: 0.935300551217
+**********************************************************************
+after fs using  70% Alpha_investing : 
+size of data matrix: (203L, 44L)
+cross validation accuracy: 0.940300551217
+**********************************************************************
+after fs using  80% Alpha_investing : 
+size of data matrix: (203L, 44L)
+cross validation accuracy: 0.940300551217
+**********************************************************************
+after fs using  90% Alpha_investing : 
+size of data matrix: (203L, 44L)
+cross validation accuracy: 0.940300551217
+**********************************************************************
+after fs using 100% Alpha_investing : 
+size of data matrix: (203L, 45L)
+cross validation accuracy: 0.944951714007
+**********************************************************************
+DONE

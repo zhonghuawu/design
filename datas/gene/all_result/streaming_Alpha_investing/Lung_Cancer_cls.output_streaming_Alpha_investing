@@ -1,0 +1,47 @@
+classify dataset: Lung_Cancer
+**********************************************************************
+origin data: 
+size of data matrix: (203L, 12600L)
+cross validation accuracy: 0.930300551217
+**********************************************************************
+after fs using  10% Alpha_investing : 
+size of data matrix: (203L, 36L)
+cross validation accuracy: 0.851456506247
+**********************************************************************
+after fs using  20% Alpha_investing : 
+size of data matrix: (203L, 37L)
+cross validation accuracy: 0.846933548584
+**********************************************************************
+after fs using  30% Alpha_investing : 
+size of data matrix: (203L, 39L)
+cross validation accuracy: 0.851805343456
+**********************************************************************
+after fs using  40% Alpha_investing : 
+size of data matrix: (203L, 39L)
+cross validation accuracy: 0.851805343456
+**********************************************************************
+after fs using  50% Alpha_investing : 
+size of data matrix: (203L, 39L)
+cross validation accuracy: 0.851805343456
+**********************************************************************
+after fs using  60% Alpha_investing : 
+size of data matrix: (203L, 39L)
+cross validation accuracy: 0.851805343456
+**********************************************************************
+after fs using  70% Alpha_investing : 
+size of data matrix: (203L, 40L)
+cross validation accuracy: 0.846927294675
+**********************************************************************
+after fs using  80% Alpha_investing : 
+size of data matrix: (203L, 41L)
+cross validation accuracy: 0.846450252338
+**********************************************************************
+after fs using  90% Alpha_investing : 
+size of data matrix: (203L, 41L)
+cross validation accuracy: 0.846450252338
+**********************************************************************
+after fs using 100% Alpha_investing : 
+size of data matrix: (203L, 41L)
+cross validation accuracy: 0.846450252338
+**********************************************************************
+DONE

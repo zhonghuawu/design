@@ -1,0 +1,47 @@
+classify dataset: SMK_CAN_187
+**********************************************************************
+origin data: 
+size of data matrix: (187L, 19993L)
+cross validation accuracy: 0.652916073969
+**********************************************************************
+after fs using  10% Alpha_investing : 
+size of data matrix: (187L, 6L)
+cross validation accuracy: 0.700711237553
+**********************************************************************
+after fs using  20% Alpha_investing : 
+size of data matrix: (187L, 6L)
+cross validation accuracy: 0.700711237553
+**********************************************************************
+after fs using  30% Alpha_investing : 
+size of data matrix: (187L, 6L)
+cross validation accuracy: 0.700711237553
+**********************************************************************
+after fs using  40% Alpha_investing : 
+size of data matrix: (187L, 6L)
+cross validation accuracy: 0.700711237553
+**********************************************************************
+after fs using  50% Alpha_investing : 
+size of data matrix: (187L, 6L)
+cross validation accuracy: 0.700711237553
+**********************************************************************
+after fs using  60% Alpha_investing : 
+size of data matrix: (187L, 6L)
+cross validation accuracy: 0.700711237553
+**********************************************************************
+after fs using  70% Alpha_investing : 
+size of data matrix: (187L, 6L)
+cross validation accuracy: 0.700711237553
+**********************************************************************
+after fs using  80% Alpha_investing : 
+size of data matrix: (187L, 6L)
+cross validation accuracy: 0.700711237553
+**********************************************************************
+after fs using  90% Alpha_investing : 
+size of data matrix: (187L, 6L)
+cross validation accuracy: 0.700711237553
+**********************************************************************
+after fs using 100% Alpha_investing : 
+size of data matrix: (187L, 6L)
+cross validation accuracy: 0.700711237553
+**********************************************************************
+DONE

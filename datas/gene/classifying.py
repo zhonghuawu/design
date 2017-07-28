@@ -93,6 +93,52 @@ def run_all_osfs(fname):
             f_streaming_osfs.write("DONE")
             f_streaming_osfs.close()
 
+def run_all_Alpha_investing(fname):
+    with open(fname, 'r') as f:
+        alg = f.readline().strip()[:-1]
+        for line in f:
+            dataset_name, indexes_set = line.split(':')
+            dataset_name = dataset_name.strip()
+            f_streaming_Alpha_investing = open("all_result/streaming_Alpha_investing/%s_cls.output_streaming_Alpha_investing"%dataset_name, 'w')
+            print "classify dataset: %s"%dataset_name
+            f_streaming_Alpha_investing.write("classify dataset: %s"%dataset_name+'\n')
+            X, Y = read_data("dataset/%s.mat"%dataset_name)
+            f_streaming_Alpha_investing.write("**"*35+'\n')
+            f_streaming_Alpha_investing.write("origin data: "+'\n')
+            # run_cross_validation(X, Y)
+
+            f_streaming_Alpha_investing.write("size of data matrix: "+str(X.shape)+'\n')
+            #clf = svm.SVC(kernel='poly')
+            clf = svm.SVC(kernel='linear')
+            scores = model_selection.cross_val_score(clf, X, Y, cv=5, scoring="accuracy")
+            #print "cross validation scores: ", scores
+            f_streaming_Alpha_investing.write("cross validation accuracy: "+str(scores.mean())+'\n')
+
+            # print "**"*35
+            f_streaming_Alpha_investing.write("**"*35+'\n')
+
+            indexes_set = eval(indexes_set)
+            if indexes_set.size==0:
+                continue
+            n, d = X.shape
+            d_part=(d+9)/10
+            for i in range(1, 11):
+                indexes = indexes_set[indexes_set<d_part*i]
+                percent = i*10
+                f_streaming_Alpha_investing.write("after fs using %3d%% %s: "%(percent, alg)+'\n')
+                X_fs = X[:, indexes]
+                f_streaming_Alpha_investing.write("size of data matrix: "+str(X_fs.shape)+'\n')
+                #clf = svm.SVC(kernel='poly')
+                clf = svm.SVC(kernel='linear')
+                scores = model_selection.cross_val_score(clf, X_fs, Y, cv=5, scoring="accuracy")
+                #print "cross validation scores: ", scores
+                f_streaming_Alpha_investing.write("cross validation accuracy: "+str(scores.mean())+'\n')
+
+                # print "**"*35
+                f_streaming_Alpha_investing.write("**"*35+'\n')
+            f_streaming_Alpha_investing.write("DONE")
+            f_streaming_Alpha_investing.close()
+
 
 if __name__ == "__main__":
     import sys

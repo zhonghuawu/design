@@ -1,0 +1,47 @@
+classify dataset: GLI_85
+**********************************************************************
+origin data: 
+size of data matrix: (85L, 22283L)
+cross validation accuracy: 0.845506535948
+**********************************************************************
+after fs using  10% Alpha_investing : 
+size of data matrix: (85L, 22L)
+cross validation accuracy: 0.916911764706
+**********************************************************************
+after fs using  20% Alpha_investing : 
+size of data matrix: (85L, 24L)
+cross validation accuracy: 0.916911764706
+**********************************************************************
+after fs using  30% Alpha_investing : 
+size of data matrix: (85L, 25L)
+cross validation accuracy: 0.916911764706
+**********************************************************************
+after fs using  40% Alpha_investing : 
+size of data matrix: (85L, 25L)
+cross validation accuracy: 0.916911764706
+**********************************************************************
+after fs using  50% Alpha_investing : 
+size of data matrix: (85L, 25L)
+cross validation accuracy: 0.916911764706
+**********************************************************************
+after fs using  60% Alpha_investing : 
+size of data matrix: (85L, 25L)
+cross validation accuracy: 0.916911764706
+**********************************************************************
+after fs using  70% Alpha_investing : 
+size of data matrix: (85L, 27L)
+cross validation accuracy: 0.916911764706
+**********************************************************************
+after fs using  80% Alpha_investing : 
+size of data matrix: (85L, 27L)
+cross validation accuracy: 0.916911764706
+**********************************************************************
+after fs using  90% Alpha_investing : 
+size of data matrix: (85L, 27L)
+cross validation accuracy: 0.916911764706
+**********************************************************************
+after fs using 100% Alpha_investing : 
+size of data matrix: (85L, 27L)
+cross validation accuracy: 0.916911764706
+**********************************************************************
+DONE
