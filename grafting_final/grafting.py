@@ -1,4 +1,4 @@
-from __future__ import division
+# from __future__ import division
 
 from numpy import matrix
 import numpy as np
@@ -55,6 +55,37 @@ def grafting(X, Y, threshold, epsilon):
             X_index = np.hstack((X_index, j))
             obj_values = np.hstack((obj_values, obj_value))
     return X_index_retained, w, X_index, obj_values
+
+def grafting_streaming(X, Y, threshold, epsilon):
+    X_model = np.ones_like(X[:, 0])
+    w = np.matrix(np.ones_like(Y[0, :]))
+    w = update_wegiht(w, X_model, Y, threshold)[0]
+
+    X_index_retained = np.array([], dtype=int)
+
+    n, d = X.shape
+    d_part = (d+9)/10
+    # print "d_part = ", d_part
+    idx = np.arange(d)
+    for j in np.arange(d):
+        x = normalize(X[:, idx[j]])
+        #if C_grad_std(x, w, X_model, Y, threshold, epsilon):
+        if gradient_validation(x, w, X_model, Y, threshold, epsilon):
+            X_index_retained = np.hstack((X_index_retained, idx[j]))
+            X_model = np.hstack((X_model, x))
+            w = np.vstack((w, 1))
+            w = update_wegiht(w, X_model, Y, threshold)[0]
+            w, X_model, X_index_retained = refresh_selected(w, X_model, X_index_retained, 1e-5)
+        if not (j+1)%d_part:
+            print "%2d0%% "%((j+1)/d_part),
+            print "grafting ",
+            print "threshold = %s, epsilon = %s: "%(str(threshold), str(epsilon)),
+            print "%s"%str(list(X_index_retained))
+    print "100% ",
+    print "grafting ",
+    print "threshold = %s, epsilon = %s: "%(str(threshold), str(epsilon)),
+    print "%s"%str(list(X_index_retained))
+    return X_index_retained, w
 
 def run(fname, threshold, epsilon, label_pos):
     print("deal with %s"%fname)

@@ -71,7 +71,7 @@ def C_grad_std(x, w, X, Y, threshold, epsilon):
  
 def update_wegiht(w, X, Y, threshold):
     #wopt, fopt = optimize.fmin_bfgs(C, w, args=(X, Y, threshold), full_output=1)[:2]
-    wopt, fopt = optimize.fmin_cg(C, w, args=(X, Y, threshold), full_output=1)[:2]
+    wopt, fopt = optimize.fmin_cg(C, w, args=(X, Y, threshold), full_output=1, disp=0)[:2]
     return wopt, fopt
 
 def refresh_selected(w, X_model, X_index, epsilon):

@@ -67,13 +67,13 @@ def gradient_validation(x, w, X, Y, threshold, epsilon):
         grad = Loss_grad(w_new, X_new, Y)
         #if abs(grad)>threshold:
         if np.sign(point)*grad + threshold < 0:
-            print("grad = %s"%str(grad))
+            # print("grad = %s"%str(grad))
             return True
     return False
  
 def update_wegiht(w, X, Y, threshold):
     #wopt, fopt = optimize.fmin_bfgs(C, w, args=(X, Y, threshold), full_output=1)[:2]
-    wopt, fopt = optimize.fmin_cg(C, w, args=(X, Y, threshold), full_output=1)[:2]
+    wopt, fopt = optimize.fmin_cg(C, w, args=(X, Y, threshold), full_output=1, disp=0)[:2]
     return np.matrix(wopt).reshape((X.shape[1], Y.shape[1])), fopt
 
 def refresh_selected(W, X, X_index, epsilon=1e-3):
