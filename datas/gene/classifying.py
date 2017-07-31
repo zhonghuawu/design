@@ -142,6 +142,6 @@ def run_all_Alpha_investing(fname):
 
 if __name__ == "__main__":
     import sys
-    # run(sys.argv[1])
-    run_all_osfs(sys.argv[1])
+    run(sys.argv[1])
+    # run_all_osfs(sys.argv[1])
     print 'DONE'

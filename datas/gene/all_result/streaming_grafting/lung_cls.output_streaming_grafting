@@ -1,0 +1,47 @@
+classifying dataset: lung
+**********************************************************************
+origin data: 
+size of data matrix:  (203, 3312)
+cross validation accuracy:  0.960208124264
+**********************************************************************
+after fs using  10%  grafting  threshold = 0.2, epsilon = 0.1: 
+size of data matrix:  (203, 20)
+cross validation accuracy:  0.867049245895
+**********************************************************************
+after fs using  20%  grafting  threshold = 0.2, epsilon = 0.1: 
+size of data matrix:  (203, 21)
+cross validation accuracy:  0.910985717818
+**********************************************************************
+after fs using  30%  grafting  threshold = 0.2, epsilon = 0.1: 
+size of data matrix:  (203, 22)
+cross validation accuracy:  0.915416248527
+**********************************************************************
+after fs using  40%  grafting  threshold = 0.2, epsilon = 0.1: 
+size of data matrix:  (203, 23)
+cross validation accuracy:  0.920544453656
+**********************************************************************
+after fs using  50%  grafting  threshold = 0.2, epsilon = 0.1: 
+size of data matrix:  (203, 23)
+cross validation accuracy:  0.920544453656
+**********************************************************************
+after fs using  60%  grafting  threshold = 0.2, epsilon = 0.1: 
+size of data matrix:  (203, 23)
+cross validation accuracy:  0.920544453656
+**********************************************************************
+after fs using  70%  grafting  threshold = 0.2, epsilon = 0.1: 
+size of data matrix:  (203, 23)
+cross validation accuracy:  0.920544453656
+**********************************************************************
+after fs using  80%  grafting  threshold = 0.2, epsilon = 0.1: 
+size of data matrix:  (203, 23)
+cross validation accuracy:  0.920544453656
+**********************************************************************
+after fs using  90%  grafting  threshold = 0.2, epsilon = 0.1: 
+size of data matrix:  (203, 23)
+cross validation accuracy:  0.920544453656
+**********************************************************************
+after fs using 100%  grafting  threshold = 0.2, epsilon = 0.1: 
+size of data matrix:  (203, 23)
+cross validation accuracy:  0.920544453656
+**********************************************************************
+DONE

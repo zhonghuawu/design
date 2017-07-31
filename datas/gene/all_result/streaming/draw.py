@@ -32,18 +32,28 @@ def read_output_streaming(fname):
     return cls.drop('1000')
 
 def read_output_streaming_of_one_dataset(dataset_name):
+    alg = "sfs_l21"
     cls_l21 = read_output_streaming("../streaming_l21/%s_cls.output_streaming"%dataset_name)
-    cls_l21.name = 'sfs_l21'
-    cls_osfs = read_output_streaming("../streaming_osfs/%s_cls.output_streaming_osfs"%dataset_name)
-    cls_osfs.name = 'osfs'
-    cls_Alpha_investing = read_output_streaming("../streaming_Alpha_investing/%s_cls.output_streaming_Alpha_investing"%dataset_name)
+    cls_l21.name = alg
+
+    alg = "grafting"
+    cls_grafting = read_output_streaming("../streaming_%s/%s_cls.output_streaming_%s"%(alg, dataset_name, alg))
+    cls_grafting.name = alg
+
+    alg = "osfs"
+    cls_osfs = read_output_streaming("../streaming_%s/%s_cls.output_streaming_%s"%(alg, dataset_name, alg))
+    cls_osfs.name = alg
+
+    alg = "Alpha_investing"
+    cls_Alpha_investing = read_output_streaming("../streaming_%s/%s_cls.output_streaming_%s"%(alg, dataset_name, alg))
     cls_Alpha_investing.name = 'Alpha_investing'
-    cls = pd.concat((cls_l21, cls_osfs, cls_Alpha_investing), axis=1)
+
+    cls = pd.concat((cls_l21, cls_grafting, cls_osfs, cls_Alpha_investing), axis=1)
     return cls
     
 def draw(cls, fname):
     fig, ax = plt.subplots(1, 1)
-    cls.plot(ax=ax, style='o-', ylim=(0.6, 1.0))
+    cls.plot(ax=ax, style='o-', ylim=(0.5, 1.0))
     #nfs.plot(ax=axes[1], style='*-', ylim=(0, 90))
     ax.set_ylabel('Prediction accuracy')
     ax.set_xlabel('The percentage of features streaming in (%)')
