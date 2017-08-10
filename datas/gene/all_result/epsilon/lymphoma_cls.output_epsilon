@@ -1,0 +1,24 @@
+classifying dataset: lymphoma
+**********************************************************************
+origin data: 
+size of data matrix:  (96, 4026)
+cross validation accuracy:  0.920555555556
+**********************************************************************
+after fs using grafting l21-norm  threshold = 0.2, epsilon = 0.01: 
+size of data matrix:  (96, 76)
+cross validation accuracy:  0.906666666667
+**********************************************************************
+after fs using grafting l21-norm  threshold = 0.2, epsilon = 0.03: 
+size of data matrix:  (96, 25)
+cross validation accuracy:  0.867222222222
+**********************************************************************
+after fs using grafting l21-norm  threshold = 0.2, epsilon = 0.05: 
+size of data matrix:  (96, 8)
+cross validation accuracy:  0.735833333333
+**********************************************************************
+after fs using grafting l21-norm  threshold = 0.2, epsilon = 0.07: 
+size of data matrix:  (96, 3)
+cross validation accuracy:  0.731666666667
+**********************************************************************
+after fs using grafting l21-norm  threshold = 0.2, epsilon = 0.09: 
+size of data matrix:  (96, 0)

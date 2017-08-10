@@ -1,32 +1,32 @@
-classifying dataset: lung
+classifying dataset: Lung_Cancer
 **********************************************************************
 origin data: 
-size of data matrix:  (203, 3312)
-cross validation accuracy:  0.960208124264
+size of data matrix:  (203, 12600)
+cross validation accuracy:  0.930300551217
 **********************************************************************
 after fs using grafting l21-norm  threshold = 0.2, epsilon = 0.01: 
-size of data matrix:  (203, 77)
-cross validation accuracy:  0.970092426953
+size of data matrix:  (203, 86)
+cross validation accuracy:  0.911015242084
 **********************************************************************
 after fs using grafting l21-norm  threshold = 0.2, epsilon = 0.03: 
-size of data matrix:  (203, 20)
-cross validation accuracy:  0.910538199747
+size of data matrix:  (203, 24)
+cross validation accuracy:  0.921143447213
 **********************************************************************
 after fs using grafting l21-norm  threshold = 0.2, epsilon = 0.05: 
 size of data matrix:  (203, 10)
-cross validation accuracy:  0.842299402243
+cross validation accuracy:  0.891120176855
 **********************************************************************
 after fs using grafting l21-norm  threshold = 0.2, epsilon = 0.07: 
 size of data matrix:  (203, 5)
-cross validation accuracy:  0.881235874166
+cross validation accuracy:  0.845985717818
 **********************************************************************
 after fs using grafting l21-norm  threshold = 0.2, epsilon = 0.09: 
-size of data matrix:  (203, 3)
-cross validation accuracy:  0.862788952398
+size of data matrix:  (203, 2)
+cross validation accuracy:  0.748402562648
 **********************************************************************
 after fs using grafting l21-norm  threshold = 0.2, epsilon = 0.11: 
 size of data matrix:  (203, 1)
-cross validation accuracy:  0.778909129252
+cross validation accuracy:  0.769257966462
 **********************************************************************
 after fs using grafting l21-norm  threshold = 0.2, epsilon = 0.13: 
 size of data matrix:  (203, 0)
