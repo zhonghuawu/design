@@ -21,13 +21,16 @@ def read_output_threshold(fname):
 
 def draw(cls, nfs, fname):
     fig, axes = plt.subplots(2, 1)
-    cls.plot(ax=axes[0], style='o-', ylim=(0.6, 1.0))
-    nfs.plot(ax=axes[1], style='*-', ylim=(0, 90))
+    cls.plot(ax=axes[0], style='o-', ylim=(0.5, 1.0))
+    nfs.plot(ax=axes[1], style='*-', ylim=(0, 100))
     axes[0].set_ylabel('Prediction accuracy')
     axes[1].set_ylabel('The number of selected features')
     axes[1].set_xlabel('lambda')
     fig.suptitle('Effect of lambda on dataset %s'%fname)
-    plt.show()
+
+    # plt.show()
+    fig.set_size_inches(9, 6)
+    fig.savefig('%s.png'%fname, bbox_inches='tight')
     plt.close()
 
 def draw_accuracy(cls, fname):
@@ -44,8 +47,8 @@ if __name__ == '__main__':
     fname = sys.argv[1]
     cls, nfs = read_output_threshold(fname)
     fname = fname.split('.')[0][:-4]
-    draw_accuracy(cls, fname)
-    #draw(cls, nfs, fname)
+    draw(cls, nfs, fname)
+    # draw_accuracy(cls, fname)
     #output_fname = "opt_threshold_on_%s"%fname
     #res = pd.concat((cls, nfs), axis=1)
     #res.index.name = 'lambda'
