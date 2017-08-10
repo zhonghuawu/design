@@ -17,7 +17,7 @@ def draw(cls, nfs):
     plt.xlabel("datasets")
     #plt.show()
     fig.set_size_inches(12, 8)
-    fig.savefig("all_std.png", bbox_inches='tight')
+    fig.savefig("all_final.png", bbox_inches='tight')
     plt.close()
 
 def get_cls_nfs_1():
@@ -25,9 +25,12 @@ def get_cls_nfs_1():
     if 'origin_data' in cls.columns:
         cls = cls.drop('origin_data', axis=1)
     nfs = pd.read_csv('all_nfs.csv')
+    # remove osfs alpha=0.05 result
+    cls = cls.drop('osfs5', axis=1)
+    nfs = nfs.drop('osfs5', axis=1)
 
-    cls = cls.drop('dataset', axis=1)
-    nfs = nfs.drop('dataset', axis=1)
+    cls = cls.drop('dataset', axis=1).rename(index=lambda i: i+1)
+    nfs = nfs.drop('dataset', axis=1).rename(index=lambda i: i+1)
     return cls, nfs
 
 def get_cls_nfs_2():

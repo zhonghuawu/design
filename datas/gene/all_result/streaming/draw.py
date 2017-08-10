@@ -59,7 +59,8 @@ def draw(cls, fname):
     ax.set_xlabel('The percentage of features streaming in (%)')
     ax.set_title(fname)
 
-    fig.set_size_inches(12, 8)
+    # fig.set_size_inches(12, 8)
+    fig.set_size_inches(6, 4)
     fig.savefig('%s.png'%fname, bbox_inches='tight')
     plt.close()
 
