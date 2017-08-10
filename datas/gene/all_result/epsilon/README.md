@@ -1,3 +1,8 @@
+## aggregate four picture in one
+<center >
+<img src="https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/epsilon/aggr.png">
+</center>
+
 ## optimize epsilon
 
 <center >

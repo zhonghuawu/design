@@ -23,7 +23,7 @@ def read_output_epsilon(fname):
 
 def draw(cls, nfs, fname):
     fig, axes = plt.subplots(2, 1)
-    cls.plot(ax=axes[0], style='o-', ylim=(0.5, 1.0))
+    cls.plot(ax=axes[0], style='o-', ylim=(0.0, 1.0))
     nfs.plot(ax=axes[1], style='*-', ylim=(0, 100))
     axes[0].set_ylabel('Prediction accuracy')
     axes[1].set_ylabel('The number of selected features')
