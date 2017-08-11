@@ -53,13 +53,15 @@
 * [Prediction accuracy](https://github.com/zhonghuawu/design/blob/master/datas/gene/all_result/all_cls.csv) <br>
 * [The number of selected features](https://github.com/zhonghuawu/design/blob/master/datas/gene/all_result/all_nfs.csv)
 
-## 2. parameter ![epsilon](https://github.com/zhonghuawu/design/tree/master/datas/gene/all_result/epsilon) effect to algorithm
-![image](https://github.com/zhonghuawu/design/tree/master/datas/gene/all_result/epsilon/aggr.png)
+## 2. parameter [epsilon](https://github.com/zhonghuawu/design/tree/master/datas/gene/all_result/epsilon) effect to algorithm
+![image](https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/epsilon/aggr.png)
 
-## 3. parameter ![lambda](https://github.com/zhonghuawu/design/tree/master/datas/gene/all_result/threshold) effect to algorithm
-![image](https://github.com/zhonghuawu/design/tree/master/datas/gene/all_result/threshold/aggr.png)
 
-## 4. ![streaming](https://github.com/zhonghuawu/design/tree/master/datas/gene/all_result/streaming)
+## 3. parameter [lambda](https://github.com/zhonghuawu/design/tree/master/datas/gene/all_result/threshold) effect to algorithm
+![image](https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/threshold/aggr.png)
+
+## 4. [streaming](https://github.com/zhonghuawu/design/tree/master/datas/gene/all_result/streaming)
+![image](https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/streaming/aggr.png)
 <!--
 <center >
 <img src="https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/streaming/TOX_171.png" width='30%'> <img src="https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/streaming/lymphoma.png" width='30%'> <img src="https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/streaming/SMK_CAN_187.png" width='30%'>
