@@ -7,7 +7,7 @@ def draw(cls, nfs):
 
     fig, axes = plt.subplots(2, 1)
 
-    style='o- ^- x- *- .-'.split(' ')
+    style='o- ^-- s-. p:'.split(' ')
     cls.plot(ax=axes[0], style=style, ylim=(0.4, 1.0))
     nfs.plot(ax=axes[1], style=style, ylim=(0, 60))
 
@@ -17,7 +17,7 @@ def draw(cls, nfs):
     plt.xlabel("datasets")
     #plt.show()
     fig.set_size_inches(12, 8)
-    fig.savefig("all_final.png", bbox_inches='tight')
+    fig.savefig("all_final_clear.png", bbox_inches='tight')
     plt.close()
 
 def get_cls_nfs_1():

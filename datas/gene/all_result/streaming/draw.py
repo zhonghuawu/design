@@ -53,7 +53,8 @@ def read_output_streaming_of_one_dataset(dataset_name):
     
 def draw(cls, fname):
     fig, ax = plt.subplots(1, 1)
-    cls.plot(ax=ax, style='o-', ylim=(0.5, 1.0))
+    style='o- ^-- s-. p:'.split(' ')
+    cls.plot(ax=ax, style=style, ylim=(0.4, 1.0))
     #nfs.plot(ax=axes[1], style='*-', ylim=(0, 90))
     ax.set_ylabel('Prediction accuracy')
     ax.set_xlabel('The percentage of features streaming in (%)')
