@@ -25,7 +25,7 @@ W = np.matrix(np.ones((d-1, c)))
 def Loss(W, X, Y):
     W = np.matrix(W).reshape((X.shape[1], Y.shape[1]))
     mat = np.dot(X, W) - Y
-    return np.linalg.norm(mat)
+    return np.linalg.norm(mat, ord='fro')
 
 def Regularized_term(W):
     W = np.matrix(W).reshape((X.shape[1], Y.shape[1]))
@@ -59,8 +59,8 @@ for i in range(x.shape[0]):
         z_Loss[i, j] = F_Loss([x[i, j], y[i, j]], W, X, Y)
 
 ax = plt.subplot(111,projection='3d')  
-ax.plot_surface(x,y,z_J,rstride=2,cstride=1,cmap=plt.cm.coolwarm,alpha=0.8) 
-ax.plot_surface(x,y,z_l21,rstride=2,cstride=1,cmap=plt.cm.coolwarm,alpha=0.8) 
+# ax.plot_surface(x,y,z_J,rstride=2,cstride=1,cmap=plt.cm.coolwarm,alpha=0.8) 
+# ax.plot_surface(x,y,z_l21,rstride=2,cstride=1,cmap=plt.cm.coolwarm,alpha=0.8) 
 ax.plot_surface(x,y,z_Loss,rstride=2,cstride=1,cmap=plt.cm.coolwarm,alpha=0.8) 
 
 ax.set_xlabel('x')
