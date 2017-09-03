@@ -1,0 +1,47 @@
+classify dataset: colon
+**********************************************************************
+origin data: 
+size of data matrix: (62, 2000)
+cross validation accuracy: 0.774358974359
+**********************************************************************
+after fs using  10% saola alpha=0.01: 
+size of data matrix: (62, 3)
+cross validation accuracy: 0.837179487179
+**********************************************************************
+after fs using  20% saola alpha=0.01: 
+size of data matrix: (62, 2)
+cross validation accuracy: 0.837179487179
+**********************************************************************
+after fs using  30% saola alpha=0.01: 
+size of data matrix: (62, 2)
+cross validation accuracy: 0.725641025641
+**********************************************************************
+after fs using  40% saola alpha=0.01: 
+size of data matrix: (62, 3)
+cross validation accuracy: 0.885897435897
+**********************************************************************
+after fs using  50% saola alpha=0.01: 
+size of data matrix: (62, 3)
+cross validation accuracy: 0.885897435897
+**********************************************************************
+after fs using  60% saola alpha=0.01: 
+size of data matrix: (62, 3)
+cross validation accuracy: 0.885897435897
+**********************************************************************
+after fs using  70% saola alpha=0.01: 
+size of data matrix: (62, 4)
+cross validation accuracy: 0.835897435897
+**********************************************************************
+after fs using  80% saola alpha=0.01: 
+size of data matrix: (62, 4)
+cross validation accuracy: 0.869230769231
+**********************************************************************
+after fs using  90% saola alpha=0.01: 
+size of data matrix: (62, 4)
+cross validation accuracy: 0.869230769231
+**********************************************************************
+after fs using 100% saola alpha=0.01: 
+size of data matrix: (62, 4)
+cross validation accuracy: 0.869230769231
+**********************************************************************
+DONE

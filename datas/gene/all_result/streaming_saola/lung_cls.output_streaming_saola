@@ -1,0 +1,47 @@
+classify dataset: lung
+**********************************************************************
+origin data: 
+size of data matrix: (203, 3312)
+cross validation accuracy: 0.960208124264
+**********************************************************************
+after fs using  10% saola alpha=0.01: 
+size of data matrix: (203, 7)
+cross validation accuracy: 0.827532542141
+**********************************************************************
+after fs using  20% saola alpha=0.01: 
+size of data matrix: (203, 20)
+cross validation accuracy: 0.931143447213
+**********************************************************************
+after fs using  30% saola alpha=0.01: 
+size of data matrix: (203, 18)
+cross validation accuracy: 0.925544453656
+**********************************************************************
+after fs using  40% saola alpha=0.01: 
+size of data matrix: (203, 15)
+cross validation accuracy: 0.911498538331
+**********************************************************************
+after fs using  50% saola alpha=0.01: 
+size of data matrix: (203, 18)
+cross validation accuracy: 0.866828613814
+**********************************************************************
+after fs using  60% saola alpha=0.01: 
+size of data matrix: (203, 24)
+cross validation accuracy: 0.926027749902
+**********************************************************************
+after fs using  70% saola alpha=0.01: 
+size of data matrix: (203, 21)
+cross validation accuracy: 0.886340808936
+**********************************************************************
+after fs using  80% saola alpha=0.01: 
+size of data matrix: (203, 20)
+cross validation accuracy: 0.906021495993
+**********************************************************************
+after fs using  90% saola alpha=0.01: 
+size of data matrix: (203, 27)
+cross validation accuracy: 0.910544453656
+**********************************************************************
+after fs using 100% saola alpha=0.01: 
+size of data matrix: (203, 30)
+cross validation accuracy: 0.910538199747
+**********************************************************************
+DONE

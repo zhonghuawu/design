@@ -1,0 +1,47 @@
+classify dataset: SRBCT
+**********************************************************************
+origin data: 
+size of data matrix: (83, 2308)
+cross validation accuracy: 1.0
+**********************************************************************
+after fs using  10% saola alpha=0.01: 
+size of data matrix: (83, 12)
+cross validation accuracy: 0.842761437908
+**********************************************************************
+after fs using  20% saola alpha=0.01: 
+size of data matrix: (83, 13)
+cross validation accuracy: 0.964624183007
+**********************************************************************
+after fs using  30% saola alpha=0.01: 
+size of data matrix: (83, 17)
+cross validation accuracy: 0.974901960784
+**********************************************************************
+after fs using  40% saola alpha=0.01: 
+size of data matrix: (83, 18)
+cross validation accuracy: 0.926192810458
+**********************************************************************
+after fs using  50% saola alpha=0.01: 
+size of data matrix: (83, 16)
+cross validation accuracy: 0.902581699346
+**********************************************************************
+after fs using  60% saola alpha=0.01: 
+size of data matrix: (83, 18)
+cross validation accuracy: 0.924803921569
+**********************************************************************
+after fs using  70% saola alpha=0.01: 
+size of data matrix: (83, 15)
+cross validation accuracy: 0.940359477124
+**********************************************************************
+after fs using  80% saola alpha=0.01: 
+size of data matrix: (83, 17)
+cross validation accuracy: 0.929983660131
+**********************************************************************
+after fs using  90% saola alpha=0.01: 
+size of data matrix: (83, 19)
+cross validation accuracy: 0.952859477124
+**********************************************************************
+after fs using 100% saola alpha=0.01: 
+size of data matrix: (83, 17)
+cross validation accuracy: 0.9875
+**********************************************************************
+DONE

@@ -1,0 +1,47 @@
+classify dataset: GLIOMA
+**********************************************************************
+origin data: 
+size of data matrix: (50, 4434)
+cross validation accuracy: 0.785909090909
+**********************************************************************
+after fs using  10% saola alpha=0.01: 
+size of data matrix: (50, 10)
+cross validation accuracy: 0.688181818182
+**********************************************************************
+after fs using  20% saola alpha=0.01: 
+size of data matrix: (50, 12)
+cross validation accuracy: 0.731363636364
+**********************************************************************
+after fs using  30% saola alpha=0.01: 
+size of data matrix: (50, 18)
+cross validation accuracy: 0.907272727273
+**********************************************************************
+after fs using  40% saola alpha=0.01: 
+size of data matrix: (50, 19)
+cross validation accuracy: 0.887272727273
+**********************************************************************
+after fs using  50% saola alpha=0.01: 
+size of data matrix: (50, 20)
+cross validation accuracy: 0.824090909091
+**********************************************************************
+after fs using  60% saola alpha=0.01: 
+size of data matrix: (50, 17)
+cross validation accuracy: 0.739090909091
+**********************************************************************
+after fs using  70% saola alpha=0.01: 
+size of data matrix: (50, 17)
+cross validation accuracy: 0.775909090909
+**********************************************************************
+after fs using  80% saola alpha=0.01: 
+size of data matrix: (50, 16)
+cross validation accuracy: 0.780909090909
+**********************************************************************
+after fs using  90% saola alpha=0.01: 
+size of data matrix: (50, 21)
+cross validation accuracy: 0.782727272727
+**********************************************************************
+after fs using 100% saola alpha=0.01: 
+size of data matrix: (50, 17)
+cross validation accuracy: 0.639545454545
+**********************************************************************
+DONE

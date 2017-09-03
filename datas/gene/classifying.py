@@ -93,6 +93,52 @@ def run_all_osfs(fname):
             f_streaming_osfs.write("DONE")
             f_streaming_osfs.close()
 
+def run_all_saola(fname):
+    with open(fname, 'r') as f:
+        alg = f.readline().strip()[:-1]
+        for line in f:
+            dataset_name, indexes_set = line.split(':')
+            dataset_name = dataset_name.strip()
+            f_streaming_saola = open("all_result/streaming_saola/%s_cls.output_streaming_saola"%dataset_name, 'w')
+            print "classify dataset: %s"%dataset_name
+            f_streaming_saola.write("classify dataset: %s"%dataset_name+'\n')
+            X, Y = read_data("dataset/%s.mat"%dataset_name)
+            # print "**"*35
+            # print "origin data: "
+            f_streaming_saola.write("**"*35+'\n')
+            f_streaming_saola.write("origin data: "+'\n')
+            # run_cross_validation(X, Y)
+
+            f_streaming_saola.write("size of data matrix: "+str(X.shape)+'\n')
+            #clf = svm.SVC(kernel='poly')
+            clf = svm.SVC(kernel='linear')
+            scores = model_selection.cross_val_score(clf, X, Y, cv=5, scoring="accuracy")
+            #print "cross validation scores: ", scores
+            f_streaming_saola.write("cross validation accuracy: "+str(scores.mean())+'\n')
+
+            # print "**"*35
+            f_streaming_saola.write("**"*35+'\n')
+            indexes_set = indexes_set.split()
+            percent = 10
+            for indexes in indexes_set:
+                # print "after fs using %3d%% %s: "%(percent, alg)
+                f_streaming_saola.write("after fs using %3d%% %s: "%(percent, alg)+'\n')
+                # run_cross_validation(X[:, eval(indexes)], Y)
+
+                X_fs = X[:, np.array(eval(indexes))-1]
+                f_streaming_saola.write("size of data matrix: "+str(X_fs.shape)+'\n')
+                #clf = svm.SVC(kernel='poly')
+                clf = svm.SVC(kernel='linear')
+                scores = model_selection.cross_val_score(clf, X_fs, Y, cv=5, scoring="accuracy")
+                #print "cross validation scores: ", scores
+                f_streaming_saola.write("cross validation accuracy: "+str(scores.mean())+'\n')
+
+                # print "**"*35
+                f_streaming_saola.write("**"*35+'\n')
+                percent+=10
+            f_streaming_saola.write("DONE")
+            f_streaming_saola.close()
+
 def run_all_Alpha_investing(fname):
     with open(fname, 'r') as f:
         alg = f.readline().strip()[:-1]
@@ -142,6 +188,7 @@ def run_all_Alpha_investing(fname):
 
 if __name__ == "__main__":
     import sys
-    run(sys.argv[1])
+    # run(sys.argv[1])
     # run_all_osfs(sys.argv[1])
+    run_all_saola(sys.argv[1])
     print 'DONE'

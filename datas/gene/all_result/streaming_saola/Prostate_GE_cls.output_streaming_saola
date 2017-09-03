@@ -1,0 +1,47 @@
+classify dataset: Prostate_GE
+**********************************************************************
+origin data: 
+size of data matrix: (102, 5966)
+cross validation accuracy: 0.921904761905
+**********************************************************************
+after fs using  10% saola alpha=0.01: 
+size of data matrix: (102, 5)
+cross validation accuracy: 0.784285714286
+**********************************************************************
+after fs using  20% saola alpha=0.01: 
+size of data matrix: (102, 5)
+cross validation accuracy: 0.82380952381
+**********************************************************************
+after fs using  30% saola alpha=0.01: 
+size of data matrix: (102, 7)
+cross validation accuracy: 0.901904761905
+**********************************************************************
+after fs using  40% saola alpha=0.01: 
+size of data matrix: (102, 5)
+cross validation accuracy: 0.910952380952
+**********************************************************************
+after fs using  50% saola alpha=0.01: 
+size of data matrix: (102, 10)
+cross validation accuracy: 0.950952380952
+**********************************************************************
+after fs using  60% saola alpha=0.01: 
+size of data matrix: (102, 9)
+cross validation accuracy: 0.950952380952
+**********************************************************************
+after fs using  70% saola alpha=0.01: 
+size of data matrix: (102, 9)
+cross validation accuracy: 0.950952380952
+**********************************************************************
+after fs using  80% saola alpha=0.01: 
+size of data matrix: (102, 9)
+cross validation accuracy: 0.931428571429
+**********************************************************************
+after fs using  90% saola alpha=0.01: 
+size of data matrix: (102, 10)
+cross validation accuracy: 0.950476190476
+**********************************************************************
+after fs using 100% saola alpha=0.01: 
+size of data matrix: (102, 12)
+cross validation accuracy: 0.950952380952
+**********************************************************************
+DONE

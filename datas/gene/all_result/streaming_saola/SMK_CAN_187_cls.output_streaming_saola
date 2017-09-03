@@ -1,0 +1,47 @@
+classify dataset: SMK_CAN_187
+**********************************************************************
+origin data: 
+size of data matrix: (187, 19993)
+cross validation accuracy: 0.652916073969
+**********************************************************************
+after fs using  10% saola alpha=0.01: 
+size of data matrix: (187, 5)
+cross validation accuracy: 0.753769559033
+**********************************************************************
+after fs using  20% saola alpha=0.01: 
+size of data matrix: (187, 6)
+cross validation accuracy: 0.652204836415
+**********************************************************************
+after fs using  30% saola alpha=0.01: 
+size of data matrix: (187, 7)
+cross validation accuracy: 0.695021337127
+**********************************************************************
+after fs using  40% saola alpha=0.01: 
+size of data matrix: (187, 6)
+cross validation accuracy: 0.689615931721
+**********************************************************************
+after fs using  50% saola alpha=0.01: 
+size of data matrix: (187, 6)
+cross validation accuracy: 0.758890469417
+**********************************************************************
+after fs using  60% saola alpha=0.01: 
+size of data matrix: (187, 10)
+cross validation accuracy: 0.72759601707
+**********************************************************************
+after fs using  70% saola alpha=0.01: 
+size of data matrix: (187, 10)
+cross validation accuracy: 0.748790896159
+**********************************************************************
+after fs using  80% saola alpha=0.01: 
+size of data matrix: (187, 10)
+cross validation accuracy: 0.706116642959
+**********************************************************************
+after fs using  90% saola alpha=0.01: 
+size of data matrix: (187, 10)
+cross validation accuracy: 0.780654338549
+**********************************************************************
+after fs using 100% saola alpha=0.01: 
+size of data matrix: (187, 10)
+cross validation accuracy: 0.780654338549
+**********************************************************************
+DONE
