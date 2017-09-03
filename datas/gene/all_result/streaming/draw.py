@@ -35,25 +35,33 @@ def read_output_streaming_of_one_dataset(dataset_name):
     alg = "sfs_l21"
     cls_l21 = read_output_streaming("../streaming_l21/%s_cls.output_streaming"%dataset_name)
     cls_l21.name = alg
+    cls = cls_l21
 
-    alg = "grafting"
-    cls_grafting = read_output_streaming("../streaming_%s/%s_cls.output_streaming_%s"%(alg, dataset_name, alg))
-    cls_grafting.name = alg
+    algs = "grafting osfs Alpha_investing saola".split()
+    for alg in algs:
+        fname = "../streaming_%s/%s_cls.output_streaming_%s"%(alg, dataset_name, alg)
+        cls_tmp = read_output_streaming(fname)
+        cls_tmp.name = alg
+        cls = pd.concat((cls, cls_tmp), axis=1)
 
-    alg = "osfs"
-    cls_osfs = read_output_streaming("../streaming_%s/%s_cls.output_streaming_%s"%(alg, dataset_name, alg))
-    cls_osfs.name = alg
+#     alg = "grafting"
+#     cls_grafting = read_output_streaming("../streaming_%s/%s_cls.output_streaming_%s"%(alg, dataset_name, alg))
+#     cls_grafting.name = alg
 
-    alg = "Alpha_investing"
-    cls_Alpha_investing = read_output_streaming("../streaming_%s/%s_cls.output_streaming_%s"%(alg, dataset_name, alg))
-    cls_Alpha_investing.name = 'Alpha_investing'
+#     alg = "osfs"
+#     cls_osfs = read_output_streaming("../streaming_%s/%s_cls.output_streaming_%s"%(alg, dataset_name, alg))
+#     cls_osfs.name = alg
 
-    cls = pd.concat((cls_l21, cls_grafting, cls_osfs, cls_Alpha_investing), axis=1)
+#     alg = "Alpha_investing"
+#     cls_Alpha_investing = read_output_streaming("../streaming_%s/%s_cls.output_streaming_%s"%(alg, dataset_name, alg))
+#     cls_Alpha_investing.name = alg
+
+    # cls = pd.concat((cls_l21, cls_grafting, cls_osfs, cls_Alpha_investing), axis=1)
     return cls
     
 def draw(cls, fname):
     fig, ax = plt.subplots(1, 1)
-    style='o- ^-- s-. p:'.split(' ')
+    style='o- ^-- s-. p: X--'.split(' ')
     cls.plot(ax=ax, style=style, ylim=(0.4, 1.0))
     #nfs.plot(ax=axes[1], style='*-', ylim=(0, 90))
     ax.set_ylabel('Prediction accuracy')
@@ -62,7 +70,7 @@ def draw(cls, fname):
 
     # fig.set_size_inches(12, 8)
     fig.set_size_inches(6, 4)
-    fig.savefig('%s.png'%fname, bbox_inches='tight')
+    fig.savefig('new/%s.png'%fname, bbox_inches='tight')
     plt.close()
 
 def get_datasets_name():
@@ -78,6 +86,7 @@ def main():
     for dataset_name in datasets_name:
         print "draw %s"%dataset_name
         cls = read_output_streaming_of_one_dataset(dataset_name)
+        cls.to_csv("new/%s.csv"%dataset_name)
         draw(cls, dataset_name)
         print "finish %s"%dataset_name
 
