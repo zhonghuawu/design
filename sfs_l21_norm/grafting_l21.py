@@ -4,6 +4,8 @@ import matplotlib.pyplot as plt
 from model import *
 from util import read_data
 
+import time
+
 '''
 streaming features selection regularized by l21-norm
 X: data matrix, n*d dimension
@@ -84,7 +86,12 @@ def run(fname, threshold, epsilon):
     X, Y = read_data(fname)
     print X.shape, Y.shape
     print "X shape: %s"%str(X.shape)
+
+    startTime = time.time()
     X_index_retained, W, X_index, obj_values = sfs_l21_norm(X, Y, threshold, epsilon)
+    endTime = time.time()
+    
+    print "runtime: %.4f seconds"%(endTime-startTime)
     
     print "**"*30
     print "data set name: %s"%fname
