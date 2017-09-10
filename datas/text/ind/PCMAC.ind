@@ -1,0 +1,2 @@
+grafting l21-norm threshold = 0.2, epsilon = 0.1:  [247, 450]
+grafting l21-norm threshold = 0.2, epsilon = 0.05:  [77, 103, 125, 158, 247, 296, 378, 383, 450, 538, 630, 990, 1260, 1393, 1430, 1479, 2282, 2360]
