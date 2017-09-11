@@ -40,6 +40,8 @@ def run(fname):
     print "**"*35
     with open(fname, 'r') as f:
         for line in f:
+            if ':' not in line:
+                continue
             alg, indexes = line.split(":")[:2]
             print "after fs using %s: "%alg
             indexes = eval(indexes)

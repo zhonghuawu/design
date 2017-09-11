@@ -3,10 +3,17 @@ from util import read_data
 import numpy as np
 import sys
 
+import time
+
 def sfs(fname, threshold, epsilon):
     # print "dataset: %s"%fname
     X, Y = read_data(fname)
+
+    startTime = time.time()
     sfs_l21_norm_streaming(X, Y, threshold, epsilon)
+    endTime = time.time()
+
+    print "%.4f"%(endTime-startTime)
 
 def sfs_part(X, Y, idx, threshold, epsilon):
     X_index_retained = sfs_l21_norm_std(X, Y, idx, threshold, epsilon)[0]
