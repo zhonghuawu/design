@@ -1,5 +1,5 @@
+import sys
 import os
-    
 
 def get_datasets_name():
     fname=r'all_result/all_attribute.csv'
@@ -11,7 +11,8 @@ def get_datasets_name():
     return datasets_fname
 
 def exec_command(fname, alg):
-    dataset_fname=r'%s/%s.ind_%s'%(alg, fname, alg)
+    dataset_fname=r'%s/%s.%s'%(alg, fname, alg)
+    alg = alg.replace('ind_', '')
     output_fname=r'all_result/%s/%s_cls.output_%s'%(alg, fname, alg)
     os.system("python classifying.py %s > %s"%(dataset_fname, output_fname))
 
@@ -24,7 +25,9 @@ def main(alg):
 
 if __name__=='__main__':
     # alg = 'streaming_grafting'
-    alg = 'streaming_l21'
+    # alg = 'streaming_l21'
+    argv = sys.argv[1]
+    alg = argv[:-1]
     main(alg)
     print "Done!"
     
