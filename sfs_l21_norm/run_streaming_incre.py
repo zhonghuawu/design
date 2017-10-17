@@ -1,8 +1,9 @@
 import sys
 import os
 
-dataset_type = 'text'
 # dataset_type = 'faceImage'
+# dataset_type = 'text'
+dataset_type = 'other'
 
 def get_datasets_name():
     fname='../datas/%s/all_result/all_attribute.csv'%dataset_type

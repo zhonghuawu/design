@@ -1,6 +1,6 @@
 import pandas as pd
 from pandas import DataFrame, Series
-from sklearn import svm
+from sklearn import svm, linear_model, tree
 from sklearn import model_selection
 from sklearn.model_selection import train_test_split
 
@@ -23,7 +23,10 @@ def read_data(fname):
 def run_cross_validation(X, y):
     print "size of data matrix: ", X.shape 
     #clf = svm.SVC(kernel='poly')
-    clf = svm.SVC(kernel='linear')
+    # clf = svm.SVC(kernel='linear')
+    # clf = linear_model.SGDClassifier()
+    # clf = linear_model.LassoCV()
+    clf = tree.DecisionTreeClassifier()
     scores = model_selection.cross_val_score(clf, X, y, cv=5, scoring="accuracy")
     #print "cross validation scores: ", scores
     print "cross validation accuracy: ", scores.mean()
@@ -77,6 +80,8 @@ def run_all_osfs(fname):
             indexes_set = indexes_set.split()
             percent = 10
             for indexes in indexes_set:
+                if not indexes.startswith('['):
+                    continue
                 # print "after fs using %3d%% %s: "%(percent, alg)
                 f_streaming_osfs.write("after fs using %3d%% %s: "%(percent, alg)+'\n')
                 # run_cross_validation(X[:, eval(indexes)], Y)
@@ -166,8 +171,7 @@ def run_all_Alpha_investing(fname):
             f_streaming_Alpha_investing.write("**"*35+'\n')
 
             indexes_set = eval(indexes_set)
-            if indexes_set.size==0:
-                continue
+            # if len(indexes_set)==0: continue
             n, d = X.shape
             d_part=(d+9)/10
             for i in range(1, 11):
@@ -191,6 +195,7 @@ def run_all_Alpha_investing(fname):
 if __name__ == "__main__":
     import sys
     run(sys.argv[1])
+    # run_all_Alpha_investing(sys.argv[1])
     # run_all_osfs(sys.argv[1])
     # run_all_saola(sys.argv[1])
     print 'DONE'

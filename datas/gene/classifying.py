@@ -1,6 +1,6 @@
 import pandas as pd
 from pandas import DataFrame, Series
-from sklearn import svm
+from sklearn import svm, linear_model, tree
 from sklearn import model_selection
 from sklearn.model_selection import train_test_split
 
@@ -23,7 +23,8 @@ def read_data(fname):
 def run_cross_validation(X, y):
     print "size of data matrix: ", X.shape 
     #clf = svm.SVC(kernel='poly')
-    clf = svm.SVC(kernel='linear')
+    # clf = svm.SVC(kernel='linear')
+    clf = tree.DecisionTreeClassifier()
     scores = model_selection.cross_val_score(clf, X, y, cv=5, scoring="accuracy")
     #print "cross validation scores: ", scores
     print "cross validation accuracy: ", scores.mean()
@@ -36,7 +37,7 @@ def run(fname):
     X, Y = read_data("dataset/%s.mat"%fn)
     print "**"*35
     print "origin data: "
-    run_cross_validation(X, Y)
+    # run_cross_validation(X, Y)
     print "**"*35
     with open(fname, 'r') as f:
         for line in f:
@@ -190,7 +191,7 @@ def run_all_Alpha_investing(fname):
 
 if __name__ == "__main__":
     import sys
-    # run(sys.argv[1])
+    run(sys.argv[1])
     # run_all_osfs(sys.argv[1])
-    run_all_saola(sys.argv[1])
+    # run_all_saola(sys.argv[1])
     print 'DONE'

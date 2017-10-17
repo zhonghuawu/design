@@ -1,0 +1,5 @@
+dataset,sample,features,labels
+arcene,200,10000,2
+gisette,7000,5000,2
+Isolet,1560,617,26
+madelon,2600,500,2

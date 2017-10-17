@@ -1,6 +1,6 @@
 import pandas as pd
 from pandas import DataFrame, Series
-from sklearn import svm
+from sklearn import svm, linear_model, tree
 from sklearn import model_selection
 from sklearn.model_selection import train_test_split
 
@@ -24,6 +24,7 @@ def run_cross_validation(X, y):
     print "size of data matrix: ", X.shape 
     #clf = svm.SVC(kernel='poly')
     clf = svm.SVC(kernel='linear')
+    # clf = tree.DecisionTreeClassifier()
     scores = model_selection.cross_val_score(clf, X, y, cv=5, scoring="accuracy")
     #print "cross validation scores: ", scores
     print "cross validation accuracy: ", scores.mean()

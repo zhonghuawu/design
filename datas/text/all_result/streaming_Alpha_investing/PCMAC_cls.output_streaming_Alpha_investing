@@ -1,0 +1,8 @@
+classify dataset: PCMAC
+**********************************************************************
+origin data: 
+size of data matrix: (1943L, 3289L)
+cross validation accuracy: 0.886286172683
+**********************************************************************
+after fs using  10% Alpha_investing : 
+size of data matrix: (1943L,)

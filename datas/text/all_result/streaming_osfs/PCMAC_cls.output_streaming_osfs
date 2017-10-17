@@ -1,0 +1,47 @@
+classify dataset: PCMAC
+**********************************************************************
+origin data: 
+size of data matrix: (1943L, 3289L)
+cross validation accuracy: 0.886286172683
+**********************************************************************
+after fs using  10% fast_osfs_z alpha = 0.01: 
+size of data matrix: (1943L, 14L)
+cross validation accuracy: 0.670604463073
+**********************************************************************
+after fs using  20% fast_osfs_z alpha = 0.01: 
+size of data matrix: (1943L, 15L)
+cross validation accuracy: 0.709722857024
+**********************************************************************
+after fs using  30% fast_osfs_z alpha = 0.01: 
+size of data matrix: (1943L, 21L)
+cross validation accuracy: 0.731339254832
+**********************************************************************
+after fs using  40% fast_osfs_z alpha = 0.01: 
+size of data matrix: (1943L, 22L)
+cross validation accuracy: 0.735971811385
+**********************************************************************
+after fs using  50% fast_osfs_z alpha = 0.01: 
+size of data matrix: (1943L, 27L)
+cross validation accuracy: 0.782827416932
+**********************************************************************
+after fs using  60% fast_osfs_z alpha = 0.01: 
+size of data matrix: (1943L, 30L)
+cross validation accuracy: 0.794659262415
+**********************************************************************
+after fs using  70% fast_osfs_z alpha = 0.01: 
+size of data matrix: (1943L, 32L)
+cross validation accuracy: 0.804944736533
+**********************************************************************
+after fs using  80% fast_osfs_z alpha = 0.01: 
+size of data matrix: (1943L, 32L)
+cross validation accuracy: 0.81779962041
+**********************************************************************
+after fs using  90% fast_osfs_z alpha = 0.01: 
+size of data matrix: (1943L, 35L)
+cross validation accuracy: 0.823464429898
+**********************************************************************
+after fs using 100% fast_osfs_z alpha = 0.01: 
+size of data matrix: (1943L, 35L)
+cross validation accuracy: 0.825005534841
+**********************************************************************
+DONE

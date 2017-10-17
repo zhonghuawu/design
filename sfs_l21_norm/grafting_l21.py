@@ -41,12 +41,12 @@ def sfs_l21_norm(X, Y, threshold, epsilon):
             W= np.vstack((W, np.ones(c)))
             W, obj_value = update_weight(W, X_model, Y, threshold)
             W, X_model, X_index_retained = refresh_selected(W, X_model, X_index_retained)
-            '''
+            #'''
             print "j = %s obj_value = %s"%(str(j), str(obj_value))
             print "X_index_retained = %s"%str(X_index_retained)
             print "weight matrix: \n%s"%str(W)
             print "***"*30
-            '''
+            #'''
             X_index = np.hstack((X_index, j))
             obj_values = np.hstack((obj_values, obj_value))
     return X_index_retained, W, X_index, obj_values

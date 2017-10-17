@@ -17,9 +17,35 @@ def draw(cls, nfs):
 
     plt.xlabel("datasets")
     #plt.show()
-    fig.set_size_inches(12, 10)
+    fig.set_size_inches(12, 8)
     fig.savefig("all_final_add_saola.png", bbox_inches='tight')
     plt.close()
+
+def draw_sfs_l21_vs_other(cls, nfs):
+    fig = plt.figure()
+    ax1 = fig.add_subplot(111)
+    ax2 = ax1.twinx()
+    ax1.set_ylabel('Prediction accuracy')
+    ax2.set_ylabel('The number of selected features')
+    style1 = 'ro- gs--'.split(' ')
+    style2 = 'r^- g*--'.split(' ')
+    cls.plot(ax=ax1, style=style1, ylim=(0.0, 1.0))
+    nfs.plot(ax=ax2, style=style2, ylim=(0, 100))
+    plt.xlabel("datasets")
+    fig.set_size_inches(12, 8)
+    ax1.legend(loc=0)
+    ax2.legend(loc=7)
+    alg1, alg2=cls.columns
+    fig.savefig("all_%s_vs_%s.png"%(alg1, alg2), bbox_inches='tight')
+    plt.close()
+
+def draw_vs_others(cls, nfs):
+	my_alg = 'sfs_l21'
+	vs_algs = 'grafting osfs Alpha_investing saola'.split()
+	for vs_alg in vs_algs:
+		cls_tmp = cls[[my_alg, vs_alg]]
+		nfs_tmp = nfs[[my_alg, vs_alg]]
+		draw_sfs_l21_vs_other(cls_tmp, nfs_tmp)
 
 def get_cls_nfs_1():
     cls = pd.read_csv('all_cls.csv')
@@ -52,4 +78,5 @@ def get_cls_nfs_2():
 
 if __name__=='__main__':
     cls, nfs = get_cls_nfs_1()
-    draw(cls, nfs)
+    # draw(cls, nfs)
+    draw_vs_others(cls, nfs)

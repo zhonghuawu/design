@@ -16,23 +16,26 @@ def read_output_epsilon(fname):
                 res_cls[epsilon] = float(line_list[-1])
             if line_list[0] == 'size' and line_list[2] == 'data':
                 res_nfs[epsilon] = int(line_list[-1][:-1])
-    res_cls.name = 'prediction accuracy'
-    res_nfs.name = 'number of selected features'
+    res_cls.name = 'accuracy'
+    res_nfs.name = 'compactness'
     return res_cls.drop(0.0), res_nfs.drop(0.0)
     
 
 def draw(cls, nfs, fname):
-    fig, axes = plt.subplots(2, 1)
-    cls.plot(ax=axes[0], style='o-', ylim=(0.0, 1.0))
-    nfs.plot(ax=axes[1], style='*-', ylim=(0, 100))
-    axes[0].set_ylabel('Prediction accuracy')
-    axes[1].set_ylabel('The number of selected features')
-    axes[1].set_xlabel('epsilon')
-    fig.suptitle('Effect of epsilon on dataset %s'%fname)
+    fig = plt.figure()
+    ax1 = fig.add_subplot(1, 1, 1)
+    ax2 = ax1.twinx()
+    ax1.set_ylabel('Prediction accuracy')
+    ax2.set_ylabel('The number of selected features')
+    cls.plot(ax=ax1, style='ro-', ylim=(0.0, 1.0), xlim=(0.01, 0.19))
+    nfs.plot(ax=ax2, style='g*--', ylim=(0, 100), xlim=(0.01, 0.19))
+    plt.xlabel('epsilon')
+    ax1.legend(loc=0)
+    ax2.legend(loc=7)
+    fig.suptitle('Effect of epsilon on %s'%fname)
 
-    # plt.show()
     fig.set_size_inches(9, 6)
-    fig.savefig('%s.png'%fname, bbox_inches='tight')
+    fig.savefig('%s_one.png'%fname, bbox_inches='tight')
     plt.close()
 
 def draw_accuracy(cls, fname):
