@@ -35,4 +35,3 @@ if __name__ == '__main__':
     options = get_options(args)
     sfs(fname, options.threshold, options.epsilon)
 
-

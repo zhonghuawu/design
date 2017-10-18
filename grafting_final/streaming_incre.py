@@ -7,16 +7,12 @@ import time
 def sfs(fname, threshold, epsilon):
     # print "dataset: %s"%fname
     X, Y = read_data(fname)
+    
     startTime = time.time()
     grafting_streaming(X, Y, threshold, epsilon)
     endTime = time.time()
+    
     print "%.4f"%(endTime-startTime)
-
-def sfs_part(X, Y, idx, threshold, epsilon):
-    X_index_retained = grafting(X, Y, idx, threshold, epsilon)[0]
-    print "grafting l21-norm ",
-    print "threshold = %s, epsilon = %s: "%(str(threshold), str(epsilon)),
-    print "%s"%str(list(X_index_retained))
 
 def get_options(args):
     from optparse import OptionParser

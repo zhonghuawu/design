@@ -79,7 +79,7 @@ def gradient_validation(x, W, X, Y, threshold, epsilon):
 
 def update_weight(W, X, Y, threshold):
     #W, obj_value = opt.fmin_bfgs(J, W, args=(X, Y, threshold), full_output=1)[:2]
-    W, obj_value = opt.fmin_cg(J, W, args=(X, Y, threshold), full_output=1, disp=0)[:2]
+    W, obj_value = opt.fmin_cg(J, W, args=(X, Y, threshold), maxiter=200, full_output=1, disp=0)[:2]
     return np.matrix(W).reshape((X.shape[1], Y.shape[1])), obj_value
 
 def refresh_selected(W, X, X_index, epsilon=1e-2):
