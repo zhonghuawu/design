@@ -1,0 +1,11 @@
+ 10%  grafting l21-norm  threshold = 0.2, epsilon = 0.05:  [0, 95]
+ 20%  grafting l21-norm  threshold = 0.2, epsilon = 0.05:  [0, 95, 1299, 1533]
+ 30%  grafting l21-norm  threshold = 0.2, epsilon = 0.05:  [0, 95, 1299, 1533, 2910, 2945]
+ 40%  grafting l21-norm  threshold = 0.2, epsilon = 0.05:  [0, 95, 1299, 1533, 2910, 2945, 3444]
+ 50%  grafting l21-norm  threshold = 0.2, epsilon = 0.05:  [0, 95, 1299, 1533, 2910, 2945, 3444]
+ 60%  grafting l21-norm  threshold = 0.2, epsilon = 0.05:  [0, 95, 1299, 1533, 2910, 2945, 3444, 5505]
+ 70%  grafting l21-norm  threshold = 0.2, epsilon = 0.05:  [0, 95, 1299, 1533, 2910, 2945, 3444, 5505]
+ 80%  grafting l21-norm  threshold = 0.2, epsilon = 0.05:  [0, 95, 1299, 1533, 2910, 2945, 3444, 5505]
+ 90%  grafting l21-norm  threshold = 0.2, epsilon = 0.05:  [0, 95, 1299, 1533, 2910, 2945, 3444, 5505]
+100%  grafting l21-norm  threshold = 0.2, epsilon = 0.05:  [0, 95, 1299, 1533, 2910, 2945, 3444, 5505]
+3133.3590
