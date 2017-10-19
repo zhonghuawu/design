@@ -1,0 +1,47 @@
+classify dataset: arcene
+**********************************************************************
+origin data: 
+size of data matrix: (200, 10000)
+cross validation accuracy: 0.914828017511
+**********************************************************************
+after fs using  10% Alpha_investing : 
+size of data matrix: (200, 9)
+cross validation accuracy: 0.809643527205
+**********************************************************************
+after fs using  20% Alpha_investing : 
+size of data matrix: (200, 9)
+cross validation accuracy: 0.809643527205
+**********************************************************************
+after fs using  30% Alpha_investing : 
+size of data matrix: (200, 9)
+cross validation accuracy: 0.809643527205
+**********************************************************************
+after fs using  40% Alpha_investing : 
+size of data matrix: (200, 9)
+cross validation accuracy: 0.809643527205
+**********************************************************************
+after fs using  50% Alpha_investing : 
+size of data matrix: (200, 9)
+cross validation accuracy: 0.809643527205
+**********************************************************************
+after fs using  60% Alpha_investing : 
+size of data matrix: (200, 9)
+cross validation accuracy: 0.809643527205
+**********************************************************************
+after fs using  70% Alpha_investing : 
+size of data matrix: (200, 9)
+cross validation accuracy: 0.809643527205
+**********************************************************************
+after fs using  80% Alpha_investing : 
+size of data matrix: (200, 9)
+cross validation accuracy: 0.809643527205
+**********************************************************************
+after fs using  90% Alpha_investing : 
+size of data matrix: (200, 9)
+cross validation accuracy: 0.809643527205
+**********************************************************************
+after fs using 100% Alpha_investing : 
+size of data matrix: (200, 9)
+cross validation accuracy: 0.809643527205
+**********************************************************************
+DONE

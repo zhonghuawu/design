@@ -23,8 +23,8 @@ def read_data(fname):
 def run_cross_validation(X, y):
     print "size of data matrix: ", X.shape 
     #clf = svm.SVC(kernel='poly')
-    # clf = svm.SVC(kernel='linear')
-    clf = tree.DecisionTreeClassifier()
+    clf = svm.SVC(kernel='linear')
+    # clf = tree.DecisionTreeClassifier()
     scores = model_selection.cross_val_score(clf, X, y, cv=5, scoring="accuracy")
     #print "cross validation scores: ", scores
     print "cross validation accuracy: ", scores.mean()
@@ -138,6 +138,8 @@ def run_all_saola(fname):
             indexes_set = indexes_set.split()
             percent = 10
             for indexes in indexes_set:
+                if not indexes.startswith('['):
+                    continue
                 # print "after fs using %3d%% %s: "%(percent, alg)
                 f_streaming_saola.write("after fs using %3d%% %s: "%(percent, alg)+'\n')
                 # run_cross_validation(X[:, eval(indexes)], Y)
@@ -205,8 +207,16 @@ def run_all_Alpha_investing(fname):
 
 if __name__ == "__main__":
     import sys
-    run(sys.argv[1])
+    # for sfs_l21 and grafting alg
     # run(sys.argv[1])
+
+    # for osfs alg
     # run_all_osfs(sys.argv[1])
+    
+    #for saola alg
     # run_all_saola(sys.argv[1])
+
+    #for Alpha_investing alg
+    run_all_Alpha_investing(sys.argv[1])
+
     print 'DONE'
