@@ -1,0 +1,47 @@
+classify dataset: orlraws10P
+**********************************************************************
+origin data: 
+size of data matrix: (100L, 10304L)
+cross validation accuracy: 1.0
+**********************************************************************
+after fs using  10% saola alpha=0.01: 
+size of data matrix: (100L, 2L)
+cross validation accuracy: 0.46
+**********************************************************************
+after fs using  20% saola alpha=0.01: 
+size of data matrix: (100L, 3L)
+cross validation accuracy: 0.43
+**********************************************************************
+after fs using  30% saola alpha=0.01: 
+size of data matrix: (100L, 3L)
+cross validation accuracy: 0.52
+**********************************************************************
+after fs using  40% saola alpha=0.01: 
+size of data matrix: (100L, 4L)
+cross validation accuracy: 0.62
+**********************************************************************
+after fs using  50% saola alpha=0.01: 
+size of data matrix: (100L, 5L)
+cross validation accuracy: 0.61
+**********************************************************************
+after fs using  60% saola alpha=0.01: 
+size of data matrix: (100L, 5L)
+cross validation accuracy: 0.57
+**********************************************************************
+after fs using  70% saola alpha=0.01: 
+size of data matrix: (100L, 4L)
+cross validation accuracy: 0.6
+**********************************************************************
+after fs using  80% saola alpha=0.01: 
+size of data matrix: (100L, 4L)
+cross validation accuracy: 0.6
+**********************************************************************
+after fs using  90% saola alpha=0.01: 
+size of data matrix: (100L, 5L)
+cross validation accuracy: 0.62
+**********************************************************************
+after fs using 100% saola alpha=0.01: 
+size of data matrix: (100L, 5L)
+cross validation accuracy: 0.62
+**********************************************************************
+DONE

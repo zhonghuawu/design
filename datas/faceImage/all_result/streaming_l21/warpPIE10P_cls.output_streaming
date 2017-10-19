@@ -1,0 +1,47 @@
+classify dataset: warpPIE10P
+**********************************************************************
+origin data: 
+size of data matrix: (210L, 2420L)
+cross validation accuracy: 0.991
+**********************************************************************
+after fs using  10%  grafting l21-norm  threshold = 0.2, epsilon = 0.02: 
+size of data matrix: (210L, 18L)
+cross validation accuracy: 0.93
+**********************************************************************
+after fs using  20%  grafting l21-norm  threshold = 0.2, epsilon = 0.02: 
+size of data matrix: (210L, 18L)
+cross validation accuracy: 0.93
+**********************************************************************
+after fs using  30%  grafting l21-norm  threshold = 0.2, epsilon = 0.02: 
+size of data matrix: (210L, 22L)
+cross validation accuracy: 0.947
+**********************************************************************
+after fs using  40%  grafting l21-norm  threshold = 0.2, epsilon = 0.02: 
+size of data matrix: (210L, 23L)
+cross validation accuracy: 0.926
+**********************************************************************
+after fs using  50%  grafting l21-norm  threshold = 0.2, epsilon = 0.02: 
+size of data matrix: (210L, 23L)
+cross validation accuracy: 0.926
+**********************************************************************
+after fs using  60%  grafting l21-norm  threshold = 0.2, epsilon = 0.02: 
+size of data matrix: (210L, 25L)
+cross validation accuracy: 0.939
+**********************************************************************
+after fs using  70%  grafting l21-norm  threshold = 0.2, epsilon = 0.02: 
+size of data matrix: (210L, 25L)
+cross validation accuracy: 0.939
+**********************************************************************
+after fs using  80%  grafting l21-norm  threshold = 0.2, epsilon = 0.02: 
+size of data matrix: (210L, 27L)
+cross validation accuracy: 0.903
+**********************************************************************
+after fs using  90%  grafting l21-norm  threshold = 0.2, epsilon = 0.02: 
+size of data matrix: (210L, 28L)
+cross validation accuracy: 0.917
+**********************************************************************
+after fs using 100%  grafting l21-norm  threshold = 0.2, epsilon = 0.02: 
+size of data matrix: (210L, 29L)
+cross validation accuracy: 0.927
+**********************************************************************
+DONE

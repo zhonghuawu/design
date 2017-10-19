@@ -1,0 +1,47 @@
+classify dataset: pixraw10P
+**********************************************************************
+origin data: 
+size of data matrix: (100L, 10000L)
+cross validation accuracy: 0.97
+**********************************************************************
+after fs using  10% saola alpha=0.01: 
+size of data matrix: (100L, 2L)
+cross validation accuracy: 0.9
+**********************************************************************
+after fs using  20% saola alpha=0.01: 
+size of data matrix: (100L, 2L)
+cross validation accuracy: 0.86
+**********************************************************************
+after fs using  30% saola alpha=0.01: 
+size of data matrix: (100L, 2L)
+cross validation accuracy: 0.67
+**********************************************************************
+after fs using  40% saola alpha=0.01: 
+size of data matrix: (100L, 5L)
+cross validation accuracy: 0.84
+**********************************************************************
+after fs using  50% saola alpha=0.01: 
+size of data matrix: (100L, 7L)
+cross validation accuracy: 0.89
+**********************************************************************
+after fs using  60% saola alpha=0.01: 
+size of data matrix: (100L, 8L)
+cross validation accuracy: 0.88
+**********************************************************************
+after fs using  70% saola alpha=0.01: 
+size of data matrix: (100L, 8L)
+cross validation accuracy: 0.93
+**********************************************************************
+after fs using  80% saola alpha=0.01: 
+size of data matrix: (100L, 8L)
+cross validation accuracy: 0.89
+**********************************************************************
+after fs using  90% saola alpha=0.01: 
+size of data matrix: (100L, 8L)
+cross validation accuracy: 0.89
+**********************************************************************
+after fs using 100% saola alpha=0.01: 
+size of data matrix: (100L, 8L)
+cross validation accuracy: 0.89
+**********************************************************************
+DONE

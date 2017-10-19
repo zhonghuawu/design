@@ -1,0 +1,47 @@
+classify dataset: orlraws10P
+**********************************************************************
+origin data: 
+size of data matrix: (100L, 10304L)
+cross validation accuracy: 1.0
+**********************************************************************
+after fs using  10% fast_osfs_z alpha = 0.01: 
+size of data matrix: (100L, 2L)
+cross validation accuracy: 0.49
+**********************************************************************
+after fs using  20% fast_osfs_z alpha = 0.01: 
+size of data matrix: (100L, 2L)
+cross validation accuracy: 0.49
+**********************************************************************
+after fs using  30% fast_osfs_z alpha = 0.01: 
+size of data matrix: (100L, 2L)
+cross validation accuracy: 0.55
+**********************************************************************
+after fs using  40% fast_osfs_z alpha = 0.01: 
+size of data matrix: (100L, 2L)
+cross validation accuracy: 0.55
+**********************************************************************
+after fs using  50% fast_osfs_z alpha = 0.01: 
+size of data matrix: (100L, 2L)
+cross validation accuracy: 0.55
+**********************************************************************
+after fs using  60% fast_osfs_z alpha = 0.01: 
+size of data matrix: (100L, 3L)
+cross validation accuracy: 0.56
+**********************************************************************
+after fs using  70% fast_osfs_z alpha = 0.01: 
+size of data matrix: (100L, 3L)
+cross validation accuracy: 0.56
+**********************************************************************
+after fs using  80% fast_osfs_z alpha = 0.01: 
+size of data matrix: (100L, 3L)
+cross validation accuracy: 0.56
+**********************************************************************
+after fs using  90% fast_osfs_z alpha = 0.01: 
+size of data matrix: (100L, 3L)
+cross validation accuracy: 0.56
+**********************************************************************
+after fs using 100% fast_osfs_z alpha = 0.01: 
+size of data matrix: (100L, 3L)
+cross validation accuracy: 0.56
+**********************************************************************
+DONE

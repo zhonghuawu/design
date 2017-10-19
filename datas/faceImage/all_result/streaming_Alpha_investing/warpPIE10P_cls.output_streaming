@@ -1,0 +1,47 @@
+classify dataset: warpPIE10P
+**********************************************************************
+origin data: 
+size of data matrix: (210L, 2420L)
+cross validation accuracy: 0.991
+**********************************************************************
+after fs using  10% Alpha_investing : 
+size of data matrix: (210L, 32L)
+cross validation accuracy: 0.93
+**********************************************************************
+after fs using  20% Alpha_investing : 
+size of data matrix: (210L, 33L)
+cross validation accuracy: 0.926
+**********************************************************************
+after fs using  30% Alpha_investing : 
+size of data matrix: (210L, 36L)
+cross validation accuracy: 0.918
+**********************************************************************
+after fs using  40% Alpha_investing : 
+size of data matrix: (210L, 40L)
+cross validation accuracy: 0.911
+**********************************************************************
+after fs using  50% Alpha_investing : 
+size of data matrix: (210L, 43L)
+cross validation accuracy: 0.889
+**********************************************************************
+after fs using  60% Alpha_investing : 
+size of data matrix: (210L, 48L)
+cross validation accuracy: 0.925
+**********************************************************************
+after fs using  70% Alpha_investing : 
+size of data matrix: (210L, 48L)
+cross validation accuracy: 0.925
+**********************************************************************
+after fs using  80% Alpha_investing : 
+size of data matrix: (210L, 48L)
+cross validation accuracy: 0.925
+**********************************************************************
+after fs using  90% Alpha_investing : 
+size of data matrix: (210L, 48L)
+cross validation accuracy: 0.925
+**********************************************************************
+after fs using 100% Alpha_investing : 
+size of data matrix: (210L, 49L)
+cross validation accuracy: 0.931
+**********************************************************************
+DONE

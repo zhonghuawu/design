@@ -1,0 +1,47 @@
+classify dataset: PCMAC
+**********************************************************************
+origin data: 
+size of data matrix: (1943L, 3289L)
+cross validation accuracy: 0.886286172683
+**********************************************************************
+after fs using  10% Alpha_investing : 
+size of data matrix: (1943L, 76L)
+cross validation accuracy: 0.691211100669
+**********************************************************************
+after fs using  20% Alpha_investing : 
+size of data matrix: (1943L, 117L)
+cross validation accuracy: 0.763267574394
+**********************************************************************
+after fs using  30% Alpha_investing : 
+size of data matrix: (1943L, 138L)
+cross validation accuracy: 0.776139603027
+**********************************************************************
+after fs using  40% Alpha_investing : 
+size of data matrix: (1943L, 158L)
+cross validation accuracy: 0.77924294656
+**********************************************************************
+after fs using  50% Alpha_investing : 
+size of data matrix: (1943L, 170L)
+cross validation accuracy: 0.800318771503
+**********************************************************************
+after fs using  60% Alpha_investing : 
+size of data matrix: (1943L, 182L)
+cross validation accuracy: 0.842030352266
+**********************************************************************
+after fs using  70% Alpha_investing : 
+size of data matrix: (1943L, 187L)
+cross validation accuracy: 0.843041471554
+**********************************************************************
+after fs using  80% Alpha_investing : 
+size of data matrix: (1943L, 194L)
+cross validation accuracy: 0.844079004503
+**********************************************************************
+after fs using  90% Alpha_investing : 
+size of data matrix: (1943L, 197L)
+cross validation accuracy: 0.844081647908
+**********************************************************************
+after fs using 100% Alpha_investing : 
+size of data matrix: (1943L, 204L)
+cross validation accuracy: 0.850769434631
+**********************************************************************
+DONE

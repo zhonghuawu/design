@@ -1,18 +1,15 @@
-import pandas as pd
-from pandas import DataFrame, Series
+import os
+import sys
+
 from sklearn import svm, linear_model, tree
 from sklearn import model_selection
 from sklearn.model_selection import train_test_split
 
-from sklearn.metrics import confusion_matrix
-from sklearn.metrics import accuracy_score
+# from sklearn.metrics import confusion_matrix
+# from sklearn.metrics import accuracy_score
 
 import numpy as np
-import scipy as sp
 import scipy.io as sio
-
-import os
-import sys
 
 def read_data(fname):
     data = sio.loadmat(fname)
@@ -40,15 +37,13 @@ def run_one(fname):
     indexes = eval(indexes)
     run_cross_validation(X[:, indexes], Y)
 
-def run(fname, clf):
-    dataset_type, alg_name, dataset_name = fname.split('/')
-    dataset_name = dataset_name.split('.')
+def run(fname, clf, dataset_type, alg_name, dataset_name):
     print "classifying dataset: %s"%dataset_name
     X, Y = read_data("%s/dataset/%s.mat"%(dataset_type, dataset_name))
     print "**"*35
     print "origin data: "
     print "size of data matrix: ", X.shape 
-    scores = model_selection.cross_val_score(clf, X, y, cv=5, scoring="accuracy")
+    scores = model_selection.cross_val_score(clf, X, Y, cv=5, scoring="accuracy")
     print "cross validation accuracy: ", scores.mean()
     print "**"*35
     with open(fname, 'r') as f:
@@ -58,19 +53,16 @@ def run(fname, clf):
             alg, indexes = line.split(":")[:2]
             print "after fs using %s: "%alg
             indexes = eval(indexes)
-            X_fs = X[: indexes]
+            X_fs = X[:, indexes]
             print "size of data matrix: ", X_fs.shape 
-            scores = model_selection.cross_val_score(clf, X_fs, y, cv=5, scoring="accuracy")
+            scores = model_selection.cross_val_score(clf, X_fs, Y, cv=5, scoring="accuracy")
             print "cross validation accuracy: ", scores.mean()
             print "**"*35
 
-def run_one_grafting_or_l21(fname, clf):
-    dataset_type, alg_name, dataset_name = os.path.split(fname.split('.'))
-    print "classifying dataset: %d"%dataset_name
-
+def run_one_grafting_or_l21(fname, clf, dataset_type, alg_name, dataset_name):
+    print "classifying dataset: %s"%dataset_name
     X, Y = read_data("%s/dataset/%s.mat"%(dataset_type, dataset_name))
-
-    wfname = "%s/all_result/%s/%s_cls.output_streaming"%(dataset_type, alg_name, dataset_name)
+    wfname = "%s/all_result/streaming_%s/%s_cls.output_streaming"%(dataset_type, alg_name, dataset_name)
     f_streaming = open(wfname, 'w')
     f_streaming.write("classify dataset: %s"%dataset_name+'\n')
     f_streaming.write("**"*35+'\n')
@@ -85,20 +77,19 @@ def run_one_grafting_or_l21(fname, clf):
             if ':' not in line:
                 continue
             alg, indexes = line.split(':')[:2]
-            f_streaming.write("after fs using %s: "%alg)
+            f_streaming.write("after fs using %s: \n"%alg)
             indexes = eval(indexes)
-            X_fs = X[:, np.array(eval(indexes))-1]
-            f_streaming.write("size of data matrix: "+str(X_fs.shape)+'\n')
+            X_fs = X[:, np.array(indexes)-1]
+            f_streaming.write("size of data matrix: %s\n"%str(X_fs.shape))
             scores = model_selection.cross_val_score(clf, X_fs, Y, cv=5, scoring="accuracy")
-            f_streaming.write("cross validation accuracy: "+str(scores.mean())+'\n')
+            f_streaming.write("cross validation accuracy: %s\n"%str(scores.mean()))
 
             f_streaming.write("**"*35+'\n')
     f_streaming.write("DONE")
     f_streaming.close()
 
-def run_all_osfs_or_saola(fname, clf):
-    dataset_type, alg_name = fname.split('/')
-    alg_name = alg_name.split('.')[0][4:] # alg_name = osfs or saola
+def run_all_osfs_or_saola(fname, clf, dataset_type, alg_name):
+    # alg_name = alg_name.split('.')[0][4:] # alg_name = osfs or saola
     with open(fname, 'r') as f:
         alg = f.readline().strip()[:-1]
         for line in f:
@@ -134,8 +125,7 @@ def run_all_osfs_or_saola(fname, clf):
             f_streaming.write("DONE")
             f_streaming.close()
 
-def run_all_Alpha_investing(fname, clf):
-    dataset_type, alg_name = fname.split('/')
+def run_all_Alpha_investing(fname, clf, dataset_type, alg_name):
     with open(fname, 'r') as f:
         alg = f.readline().strip()[:-1]
         for line in f:
@@ -173,20 +163,35 @@ def run_all_Alpha_investing(fname, clf):
             f_streaming.write("DONE")
             f_streaming.close()
 
+def main(fname):
+    path, filename = os.path.split(fname)
+
+    clf = svm.SVC(kernel='linear')
+    # clf = tree.DecisionTreeClassifier()
+
+    # run(fname, clf, dataset_type, alg_name, dataset_name)
+
+    if filename.startswith("all_"):
+        dataset_type = path
+        alg = os.path.splitext(filename)[0][4:]
+
+        run_osfs = run_all_osfs_or_saola
+        run_saola = run_all_osfs_or_saola
+        run_Alpha_investing = run_all_Alpha_investing
+
+        cmd = "run_%s(fname, clf, dataset_type, \"%s\")"%(alg, alg)
+        eval(cmd)
+    else :
+        dataset_type, alg_name = os.path.split(path)
+        dataset_name = os.path.splitext(filename)[0]
+        alg = alg_name.split("_")[-1]
+
+        run_l21 = run_one_grafting_or_l21
+        run_grafting = run_one_grafting_or_l21
+
+        cmd = "run_%s(fname, clf, dataset_type, \"%s\", dataset_name)"%(alg, alg)
+        eval(cmd)
+    print 'DONE'
 
 if __name__ == "__main__":
-    clf = svm.SVC(kernel='linear')
-    run(sys.argv[1], clf)
-    # for sfs_l21 and grafting alg
-    # run(sys.argv[1])
-
-    # for osfs alg
-    # run_all_osfs(sys.argv[1])
-    
-    #for saola alg
-    # run_all_saola(sys.argv[1])
-
-    #for Alpha_investing alg
-    # run_all_Alpha_investing(sys.argv[1])
-
-    print 'DONE'
+    main(sys.argv[1])

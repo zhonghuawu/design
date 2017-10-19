@@ -1,0 +1,47 @@
+classify dataset: warpPIE10P
+**********************************************************************
+origin data: 
+size of data matrix: (210L, 2420L)
+cross validation accuracy: 0.991
+**********************************************************************
+after fs using  10% saola alpha=0.01: 
+size of data matrix: (210L, 2L)
+cross validation accuracy: 0.349
+**********************************************************************
+after fs using  20% saola alpha=0.01: 
+size of data matrix: (210L, 2L)
+cross validation accuracy: 0.349
+**********************************************************************
+after fs using  30% saola alpha=0.01: 
+size of data matrix: (210L, 3L)
+cross validation accuracy: 0.555
+**********************************************************************
+after fs using  40% saola alpha=0.01: 
+size of data matrix: (210L, 4L)
+cross validation accuracy: 0.557
+**********************************************************************
+after fs using  50% saola alpha=0.01: 
+size of data matrix: (210L, 3L)
+cross validation accuracy: 0.407
+**********************************************************************
+after fs using  60% saola alpha=0.01: 
+size of data matrix: (210L, 3L)
+cross validation accuracy: 0.41
+**********************************************************************
+after fs using  70% saola alpha=0.01: 
+size of data matrix: (210L, 4L)
+cross validation accuracy: 0.642
+**********************************************************************
+after fs using  80% saola alpha=0.01: 
+size of data matrix: (210L, 4L)
+cross validation accuracy: 0.642
+**********************************************************************
+after fs using  90% saola alpha=0.01: 
+size of data matrix: (210L, 4L)
+cross validation accuracy: 0.642
+**********************************************************************
+after fs using 100% saola alpha=0.01: 
+size of data matrix: (210L, 3L)
+cross validation accuracy: 0.517
+**********************************************************************
+DONE

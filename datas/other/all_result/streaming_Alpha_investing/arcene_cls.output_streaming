@@ -1,0 +1,47 @@
+classify dataset: arcene
+**********************************************************************
+origin data: 
+size of data matrix: (200L, 10000L)
+cross validation accuracy: 0.714355847405
+**********************************************************************
+after fs using  10% Alpha_investing : 
+size of data matrix: (200L, 9L)
+cross validation accuracy: 0.719740462789
+**********************************************************************
+after fs using  20% Alpha_investing : 
+size of data matrix: (200L, 9L)
+cross validation accuracy: 0.714484052533
+**********************************************************************
+after fs using  30% Alpha_investing : 
+size of data matrix: (200L, 9L)
+cross validation accuracy: 0.699740462789
+**********************************************************************
+after fs using  40% Alpha_investing : 
+size of data matrix: (200L, 9L)
+cross validation accuracy: 0.684484052533
+**********************************************************************
+after fs using  50% Alpha_investing : 
+size of data matrix: (200L, 9L)
+cross validation accuracy: 0.700112570356
+**********************************************************************
+after fs using  60% Alpha_investing : 
+size of data matrix: (200L, 9L)
+cross validation accuracy: 0.689111944966
+**********************************************************************
+after fs using  70% Alpha_investing : 
+size of data matrix: (200L, 9L)
+cross validation accuracy: 0.695100062539
+**********************************************************************
+after fs using  80% Alpha_investing : 
+size of data matrix: (200L, 9L)
+cross validation accuracy: 0.699612257661
+**********************************************************************
+after fs using  90% Alpha_investing : 
+size of data matrix: (200L, 9L)
+cross validation accuracy: 0.679477798624
+**********************************************************************
+after fs using 100% Alpha_investing : 
+size of data matrix: (200L, 9L)
+cross validation accuracy: 0.684606003752
+**********************************************************************
+DONE

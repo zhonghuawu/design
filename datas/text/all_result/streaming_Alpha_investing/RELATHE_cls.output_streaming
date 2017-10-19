@@ -1,0 +1,47 @@
+classify dataset: RELATHE
+**********************************************************************
+origin data: 
+size of data matrix: (1427L, 4322L)
+cross validation accuracy: 0.839510869659
+**********************************************************************
+after fs using  10% Alpha_investing : 
+size of data matrix: (1427L, 106L)
+cross validation accuracy: 0.725948704125
+**********************************************************************
+after fs using  20% Alpha_investing : 
+size of data matrix: (1427L, 123L)
+cross validation accuracy: 0.751913841039
+**********************************************************************
+after fs using  30% Alpha_investing : 
+size of data matrix: (1427L, 138L)
+cross validation accuracy: 0.761017018563
+**********************************************************************
+after fs using  40% Alpha_investing : 
+size of data matrix: (1427L, 149L)
+cross validation accuracy: 0.776438508366
+**********************************************************************
+after fs using  50% Alpha_investing : 
+size of data matrix: (1427L, 157L)
+cross validation accuracy: 0.784125925964
+**********************************************************************
+after fs using  60% Alpha_investing : 
+size of data matrix: (1427L, 161L)
+cross validation accuracy: 0.800231959787
+**********************************************************************
+after fs using  70% Alpha_investing : 
+size of data matrix: (1427L, 170L)
+cross validation accuracy: 0.804452335409
+**********************************************************************
+after fs using  80% Alpha_investing : 
+size of data matrix: (1427L, 172L)
+cross validation accuracy: 0.807948821626
+**********************************************************************
+after fs using  90% Alpha_investing : 
+size of data matrix: (1427L, 177L)
+cross validation accuracy: 0.814267168463
+**********************************************************************
+after fs using 100% Alpha_investing : 
+size of data matrix: (1427L, 187L)
+cross validation accuracy: 0.829681279926
+**********************************************************************
+DONE

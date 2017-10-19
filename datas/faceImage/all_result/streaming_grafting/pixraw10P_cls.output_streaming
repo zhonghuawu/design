@@ -1,47 +1,51 @@
-classifying dataset: orlraws10P
+classify dataset: pixraw10P
 **********************************************************************
 origin data: 
-size of data matrix:  (100, 10304)
-cross validation accuracy:  1.0
+size of data matrix: (100L, 10000L)
+cross validation accuracy: 0.97
 **********************************************************************
 after fs using  10%  grafting  threshold = 0.2, epsilon = 0.05: 
-size of data matrix:  (100, 38)
-cross validation accuracy:  0.91
+size of data matrix: (100L, 10L)
+cross validation accuracy: 0.9
 **********************************************************************
 after fs using  20%  grafting  threshold = 0.2, epsilon = 0.05: 
-size of data matrix:  (100, 53)
-cross validation accuracy:  0.96
+size of data matrix: (100L, 15L)
+cross validation accuracy: 0.88
 **********************************************************************
 after fs using  30%  grafting  threshold = 0.2, epsilon = 0.05: 
-size of data matrix:  (100, 55)
-cross validation accuracy:  0.96
+size of data matrix: (100L, 26L)
+cross validation accuracy: 0.88
 **********************************************************************
 after fs using  40%  grafting  threshold = 0.2, epsilon = 0.05: 
-size of data matrix:  (100, 56)
-cross validation accuracy:  0.97
+size of data matrix: (100L, 29L)
+cross validation accuracy: 0.92
 **********************************************************************
 after fs using  50%  grafting  threshold = 0.2, epsilon = 0.05: 
-size of data matrix:  (100, 56)
-cross validation accuracy:  0.97
+size of data matrix: (100L, 30L)
+cross validation accuracy: 0.92
 **********************************************************************
 after fs using  60%  grafting  threshold = 0.2, epsilon = 0.05: 
-size of data matrix:  (100, 57)
-cross validation accuracy:  0.97
+size of data matrix: (100L, 31L)
+cross validation accuracy: 0.92
 **********************************************************************
 after fs using  70%  grafting  threshold = 0.2, epsilon = 0.05: 
-size of data matrix:  (100, 57)
-cross validation accuracy:  0.97
+size of data matrix: (100L, 35L)
+cross validation accuracy: 0.96
 **********************************************************************
 after fs using  80%  grafting  threshold = 0.2, epsilon = 0.05: 
-size of data matrix:  (100, 57)
-cross validation accuracy:  0.97
+size of data matrix: (100L, 35L)
+cross validation accuracy: 0.96
 **********************************************************************
 after fs using  90%  grafting  threshold = 0.2, epsilon = 0.05: 
-size of data matrix:  (100, 58)
-cross validation accuracy:  0.98
+size of data matrix: (100L, 35L)
+cross validation accuracy: 0.96
 **********************************************************************
 after fs using 100%  grafting  threshold = 0.2, epsilon = 0.05: 
-size of data matrix:  (100, 59)
-cross validation accuracy:  0.98
+size of data matrix: (100L, 35L)
+cross validation accuracy: 0.96
+**********************************************************************
+after fs using 100%  grafting  threshold = 0.2, epsilon = 0.05: 
+size of data matrix: (100L, 35L)
+cross validation accuracy: 0.96
 **********************************************************************
 DONE

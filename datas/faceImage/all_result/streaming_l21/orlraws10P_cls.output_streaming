@@ -1,0 +1,47 @@
+classify dataset: orlraws10P
+**********************************************************************
+origin data: 
+size of data matrix: (100L, 10304L)
+cross validation accuracy: 1.0
+**********************************************************************
+after fs using  10%  grafting l21-norm  threshold = 0.2, epsilon = 0.02: 
+size of data matrix: (100L, 27L)
+cross validation accuracy: 0.81
+**********************************************************************
+after fs using  20%  grafting l21-norm  threshold = 0.2, epsilon = 0.02: 
+size of data matrix: (100L, 33L)
+cross validation accuracy: 0.9
+**********************************************************************
+after fs using  30%  grafting l21-norm  threshold = 0.2, epsilon = 0.02: 
+size of data matrix: (100L, 36L)
+cross validation accuracy: 0.91
+**********************************************************************
+after fs using  40%  grafting l21-norm  threshold = 0.2, epsilon = 0.02: 
+size of data matrix: (100L, 37L)
+cross validation accuracy: 0.9
+**********************************************************************
+after fs using  50%  grafting l21-norm  threshold = 0.2, epsilon = 0.02: 
+size of data matrix: (100L, 37L)
+cross validation accuracy: 0.9
+**********************************************************************
+after fs using  60%  grafting l21-norm  threshold = 0.2, epsilon = 0.02: 
+size of data matrix: (100L, 37L)
+cross validation accuracy: 0.9
+**********************************************************************
+after fs using  70%  grafting l21-norm  threshold = 0.2, epsilon = 0.02: 
+size of data matrix: (100L, 38L)
+cross validation accuracy: 0.91
+**********************************************************************
+after fs using  80%  grafting l21-norm  threshold = 0.2, epsilon = 0.02: 
+size of data matrix: (100L, 38L)
+cross validation accuracy: 0.91
+**********************************************************************
+after fs using  90%  grafting l21-norm  threshold = 0.2, epsilon = 0.02: 
+size of data matrix: (100L, 39L)
+cross validation accuracy: 0.92
+**********************************************************************
+after fs using 100%  grafting l21-norm  threshold = 0.2, epsilon = 0.02: 
+size of data matrix: (100L, 39L)
+cross validation accuracy: 0.92
+**********************************************************************
+DONE

@@ -1,0 +1,47 @@
+classify dataset: pixraw10P
+**********************************************************************
+origin data: 
+size of data matrix: (100L, 10000L)
+cross validation accuracy: 0.97
+**********************************************************************
+after fs using  10% fast_osfs_z alpha = 0.01: 
+size of data matrix: (100L, 3L)
+cross validation accuracy: 0.92
+**********************************************************************
+after fs using  20% fast_osfs_z alpha = 0.01: 
+size of data matrix: (100L, 3L)
+cross validation accuracy: 0.83
+**********************************************************************
+after fs using  30% fast_osfs_z alpha = 0.01: 
+size of data matrix: (100L, 3L)
+cross validation accuracy: 0.8
+**********************************************************************
+after fs using  40% fast_osfs_z alpha = 0.01: 
+size of data matrix: (100L, 4L)
+cross validation accuracy: 0.62
+**********************************************************************
+after fs using  50% fast_osfs_z alpha = 0.01: 
+size of data matrix: (100L, 4L)
+cross validation accuracy: 0.62
+**********************************************************************
+after fs using  60% fast_osfs_z alpha = 0.01: 
+size of data matrix: (100L, 4L)
+cross validation accuracy: 0.62
+**********************************************************************
+after fs using  70% fast_osfs_z alpha = 0.01: 
+size of data matrix: (100L, 4L)
+cross validation accuracy: 0.62
+**********************************************************************
+after fs using  80% fast_osfs_z alpha = 0.01: 
+size of data matrix: (100L, 4L)
+cross validation accuracy: 0.7
+**********************************************************************
+after fs using  90% fast_osfs_z alpha = 0.01: 
+size of data matrix: (100L, 4L)
+cross validation accuracy: 0.7
+**********************************************************************
+after fs using 100% fast_osfs_z alpha = 0.01: 
+size of data matrix: (100L, 4L)
+cross validation accuracy: 0.7
+**********************************************************************
+DONE
