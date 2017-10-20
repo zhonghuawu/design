@@ -1,0 +1,47 @@
+classify dataset: RELATHE
+**********************************************************************
+origin data: 
+size of data matrix: (1427L, 4322L)
+cross validation accuracy: 0.839510869659
+**********************************************************************
+after fs using  10% saola_mi alph=0.01 : 
+size of data matrix: (1427L, 15L)
+cross validation accuracy: 0.718921207283
+**********************************************************************
+after fs using  20% saola_mi alph=0.01 : 
+size of data matrix: (1427L, 12L)
+cross validation accuracy: 0.741352966283
+**********************************************************************
+after fs using  30% saola_mi alph=0.01 : 
+size of data matrix: (1427L, 15L)
+cross validation accuracy: 0.737861387439
+**********************************************************************
+after fs using  40% saola_mi alph=0.01 : 
+size of data matrix: (1427L, 16L)
+cross validation accuracy: 0.73927229183
+**********************************************************************
+after fs using  50% saola_mi alph=0.01 : 
+size of data matrix: (1427L, 15L)
+cross validation accuracy: 0.739932229866
+**********************************************************************
+after fs using  60% saola_mi alph=0.01 : 
+size of data matrix: (1427L, 18L)
+cross validation accuracy: 0.787568310118
+**********************************************************************
+after fs using  70% saola_mi alph=0.01 : 
+size of data matrix: (1427L, 16L)
+cross validation accuracy: 0.775003153506
+**********************************************************************
+after fs using  80% saola_mi alph=0.01 : 
+size of data matrix: (1427L, 19L)
+cross validation accuracy: 0.788356220009
+**********************************************************************
+after fs using  90% saola_mi alph=0.01 : 
+size of data matrix: (1427L, 19L)
+cross validation accuracy: 0.788356220009
+**********************************************************************
+after fs using 100% saola_mi alph=0.01 : 
+size of data matrix: (1427L, 17L)
+cross validation accuracy: 0.799547484885
+**********************************************************************
+DONE
