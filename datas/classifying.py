@@ -99,7 +99,7 @@ def run_all_osfs_or_saola(fname, dataset_type, alg_name):
             f_streaming.write("origin data: "+'\n')
 
             f_streaming.write("size of data matrix: "+str(X.shape)+'\n')
-            scores = run_cross_validation(X_fs, Y)
+            scores = run_cross_validation(X, Y)
             # scores = model_selection.cross_val_score(clf, X, Y, cv=5, scoring="accuracy")
             f_streaming.write("cross validation accuracy: "+str(scores.mean())+'\n')
 

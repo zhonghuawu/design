@@ -1,47 +1,47 @@
 classify dataset: arcene
 **********************************************************************
 origin data: 
-size of data matrix: (200, 10000)
+size of data matrix: (200L, 10000L)
 cross validation accuracy: 0.914828017511
 **********************************************************************
 after fs using  10% fast_osfs_z alpha = 0.01: 
-size of data matrix: (200, 4)
+size of data matrix: (200L, 4L)
 cross validation accuracy: 0.748989993746
 **********************************************************************
 after fs using  20% fast_osfs_z alpha = 0.01: 
-size of data matrix: (200, 4)
+size of data matrix: (200L, 4L)
 cross validation accuracy: 0.72461851157
 **********************************************************************
 after fs using  30% fast_osfs_z alpha = 0.01: 
-size of data matrix: (200, 5)
+size of data matrix: (200L, 5L)
 cross validation accuracy: 0.759752970607
 **********************************************************************
 after fs using  40% fast_osfs_z alpha = 0.01: 
-size of data matrix: (200, 6)
+size of data matrix: (200L, 6L)
 cross validation accuracy: 0.804405878674
 **********************************************************************
 after fs using  50% fast_osfs_z alpha = 0.01: 
-size of data matrix: (200, 6)
+size of data matrix: (200L, 6L)
 cross validation accuracy: 0.804405878674
 **********************************************************************
 after fs using  60% fast_osfs_z alpha = 0.01: 
-size of data matrix: (200, 6)
+size of data matrix: (200L, 6L)
 cross validation accuracy: 0.804405878674
 **********************************************************************
 after fs using  70% fast_osfs_z alpha = 0.01: 
-size of data matrix: (200, 6)
+size of data matrix: (200L, 6L)
 cross validation accuracy: 0.804405878674
 **********************************************************************
 after fs using  80% fast_osfs_z alpha = 0.01: 
-size of data matrix: (200, 6)
+size of data matrix: (200L, 6L)
 cross validation accuracy: 0.774881175735
 **********************************************************************
 after fs using  90% fast_osfs_z alpha = 0.01: 
-size of data matrix: (200, 6)
+size of data matrix: (200L, 6L)
 cross validation accuracy: 0.774881175735
 **********************************************************************
 after fs using 100% fast_osfs_z alpha = 0.01: 
-size of data matrix: (200, 6)
+size of data matrix: (200L, 6L)
 cross validation accuracy: 0.765009380863
 **********************************************************************
 DONE
