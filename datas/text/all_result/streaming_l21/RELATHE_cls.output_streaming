@@ -1,47 +1,47 @@
-classifying dataset: RELATHE
+classify dataset: RELATHE
 **********************************************************************
 origin data: 
-size of data matrix:  (1427, 4322)
-cross validation accuracy:  0.839510869659
+size of data matrix: (1427, 4322)
+cross validation accuracy: 0.839510869659
 **********************************************************************
-after fs using  10%  grafting l21-norm  threshold = 0.2, epsilon = 0.05: 
-size of data matrix:  (1427, 16)
-cross validation accuracy:  0.716094542966
+after fs using  10%  grafting l21-norm  threshold = 0.2, epsilon = 0.02: 
+size of data matrix: (1427, 101)
+cross validation accuracy: 0.754664233715
 **********************************************************************
-after fs using  20%  grafting l21-norm  threshold = 0.2, epsilon = 0.05: 
-size of data matrix:  (1427, 21)
-cross validation accuracy:  0.76373060594
+after fs using  20%  grafting l21-norm  threshold = 0.2, epsilon = 0.02: 
+size of data matrix: (1427, 134)
+cross validation accuracy: 0.838752455847
 **********************************************************************
-after fs using  30%  grafting l21-norm  threshold = 0.2, epsilon = 0.05: 
-size of data matrix:  (1427, 22)
-cross validation accuracy:  0.777046849864
+after fs using  30%  grafting l21-norm  threshold = 0.2, epsilon = 0.02: 
+size of data matrix: (1427, 141)
+cross validation accuracy: 0.862629609086
 **********************************************************************
-after fs using  40%  grafting l21-norm  threshold = 0.2, epsilon = 0.05: 
-size of data matrix:  (1427, 22)
-cross validation accuracy:  0.777046849864
+after fs using  40%  grafting l21-norm  threshold = 0.2, epsilon = 0.02: 
+size of data matrix: (1427, 144)
+cross validation accuracy: 0.874539838713
 **********************************************************************
-after fs using  50%  grafting l21-norm  threshold = 0.2, epsilon = 0.05: 
-size of data matrix:  (1427, 22)
-cross validation accuracy:  0.777046849864
+after fs using  50%  grafting l21-norm  threshold = 0.2, epsilon = 0.02: 
+size of data matrix: (1427, 147)
+cross validation accuracy: 0.882941296411
 **********************************************************************
-after fs using  60%  grafting l21-norm  threshold = 0.2, epsilon = 0.05: 
-size of data matrix:  (1427, 26)
-cross validation accuracy:  0.799476137897
+after fs using  60%  grafting l21-norm  threshold = 0.2, epsilon = 0.02: 
+size of data matrix: (1427, 149)
+cross validation accuracy: 0.897646275148
 **********************************************************************
-after fs using  70%  grafting l21-norm  threshold = 0.2, epsilon = 0.05: 
-size of data matrix:  (1427, 26)
-cross validation accuracy:  0.799476137897
+after fs using  70%  grafting l21-norm  threshold = 0.2, epsilon = 0.02: 
+size of data matrix: (1427, 151)
+cross validation accuracy: 0.900458251904
 **********************************************************************
-after fs using  80%  grafting l21-norm  threshold = 0.2, epsilon = 0.05: 
-size of data matrix:  (1427, 27)
-cross validation accuracy:  0.807188092362
+after fs using  80%  grafting l21-norm  threshold = 0.2, epsilon = 0.02: 
+size of data matrix: (1427, 152)
+cross validation accuracy: 0.899057196819
 **********************************************************************
-after fs using  90%  grafting l21-norm  threshold = 0.2, epsilon = 0.05: 
-size of data matrix:  (1427, 27)
-cross validation accuracy:  0.807188092362
+after fs using  90%  grafting l21-norm  threshold = 0.2, epsilon = 0.02: 
+size of data matrix: (1427, 153)
+cross validation accuracy: 0.903964604706
 **********************************************************************
-after fs using 100%  grafting l21-norm  threshold = 0.2, epsilon = 0.05: 
-size of data matrix:  (1427, 27)
-cross validation accuracy:  0.807188092362
+after fs using 100%  grafting l21-norm  threshold = 0.2, epsilon = 0.02: 
+size of data matrix: (1427, 153)
+cross validation accuracy: 0.903964604706
 **********************************************************************
 DONE

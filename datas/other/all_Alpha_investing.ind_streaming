@@ -1,2 +1,3 @@
 Alpha_investing :
 arcene : np.array([1, 4, 5, 10, 22, 34, 38, 61, 102])-1
+madelon : np.array([1, 49, 65, 106, 154, 242, 324])-1

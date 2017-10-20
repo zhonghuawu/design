@@ -19,31 +19,23 @@ def read_data(fname):
 
 # whole data set, use cross validation to classify
 def run_cross_validation(X, y):
-    print "size of data matrix: ", X.shape 
     clf = svm.SVC(kernel='linear')
     # clf = tree.DecisionTreeClassifier()
     scores = model_selection.cross_val_score(clf, X, y, cv=5, scoring="accuracy")
-    print "cross validation accuracy: ", scores.mean()
+    
+    # clf = svm.SVC(kernel='linear')
+    # clf = tree.DecisionTreeClassifier()
+    # scores = model_selection.cross_val_score(clf, X, y, cv=5, scoring="accuracy")
+    return scores
 
-def run_one(fname):
-    fn = os.path.splitext(fname)[0]
-    fn = os.path.split(fn)[1]
-    print "classifying dataset: %s"%fn
-    X, Y = read_data("dataset/%s.mat"%fn)
-    line = ''
-    with open(fname, 'r') as f:
-        line = f.readlines()[-2]
-    alg, indexes = line.split(':')[:2]
-    indexes = eval(indexes)
-    run_cross_validation(X[:, indexes], Y)
-
-def run(fname, clf, dataset_type, alg_name, dataset_name):
+def run(fname, dataset_type, alg_name, dataset_name):
     print "classifying dataset: %s"%dataset_name
     X, Y = read_data("%s/dataset/%s.mat"%(dataset_type, dataset_name))
     print "**"*35
     print "origin data: "
     print "size of data matrix: ", X.shape 
-    scores = model_selection.cross_val_score(clf, X, Y, cv=5, scoring="accuracy")
+    scores = run_cross_validation(X, Y)
+    # scores = model_selection.cross_val_score(clf, X, Y, cv=5, scoring="accuracy")
     print "cross validation accuracy: ", scores.mean()
     print "**"*35
     with open(fname, 'r') as f:
@@ -55,11 +47,12 @@ def run(fname, clf, dataset_type, alg_name, dataset_name):
             indexes = eval(indexes)
             X_fs = X[:, indexes]
             print "size of data matrix: ", X_fs.shape 
-            scores = model_selection.cross_val_score(clf, X_fs, Y, cv=5, scoring="accuracy")
+            scores = run_cross_validation(X_fs, Y)
+            # scores = model_selection.cross_val_score(clf, X_fs, Y, cv=5, scoring="accuracy")
             print "cross validation accuracy: ", scores.mean()
             print "**"*35
 
-def run_one_grafting_or_l21(fname, clf, dataset_type, alg_name, dataset_name):
+def run_one_grafting_or_l21(fname, dataset_type, alg_name, dataset_name):
     print "classifying dataset: %s"%dataset_name
     X, Y = read_data("%s/dataset/%s.mat"%(dataset_type, dataset_name))
     wfname = "%s/all_result/streaming_%s/%s_cls.output_streaming"%(dataset_type, alg_name, dataset_name)
@@ -68,7 +61,8 @@ def run_one_grafting_or_l21(fname, clf, dataset_type, alg_name, dataset_name):
     f_streaming.write("**"*35+'\n')
     f_streaming.write("origin data: "+'\n')
     f_streaming.write("size of data matrix: "+str(X.shape)+'\n')
-    scores = model_selection.cross_val_score(clf, X, Y, cv=5, scoring="accuracy")
+    scores = run_cross_validation(X, Y)
+    # scores = model_selection.cross_val_score(clf, X, Y, cv=5, scoring="accuracy")
     f_streaming.write("cross validation accuracy: "+str(scores.mean())+'\n')
 
     f_streaming.write("**"*35+'\n')
@@ -79,16 +73,17 @@ def run_one_grafting_or_l21(fname, clf, dataset_type, alg_name, dataset_name):
             alg, indexes = line.split(':')[:2]
             f_streaming.write("after fs using %s: \n"%alg)
             indexes = eval(indexes)
-            X_fs = X[:, np.array(indexes)-1]
+            X_fs = X[:, np.array(indexes)]
             f_streaming.write("size of data matrix: %s\n"%str(X_fs.shape))
-            scores = model_selection.cross_val_score(clf, X_fs, Y, cv=5, scoring="accuracy")
+            scores = run_cross_validation(X_fs, Y)
+            # scores = model_selection.cross_val_score(clf, X_fs, Y, cv=5, scoring="accuracy")
             f_streaming.write("cross validation accuracy: %s\n"%str(scores.mean()))
 
             f_streaming.write("**"*35+'\n')
     f_streaming.write("DONE")
     f_streaming.close()
 
-def run_all_osfs_or_saola(fname, clf, dataset_type, alg_name):
+def run_all_osfs_or_saola(fname, dataset_type, alg_name):
     # alg_name = alg_name.split('.')[0][4:] # alg_name = osfs or saola
     with open(fname, 'r') as f:
         alg = f.readline().strip()[:-1]
@@ -104,7 +99,8 @@ def run_all_osfs_or_saola(fname, clf, dataset_type, alg_name):
             f_streaming.write("origin data: "+'\n')
 
             f_streaming.write("size of data matrix: "+str(X.shape)+'\n')
-            scores = model_selection.cross_val_score(clf, X, Y, cv=5, scoring="accuracy")
+            scores = run_cross_validation(X_fs, Y)
+            # scores = model_selection.cross_val_score(clf, X, Y, cv=5, scoring="accuracy")
             f_streaming.write("cross validation accuracy: "+str(scores.mean())+'\n')
 
             f_streaming.write("**"*35+'\n')
@@ -117,7 +113,8 @@ def run_all_osfs_or_saola(fname, clf, dataset_type, alg_name):
 
                 X_fs = X[:, np.array(eval(indexes))-1]
                 f_streaming.write("size of data matrix: "+str(X_fs.shape)+'\n')
-                scores = model_selection.cross_val_score(clf, X_fs, Y, cv=5, scoring="accuracy")
+                scores = run_cross_validation(X_fs, Y)
+                # scores = model_selection.cross_val_score(clf, X_fs, Y, cv=5, scoring="accuracy")
                 f_streaming.write("cross validation accuracy: "+str(scores.mean())+'\n')
 
                 f_streaming.write("**"*35+'\n')
@@ -125,7 +122,7 @@ def run_all_osfs_or_saola(fname, clf, dataset_type, alg_name):
             f_streaming.write("DONE")
             f_streaming.close()
 
-def run_all_Alpha_investing(fname, clf, dataset_type, alg_name):
+def run_all_Alpha_investing(fname, dataset_type, alg_name):
     with open(fname, 'r') as f:
         alg = f.readline().strip()[:-1]
         for line in f:
@@ -142,7 +139,8 @@ def run_all_Alpha_investing(fname, clf, dataset_type, alg_name):
             f_streaming.write("origin data: "+'\n')
 
             f_streaming.write("size of data matrix: "+str(X.shape)+'\n')
-            scores = model_selection.cross_val_score(clf, X, Y, cv=5, scoring="accuracy")
+            scores = run_cross_validation(X, Y)
+            # scores = model_selection.cross_val_score(clf, X, Y, cv=5, scoring="accuracy")
             f_streaming.write("cross validation accuracy: "+str(scores.mean())+'\n')
 
             f_streaming.write("**"*35+'\n')
@@ -156,7 +154,8 @@ def run_all_Alpha_investing(fname, clf, dataset_type, alg_name):
                 f_streaming.write("after fs using %3d%% %s: "%(percent, alg)+'\n')
                 X_fs = X[:, indexes]
                 f_streaming.write("size of data matrix: "+str(X_fs.shape)+'\n')
-                scores = model_selection.cross_val_score(clf, X_fs, Y, cv=5, scoring="accuracy")
+                scores = run_cross_validation(X_fs, Y)
+                # scores = model_selection.cross_val_score(clf, X_fs, Y, cv=5, scoring="accuracy")
                 f_streaming.write("cross validation accuracy: "+str(scores.mean())+'\n')
 
                 f_streaming.write("**"*35+'\n')
@@ -166,10 +165,7 @@ def run_all_Alpha_investing(fname, clf, dataset_type, alg_name):
 def main(fname):
     path, filename = os.path.split(fname)
 
-    clf = svm.SVC(kernel='linear')
-    # clf = tree.DecisionTreeClassifier()
-
-    # run(fname, clf, dataset_type, alg_name, dataset_name)
+    # run(fname, dataset_type, alg_name, dataset_name)
 
     if filename.startswith("all_"):
         dataset_type = path
@@ -179,7 +175,7 @@ def main(fname):
         run_saola = run_all_osfs_or_saola
         run_Alpha_investing = run_all_Alpha_investing
 
-        cmd = "run_%s(fname, clf, dataset_type, \"%s\")"%(alg, alg)
+        cmd = "run_%s(fname, dataset_type, \"%s\")"%(alg, alg)
         eval(cmd)
     else :
         dataset_type, alg_name = os.path.split(path)
@@ -189,7 +185,7 @@ def main(fname):
         run_l21 = run_one_grafting_or_l21
         run_grafting = run_one_grafting_or_l21
 
-        cmd = "run_%s(fname, clf, dataset_type, \"%s\", dataset_name)"%(alg, alg)
+        cmd = "run_%s(fname, dataset_type, \"%s\", dataset_name)"%(alg, alg)
         eval(cmd)
     print 'DONE'
 

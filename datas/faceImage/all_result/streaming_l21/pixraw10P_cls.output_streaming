@@ -1,47 +1,47 @@
 classify dataset: pixraw10P
 **********************************************************************
 origin data: 
-size of data matrix: (100L, 10000L)
+size of data matrix: (100, 10000)
 cross validation accuracy: 0.97
 **********************************************************************
 after fs using  10%  grafting l21-norm  threshold = 0.2, epsilon = 0.05: 
-size of data matrix: (100L, 2L)
-cross validation accuracy: 0.67
+size of data matrix: (100, 2)
+cross validation accuracy: 0.83
 **********************************************************************
 after fs using  20%  grafting l21-norm  threshold = 0.2, epsilon = 0.05: 
-size of data matrix: (100L, 4L)
-cross validation accuracy: 0.88
+size of data matrix: (100, 4)
+cross validation accuracy: 0.85
 **********************************************************************
 after fs using  30%  grafting l21-norm  threshold = 0.2, epsilon = 0.05: 
-size of data matrix: (100L, 6L)
-cross validation accuracy: 0.85
+size of data matrix: (100, 6)
+cross validation accuracy: 0.87
 **********************************************************************
 after fs using  40%  grafting l21-norm  threshold = 0.2, epsilon = 0.05: 
-size of data matrix: (100L, 7L)
-cross validation accuracy: 0.85
+size of data matrix: (100, 7)
+cross validation accuracy: 0.87
 **********************************************************************
 after fs using  50%  grafting l21-norm  threshold = 0.2, epsilon = 0.05: 
-size of data matrix: (100L, 7L)
-cross validation accuracy: 0.85
+size of data matrix: (100, 7)
+cross validation accuracy: 0.87
 **********************************************************************
 after fs using  60%  grafting l21-norm  threshold = 0.2, epsilon = 0.05: 
-size of data matrix: (100L, 8L)
-cross validation accuracy: 0.85
+size of data matrix: (100, 8)
+cross validation accuracy: 0.86
 **********************************************************************
 after fs using  70%  grafting l21-norm  threshold = 0.2, epsilon = 0.05: 
-size of data matrix: (100L, 8L)
-cross validation accuracy: 0.85
+size of data matrix: (100, 8)
+cross validation accuracy: 0.86
 **********************************************************************
 after fs using  80%  grafting l21-norm  threshold = 0.2, epsilon = 0.05: 
-size of data matrix: (100L, 8L)
-cross validation accuracy: 0.85
+size of data matrix: (100, 8)
+cross validation accuracy: 0.86
 **********************************************************************
 after fs using  90%  grafting l21-norm  threshold = 0.2, epsilon = 0.05: 
-size of data matrix: (100L, 8L)
-cross validation accuracy: 0.85
+size of data matrix: (100, 8)
+cross validation accuracy: 0.86
 **********************************************************************
 after fs using 100%  grafting l21-norm  threshold = 0.2, epsilon = 0.05: 
-size of data matrix: (100L, 8L)
-cross validation accuracy: 0.85
+size of data matrix: (100, 8)
+cross validation accuracy: 0.86
 **********************************************************************
 DONE

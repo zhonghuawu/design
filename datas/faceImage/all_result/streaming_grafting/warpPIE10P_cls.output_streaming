@@ -1,51 +1,51 @@
 classify dataset: warpPIE10P
 **********************************************************************
 origin data: 
-size of data matrix: (210L, 2420L)
+size of data matrix: (210, 2420)
 cross validation accuracy: 0.991
 **********************************************************************
 after fs using  10%  grafting  threshold = 0.2, epsilon = 0.05: 
-size of data matrix: (210L, 25L)
-cross validation accuracy: 0.927
+size of data matrix: (210, 25)
+cross validation accuracy: 0.944
 **********************************************************************
 after fs using  20%  grafting  threshold = 0.2, epsilon = 0.05: 
-size of data matrix: (210L, 25L)
-cross validation accuracy: 0.915
+size of data matrix: (210, 25)
+cross validation accuracy: 0.928
 **********************************************************************
 after fs using  30%  grafting  threshold = 0.2, epsilon = 0.05: 
-size of data matrix: (210L, 31L)
-cross validation accuracy: 0.922
+size of data matrix: (210, 31)
+cross validation accuracy: 0.936
 **********************************************************************
 after fs using  40%  grafting  threshold = 0.2, epsilon = 0.05: 
-size of data matrix: (210L, 36L)
-cross validation accuracy: 0.932
+size of data matrix: (210, 36)
+cross validation accuracy: 0.945
 **********************************************************************
 after fs using  50%  grafting  threshold = 0.2, epsilon = 0.05: 
-size of data matrix: (210L, 37L)
-cross validation accuracy: 0.939
+size of data matrix: (210, 37)
+cross validation accuracy: 0.941
 **********************************************************************
 after fs using  60%  grafting  threshold = 0.2, epsilon = 0.05: 
-size of data matrix: (210L, 41L)
-cross validation accuracy: 0.972
+size of data matrix: (210, 41)
+cross validation accuracy: 0.982
 **********************************************************************
 after fs using  70%  grafting  threshold = 0.2, epsilon = 0.05: 
-size of data matrix: (210L, 41L)
-cross validation accuracy: 0.972
+size of data matrix: (210, 41)
+cross validation accuracy: 0.982
 **********************************************************************
 after fs using  80%  grafting  threshold = 0.2, epsilon = 0.05: 
-size of data matrix: (210L, 43L)
-cross validation accuracy: 0.972
+size of data matrix: (210, 43)
+cross validation accuracy: 0.983
 **********************************************************************
 after fs using  90%  grafting  threshold = 0.2, epsilon = 0.05: 
-size of data matrix: (210L, 45L)
-cross validation accuracy: 0.977
+size of data matrix: (210, 45)
+cross validation accuracy: 0.979
 **********************************************************************
 after fs using 100%  grafting  threshold = 0.2, epsilon = 0.05: 
-size of data matrix: (210L, 44L)
-cross validation accuracy: 0.976
+size of data matrix: (210, 44)
+cross validation accuracy: 0.973
 **********************************************************************
 after fs using 100%  grafting  threshold = 0.2, epsilon = 0.05: 
-size of data matrix: (210L, 44L)
-cross validation accuracy: 0.976
+size of data matrix: (210, 44)
+cross validation accuracy: 0.973
 **********************************************************************
 DONE
