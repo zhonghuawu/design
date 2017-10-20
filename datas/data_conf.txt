@@ -1,7 +1,8 @@
 other/arcene -t 0.2 -e 0.05
-other/gisette -t 0.2 -e 0.05
+# other/gisette -t 0.2 -e 0.05
+other/madelon -t 0.2 -e 0.05
 faceImage/warpPIE10P -t 0.2 -e 0.02
-faceImage/pixraw10P -t 0.2 -e 0.05
+faceImage/pixraw10P -t 0.2 -e 0.02
 faceImage/orlraws10P -t 0.2 -e 0.02
 text/PCMAC -t 0.2 -e 0.03
 text/RELATHE -t 0.2 -e 0.02
