@@ -25,8 +25,8 @@ def draw(cls, nfs, fn_png):
     fig, axes = plt.subplots(2, 1)
     # style='o- ^-- s-. +-- x-.'.split(' ')
     style = 'o- ^-- s-. p: D:'.split(' ')
-    cls.plot(ax=axes[0], style=style, ylim=(0.0, 1.0))
-    nfs.plot(ax=axes[1], style=style, ylim=(0, 300))
+    cls.plot(ax=axes[0], style=style, ylim=(0.0, 1.0), rot=45)
+    nfs.plot(ax=axes[1], style=style, ylim=(0, 300), rot=45)
 
     axes[0].set_ylabel('Prediction accuracy')
     axes[1].set_ylabel('The number of selected features')
@@ -68,9 +68,9 @@ def draw_vs_others(cls, nfs):
 
 if __name__ == '__main__':
     clses, nfses = get_dataset_name()
-    clses.to_csv("all_cls.csv")
-    nfses.to_csv("all_nfs.csv")
+    # clses.to_csv("all_cls.csv")
+    # nfses.to_csv("all_nfs.csv")
     print clses
     print nfses
-    draw_vs_others(clses, nfses)
-    # draw(clses, nfses, "all")
+    # draw_vs_others(clses, nfses)
+    draw(clses, nfses, "all")

@@ -1,9 +1,12 @@
-other/arcene -t 0.2 -e 0.05
-# other/gisette -t 0.2 -e 0.05
-other/madelon -t 0.2 -e 0.05
+faceImage/orlraws10P -t 0.2 -e 0.02
 faceImage/warpPIE10P -t 0.2 -e 0.02
 faceImage/pixraw10P -t 0.2 -e 0.02
-faceImage/orlraws10P -t 0.2 -e 0.02
+gene/ALLAML -t 0.2 -e 0.1
+gene/GLIOMA -t 0.2 -e 0.05
+gene/Lung_Cancer -t 0.2 -e 0.05
+gene/Prostate_GE -t 0.2 -e 0.1
+gene/SMK_CAN_187 -t 0.2 -e 0.05
+gene/TOX_171 -t 0.2 -e 0.05
+other/arcene -t 0.2 -e 0.05
 text/PCMAC -t 0.2 -e 0.03
-text/RELATHE -t 0.2 -e 0.02
-text/BASEHOCK -t 0.2 -e 0.02
+text/RELATHE -t 0.2 -e 0.03
