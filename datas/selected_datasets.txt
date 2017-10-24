@@ -1,0 +1,8 @@
+faceImage : orlraws10P pixraw10P warpPIE10P
+# faceImage : 
+gene : ALLAML GLIOMA Lung_Cancer Prostate_GE SMK_CAN_187 TOX_171
+# gene : lymphoma GLI_85 lung colon DLBCL SRBCT
+other : arcene
+# other :
+text : PCMAC RELATHE
+# text BASEHOCK

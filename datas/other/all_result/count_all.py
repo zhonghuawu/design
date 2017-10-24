@@ -31,6 +31,8 @@ def read_output_streaming_cls_nfs_one_dataset(alg):
 def main():
     alg = 'l21'
     cls, nfs= read_output_streaming_cls_nfs_one_dataset(alg)
+    cls.name = "sfs_l21"
+    nfs.name = "sfs_l21"
 
     algs = 'grafting osfs Alpha_investing saola'
     for alg in algs.split():
