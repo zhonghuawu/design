@@ -1,7 +1,7 @@
 # from __future__ import division
 
-from numpy import matrix
 import numpy as np
+from numpy import matrix
 
 import scipy.io as sio
 
@@ -12,6 +12,8 @@ import matplotlib.pyplot as plt
 #from model import *
 #from model_new import *
 from model_multi import *
+
+import time
 
 '''
 run grafting algorithm on data set from file fname
@@ -48,10 +50,12 @@ def grafting(X, Y, threshold, epsilon):
             w = np.vstack((w, 1))
             w, obj_value = update_wegiht(w, X_model, Y, threshold)
             w, X_model, X_index_retained = refresh_selected(w, X_model, X_index_retained, 1e-5)
+            '''
             print("j = %d obj_value: %f"%(j, obj_value))
             print("X_index_retained: %s"%str(X_index_retained))
             print("weight_vector: \n%s"%str(w))
             print "***"*30
+            '''
             X_index = np.hstack((X_index, j))
             obj_values = np.hstack((obj_values, obj_value))
     return X_index_retained, w, X_index, obj_values
@@ -93,9 +97,13 @@ def run(fname, threshold, epsilon, label_pos):
     X, Y = read_data(fname)
     print("X shape: %s"%str(X.shape))
     print("Y shape: %s"%str(Y.shape))
+    startTime = time.time()
     results = grafting(np.matrix(X), np.matrix(Y), threshold, epsilon)
+    endTime = time.time()
     X_index_retained, w, X_index, obj_values = results
-    
+
+    print("runtime : %.4f"%(endTime-startTime))
+    '''
     print(str("***"*30))
     print("dataset name: %s"%fname)
     print("selected features index retained: ")
@@ -107,12 +115,12 @@ def run(fname, threshold, epsilon, label_pos):
     print("objective function values: %s"%str(obj_values))
     print(str("***"*30))
     print("DONE")
-
     obj_values_df = DataFrame(obj_values, index=X_index, columns=["obj values"])
     weights_df = DataFrame(w, index=np.hstack((-1, X_index_retained)), columns=["weight"])
     df = pd.concat((obj_values_df, weights_df))
     df.plot(subplots=True)
     plt.show()
+    '''
 
 def get_options(args):
     from optparse import OptionParser
