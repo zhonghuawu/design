@@ -34,33 +34,20 @@ def read_output_streaming(fname):
     return cls.drop('1000')
 
 
-def read_output_streaming_of_one_dataset(dataset_name):
+def read_output_streaming_of_one_dataset(dstype, dataset_name):
     alg = "sfs_l21"
     cls_l21 = read_output_streaming(
-        "../streaming_l21/%s_cls.output_streaming" % dataset_name)
+        "%s/all_result/streaming_l21/%s_cls.output_streaming" % (dstype, dataset_name))
     cls_l21.name = alg
     cls = cls_l21
 
     algs = "grafting osfs Alpha_investing saola".split()
     for alg in algs:
-        fname = "../streaming_%s/%s_cls.output_streaming" % (alg, dataset_name)
+        fname = "%s/all_result/streaming_%s/%s_cls.output_streaming" % (
+            dstype, alg, dataset_name)
         cls_tmp = read_output_streaming(fname)
         cls_tmp.name = alg
         cls = pd.concat((cls, cls_tmp), axis=1)
-
-#     alg = "grafting"
-#     cls_grafting = read_output_streaming("../streaming_%s/%s_cls.output_streaming_%s"%(alg, dataset_name, alg))
-#     cls_grafting.name = alg
-
-#     alg = "osfs"
-#     cls_osfs = read_output_streaming("../streaming_%s/%s_cls.output_streaming_%s"%(alg, dataset_name, alg))
-#     cls_osfs.name = alg
-
-#     alg = "Alpha_investing"
-#     cls_Alpha_investing = read_output_streaming("../streaming_%s/%s_cls.output_streaming_%s"%(alg, dataset_name, alg))
-#     cls_Alpha_investing.name = alg
-
-    # cls = pd.concat((cls_l21, cls_grafting, cls_osfs, cls_Alpha_investing), axis=1)
     return cls
 
 
@@ -72,31 +59,32 @@ def draw(cls, fname):
     ax.set_xlabel('The percentage of features streaming in (%)')
     ax.set_title(fname)
 
-    # fig.set_size_inches(12, 8)
     fig.set_size_inches(12, 8)
-    fig.savefig('images/%s.png' % fname, bbox_inches='tight')
+    fig.savefig('images_streaming/%s.png' % fname, bbox_inches='tight')
     plt.close()
 
 
 def get_datasets_name():
-    datasets_name = []
-    with open('../all_attribute.csv', 'r') as f:
-        f.readline()
+    datasets_name = {}
+    with open('selected_datasets.txt', 'r') as f:
         for line in f:
             if line.startswith('#'):
                 continue
-            datasets_name.append(line.split(',')[0])
+            dstype, dsname = line.split(":")
+            dstype = dstype.strip()
+            datasets_name[dstype.strip()] = dsname
     return datasets_name
 
 
 def main():
     datasets_name = get_datasets_name()
-    for dataset_name in datasets_name:
-        print "draw %s" % dataset_name
-        cls = read_output_streaming_of_one_dataset(dataset_name)
-        cls.to_csv("csvs/%s.csv" % dataset_name)
-        draw(cls, dataset_name)
-        print "finish %s" % dataset_name
+    for dstype, dsnames in datasets_name.iteritems():
+        for dsname in dsnames.split():
+            print "draw %s/%s" % (dstype, dsname)
+            cls = read_output_streaming_of_one_dataset(dstype, dsname)
+            cls.to_csv("images_streaming/%s.csv" % dsname)
+            draw(cls, dsname)
+            print "finish %s/%s" % (dstype, dsname)
 
 
 if __name__ == '__main__':
