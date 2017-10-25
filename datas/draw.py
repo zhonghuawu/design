@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 
-def get_dataset_name():
+def get_cls_nfs():
     algs = "sfs_l21 grafting Alpha_investing osfs saola".split()
     clses, nfses = None, None
     with open("selected_datasets.txt", 'r') as f:
@@ -25,11 +25,15 @@ def draw(cls, nfs, fn_png):
     fig, axes = plt.subplots(2, 1)
     # style='o- ^-- s-. +-- x-.'.split(' ')
     style = 'o- ^-- s-. p: D:'.split(' ')
-    cls.plot(ax=axes[0], style=style, ylim=(0.0, 1.0), rot=45)
-    nfs.plot(ax=axes[1], style=style, ylim=(0, 300), rot=45)
+    cls.plot(ax=axes[0], style=style, ylim=(0.0, 1.0), rot=30)
+    nfs.plot(ax=axes[1], style=style, ylim=(0, 300), rot=30)
 
     axes[0].set_ylabel('Prediction accuracy')
+    axes[0].set_xticks(range(12))
+    axes[0].set_xticklabels(cls.index)
     axes[1].set_ylabel('The number of selected features')
+    axes[1].set_xticks(range(12))
+    axes[1].set_xticklabels(nfs.index)
 
     plt.xlabel("datasets")
     # plt.show()
@@ -41,17 +45,20 @@ def draw(cls, nfs, fn_png):
 def draw_sfs_l21_vs_other(cls, nfs):
     fig = plt.figure()
     ax1 = fig.add_subplot(111)
+    ax1.set_xticks(range(len(cls.index)))
+    ax1.set_xticklabels(cls.index)
     ax2 = ax1.twinx()
     ax1.set_ylabel('Prediction accuracy')
     ax2.set_ylabel('The number of selected features')
-    style1 = 'ro- gs--'.split(' ')
-    style2 = 'r^- g*--'.split(' ')
-    cls.plot(ax=ax1, style=style1, ylim=(0.0, 1.0))
-    nfs.plot(ax=ax2, style=style2, ylim=(0, 300))
+    style1 = 'bo- gs--'.split()
+    style2 = 'b^- g*--'.split()
+    cls.plot(ax=ax1, style=style1, ylim=(0.0, 1.0), rot=30)
+    nfs.plot(ax=ax2, style=style2, ylim=(0, 300)) #, kind='bar')
     plt.xlabel("datasets")
     fig.set_size_inches(12, 8)
     ax1.legend(loc="center left")
-    ax2.legend(loc="center left")
+    ax2.legend(loc="center right")
+    # plt.gca().add_artist(l1)
     alg1, alg2 = cls.columns
     fig.savefig("all_%s_vs_%s.png" % (alg1, alg2), bbox_inches='tight')
     plt.close()
@@ -67,9 +74,9 @@ def draw_vs_others(cls, nfs):
 
 
 if __name__ == '__main__':
-    clses, nfses = get_dataset_name()
-    # clses.to_csv("all_cls.csv")
-    # nfses.to_csv("all_nfs.csv")
+    clses, nfses = get_cls_nfs()
+    clses.to_csv("all_cls.csv")
+    nfses.to_csv("all_nfs.csv")
     print clses
     print nfses
     # draw_vs_others(clses, nfses)
