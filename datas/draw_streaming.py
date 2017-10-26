@@ -30,7 +30,6 @@ def read_output_streaming(fname):
                 percentage = line_list[3][:-1]
             if line_list[0] == 'cross':
                 cls[percentage] = float(line_list[-1])
-    # cls.name = 'prediction accuracy'
     return cls.drop('1000')
 
 
@@ -54,12 +53,12 @@ def read_output_streaming_of_one_dataset(dstype, dataset_name):
 def draw(cls, fname):
     fig, ax = plt.subplots(1, 1)
     style = 'o- ^-- s-. p: D:'.split(' ')
-    cls.plot(ax=ax, style=style, ylim=(0.0, 1.0), rot=30)
+    cls.plot(ax=ax, style=style, ylim=(0.0, 1.0)) #, rot=30)
     ax.set_ylabel('Prediction accuracy')
     ax.set_xlabel('The percentage of features streaming in (%)')
     ax.set_title(fname)
 
-    fig.set_size_inches(12, 8)
+    fig.set_size_inches(9, 6)
     fig.savefig('images_streaming/%s.png' % fname, bbox_inches='tight')
     plt.close()
 
