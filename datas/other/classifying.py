@@ -208,7 +208,7 @@ def run_all_Alpha_investing(fname):
 if __name__ == "__main__":
     import sys
     # for sfs_l21 and grafting alg
-    # run(sys.argv[1])
+    run(sys.argv[1])
 
     # for osfs alg
     # run_all_osfs(sys.argv[1])
@@ -217,6 +217,6 @@ if __name__ == "__main__":
     # run_all_saola(sys.argv[1])
 
     #for Alpha_investing alg
-    run_all_Alpha_investing(sys.argv[1])
+    # run_all_Alpha_investing(sys.argv[1])
 
     print 'DONE'

@@ -1,4 +1,4 @@
-import draw_threshold as dt
+import draw_epsilon as de
 import sys
 import os
 
@@ -13,13 +13,13 @@ def get_datasets_name():
     return datasets_name
 
 def main():
-    datasets_name=get_datasets_name()
-    postfix="_cls.output_threshold"
+    datasets_name = get_datasets_name()
+    postfix="_cls.output_epsilon"
     for dataset_name in datasets_name:
         print "draw %s"%dataset_name
         fname="%s%s"%(dataset_name, postfix)
-        cls, nfs = dt.read_output_threshold(fname)
-        dt.draw(cls, nfs, dataset_name)
+        cls, nfs = de.read_output_epsilon(fname)
+        de.draw(cls, nfs, dataset_name)
         print "finish %s"%dataset_name
 
 if __name__ == '__main__':
