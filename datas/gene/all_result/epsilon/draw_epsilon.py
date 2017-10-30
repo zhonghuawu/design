@@ -28,10 +28,10 @@ def draw(cls, nfs, fname):
     ax1.set_ylabel('Prediction accuracy')
     ax2.set_ylabel('The number of selected features')
     cls.plot(ax=ax1, style='ro-', ylim=(0.0, 1.0), xlim=(0.01, 0.19))
-    nfs.plot(ax=ax2, style='g*--', ylim=(0, 100), xlim=(0.01, 0.19))
+    nfs.plot(ax=ax2, style='g*--', ylim=(0, 150), xlim=(0.01, 0.19))
     plt.xlabel('epsilon')
-    ax1.legend(loc=0)
-    ax2.legend(loc=7)
+    ax1.legend(loc="center left")
+    ax2.legend(loc="center right")
     fig.suptitle('Effect of epsilon on %s'%fname)
 
     fig.set_size_inches(9, 6)
