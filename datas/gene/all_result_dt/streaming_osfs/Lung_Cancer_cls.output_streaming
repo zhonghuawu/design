@@ -1,0 +1,58 @@
+classify dataset: Lung_Cancer
+**********************************************************************
+origin data: 
+size of data matrix: (203, 12600)
+cross validation accuracy: 0.860380470352
+stardard deviation: 0.055085410918
+**********************************************************************
+after fs using  10% fast_osfs alpha=0.01: 
+size of data matrix: (203, 7)
+cross validation accuracy: 0.768083249705
+stardard deviation: 0.0807101106864
+**********************************************************************
+after fs using  20% fast_osfs alpha=0.01: 
+size of data matrix: (203, 5)
+cross validation accuracy: 0.771740041014
+stardard deviation: 0.099541911055
+**********************************************************************
+after fs using  30% fast_osfs alpha=0.01: 
+size of data matrix: (203, 6)
+cross validation accuracy: 0.748913637884
+stardard deviation: 0.0486414744576
+**********************************************************************
+after fs using  40% fast_osfs alpha=0.01: 
+size of data matrix: (203, 9)
+cross validation accuracy: 0.759146777783
+stardard deviation: 0.0314074483652
+**********************************************************************
+after fs using  50% fast_osfs alpha=0.01: 
+size of data matrix: (203, 10)
+cross validation accuracy: 0.792484256148
+stardard deviation: 0.0295573347842
+**********************************************************************
+after fs using  60% fast_osfs alpha=0.01: 
+size of data matrix: (203, 10)
+cross validation accuracy: 0.742202830257
+stardard deviation: 0.0908735590433
+**********************************************************************
+after fs using  70% fast_osfs alpha=0.01: 
+size of data matrix: (203, 9)
+cross validation accuracy: 0.709564771587
+stardard deviation: 0.0761946080185
+**********************************************************************
+after fs using  80% fast_osfs alpha=0.01: 
+size of data matrix: (203, 7)
+cross validation accuracy: 0.83346786509
+stardard deviation: 0.0435819838145
+**********************************************************************
+after fs using  90% fast_osfs alpha=0.01: 
+size of data matrix: (203, 8)
+cross validation accuracy: 0.794171793417
+stardard deviation: 0.0432981672132
+**********************************************************************
+after fs using 100% fast_osfs alpha=0.01: 
+size of data matrix: (203, 9)
+cross validation accuracy: 0.773926145702
+stardard deviation: 0.0388000682308
+**********************************************************************
+DONE

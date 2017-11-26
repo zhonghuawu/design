@@ -1,3 +1,5 @@
+import os
+
 import pandas as pd
 from pandas import DataFrame, Series
 from sklearn import svm, linear_model, tree
@@ -8,10 +10,8 @@ from sklearn.metrics import confusion_matrix
 from sklearn.metrics import accuracy_score
 
 import numpy as np
-import scipy as sp
 import scipy.io as sio
 
-import os
 
 def read_data(fname):
     data = sio.loadmat(fname)
@@ -19,179 +19,211 @@ def read_data(fname):
     Y = data['Y'][:, 0]
     return X, Y
 
-# whole data set, use cross validation to classify
+
 def run_cross_validation(X, y):
-    print "size of data matrix: ", X.shape 
-    #clf = svm.SVC(kernel='poly')
-    # clf = svm.SVC(kernel='linear')
-    clf = tree.DecisionTreeClassifier()
-    scores = model_selection.cross_val_score(clf, X, y, cv=5, scoring="accuracy")
-    #print "cross validation scores: ", scores
+    print "size of data matrix: ", X.shape
+    clf = svm.SVC(kernel='linear')
+    # clf = tree.DecisionTreeClassifier()
+    scores = model_selection.cross_val_score(
+        clf, X, y, cv=5, scoring="accuracy")
     print "cross validation accuracy: ", scores.mean()
+    print "standard deviation: ", scores.std()
 
 
 def run(fname):
     fn = os.path.splitext(fname)[0]
     fn = os.path.split(fn)[1]
-    print "classifying dataset: %s"%fn
-    X, Y = read_data("dataset/%s.mat"%fn)
-    print "**"*35
+    print "classifying dataset: %s" % fn
+    X, Y = read_data("dataset/%s.mat" % fn)
+    print "**" * 35
     print "origin data: "
-    # run_cross_validation(X, Y)
-    print "**"*35
+    run_cross_validation(X, Y)
+    print "**" * 35
     with open(fname, 'r') as f:
         for line in f:
             if ':' not in line:
                 continue
             alg, indexes = line.split(":")[:2]
-            print "after fs using %s: "%alg
+            print "after fs using %s: " % alg
             indexes = eval(indexes)
-            #print "selected features index: \n%s"%indexes
             run_cross_validation(X[:, indexes], Y)
-            print "**"*35
+            print "**" * 35
 
-def run_all_osfs(fname):
+
+def run_one_grafting_or_l21(fname, clf, write_to_folder):
+    alg = write_to_folder.split('_')[-1]
+    dataset_name = os.path.split(fname)[-1].split('.')[0]
+    print "classifying dataset: %s" % dataset_name
+    X, Y = read_data("dataset/%s.mat" % dataset_name)
+    wfname = write_to_folder + "/%s_cls.output_streaming" % (dataset_name)
+    f_streaming = open(wfname, 'w')
+    f_streaming.write("classify dataset: %s\n" % dataset_name)
+
+    # classifying origin data
+    f_streaming.write("**" * 35 + '\n')
+    f_streaming.write("origin data: \n")
+    f_streaming.write("size of data matrix: %s\n" % str(X.shape))
+    scores = model_selection.cross_val_score(clf, X, Y, cv=5, scoring="accuracy")
+    f_streaming.write("cross validation accuracy: %s\n" % str(scores.mean()))
+    f_streaming.write("standard deviation: %s\n" % str(scores.std()))
+    f_streaming.write("**" * 35 + '\n')
+
+    with open(fname, 'r') as f:
+        for line in f:
+            if ':' not in line:
+                continue
+            alg, indexes = line.split(':')[:2]
+            f_streaming.write("after fs using %s: \n" % alg)
+            indexes = eval(indexes)
+            X_fs = X[:, np.array(indexes)]
+            f_streaming.write("size of data matrix: %s\n" % str(X_fs.shape))
+            scores = model_selection.cross_val_score(clf, X_fs, Y, cv=5, scoring="accuracy")
+            f_streaming.write("cross validation accuracy: %s\n" % str(scores.mean()))
+            f_streaming.write("standard deviation: %s\n" % str(scores.std()))
+            f_streaming.write("**" * 35 + '\n')
+    f_streaming.write("DONE")
+    f_streaming.close()
+
+
+def get_datasets_name():
+    fname=r'dataset/all_attribute.csv'
+    datasets_fname=[]
+    with open(fname, 'r') as f:
+        f.readline()
+        for line in f:
+            datasets_fname.append(line.split(',')[0])
+    return datasets_fname
+
+
+def run_grafting_or_l21(ind_folder, clf, write_to_folder):
+    datasets_name = get_datasets_name()
+    for dataset_name in datasets_name:
+        fname = ind_folder+"%s.ind_streaming"%dataset_name
+        run_one_grafting_or_l21(fname, clf, write_to_folder)
+
+
+def run_all_osfs_and_saola(fname, clf, write_to_folder):
     with open(fname, 'r') as f:
         alg = f.readline().strip()[:-1]
         for line in f:
             dataset_name, indexes_set = line.split(':')
             dataset_name = dataset_name.strip()
-            f_streaming_osfs = open("all_result/streaming_osfs/%s_cls.output_streaming_osfs"%dataset_name, 'w')
-            print "classify dataset: %s"%dataset_name
-            f_streaming_osfs.write("classify dataset: %s"%dataset_name+'\n')
-            X, Y = read_data("dataset/%s.mat"%dataset_name)
-            # print "**"*35
-            # print "origin data: "
-            f_streaming_osfs.write("**"*35+'\n')
-            f_streaming_osfs.write("origin data: "+'\n')
-            # run_cross_validation(X, Y)
+            f_streaming = open(
+                write_to_folder+"/%s_cls.output_streaming" % dataset_name, 'w')
+            print "classify dataset: %s" % dataset_name
+            f_streaming.write("classify dataset: %s\n" % dataset_name)
+            X, Y = read_data("dataset/%s.mat" % dataset_name)
 
-            f_streaming_osfs.write("size of data matrix: "+str(X.shape)+'\n')
-            #clf = svm.SVC(kernel='poly')
-            clf = svm.SVC(kernel='linear')
-            scores = model_selection.cross_val_score(clf, X, Y, cv=5, scoring="accuracy")
-            #print "cross validation scores: ", scores
-            f_streaming_osfs.write("cross validation accuracy: "+str(scores.mean())+'\n')
+            # classifying origin data
+            f_streaming.write("**" * 35 + '\n')
+            f_streaming.write("origin data: \n")
+            f_streaming.write("size of data matrix: %s\n" % str(X.shape))
+            scores = model_selection.cross_val_score(
+                clf, X, Y, cv=5, scoring="accuracy")
+            f_streaming.write(
+                "cross validation accuracy: %s\n" % str(scores.mean()))
+            f_streaming.write(
+                "stardard deviation: %s\n" % str(scores.std()))
 
-            # print "**"*35
-            f_streaming_osfs.write("**"*35+'\n')
+            f_streaming.write("**" * 35 + '\n')
+
+            #classifying streaming data
             indexes_set = indexes_set.split()
             percent = 10
             for indexes in indexes_set:
-                # print "after fs using %3d%% %s: "%(percent, alg)
-                f_streaming_osfs.write("after fs using %3d%% %s: "%(percent, alg)+'\n')
-                # run_cross_validation(X[:, eval(indexes)], Y)
+                f_streaming.write(
+                    "after fs using %3d%% %s: \n" % (percent, alg))
+                X_fs = X[:, np.array(eval(indexes)) - 1]
+                f_streaming.write(
+                    "size of data matrix: %s\n" % str(X_fs.shape))
+                scores = model_selection.cross_val_score(
+                    clf, X_fs, Y, cv=5, scoring="accuracy")
+                f_streaming.write(
+                    "cross validation accuracy: %s\n" % str(scores.mean()))
+                f_streaming.write(
+                    "stardard deviation: %s\n" % str(scores.std()))
 
-                X_fs = X[:, np.array(eval(indexes))-1]
-                f_streaming_osfs.write("size of data matrix: "+str(X_fs.shape)+'\n')
-                #clf = svm.SVC(kernel='poly')
-                clf = svm.SVC(kernel='linear')
-                scores = model_selection.cross_val_score(clf, X_fs, Y, cv=5, scoring="accuracy")
-                #print "cross validation scores: ", scores
-                f_streaming_osfs.write("cross validation accuracy: "+str(scores.mean())+'\n')
+                f_streaming.write("**" * 35 + '\n')
+                percent += 10
+            f_streaming.write("DONE")
+            f_streaming.close()
 
-                # print "**"*35
-                f_streaming_osfs.write("**"*35+'\n')
-                percent+=10
-            f_streaming_osfs.write("DONE")
-            f_streaming_osfs.close()
 
-def run_all_saola(fname):
+def run_all_Alpha_investing(fname, clf, write_to_folder):
     with open(fname, 'r') as f:
         alg = f.readline().strip()[:-1]
         for line in f:
             dataset_name, indexes_set = line.split(':')
             dataset_name = dataset_name.strip()
-            f_streaming_saola = open("all_result/streaming_saola/%s_cls.output_streaming_saola"%dataset_name, 'w')
-            print "classify dataset: %s"%dataset_name
-            f_streaming_saola.write("classify dataset: %s"%dataset_name+'\n')
-            X, Y = read_data("dataset/%s.mat"%dataset_name)
-            # print "**"*35
-            # print "origin data: "
-            f_streaming_saola.write("**"*35+'\n')
-            f_streaming_saola.write("origin data: "+'\n')
-            # run_cross_validation(X, Y)
+            f_streaming = open(
+                write_to_folder+"/%s_cls.output_streaming" % dataset_name, 'w')
+            print "classify dataset: %s" % dataset_name
+            f_streaming.write(
+                "classify dataset: %s\n" % dataset_name)
+            X, Y = read_data("dataset/%s.mat" % dataset_name)
+            f_streaming.write("**" * 35 + '\n')
+            f_streaming.write("origin data: \n")
 
-            f_streaming_saola.write("size of data matrix: "+str(X.shape)+'\n')
-            #clf = svm.SVC(kernel='poly')
-            clf = svm.SVC(kernel='linear')
-            scores = model_selection.cross_val_score(clf, X, Y, cv=5, scoring="accuracy")
-            #print "cross validation scores: ", scores
-            f_streaming_saola.write("cross validation accuracy: "+str(scores.mean())+'\n')
+            f_streaming.write(
+                "size of data matrix: %s\n" % str(X.shape))
+            scores = model_selection.cross_val_score(
+                clf, X, Y, cv=5, scoring="accuracy")
+            f_streaming.write(
+                "cross validation accuracy: %s\n" % str(scores.mean()))
+            f_streaming.write(
+                "stardard deviation: %s\n" % str(scores.std()))
 
-            # print "**"*35
-            f_streaming_saola.write("**"*35+'\n')
-            indexes_set = indexes_set.split()
-            percent = 10
-            for indexes in indexes_set:
-                # print "after fs using %3d%% %s: "%(percent, alg)
-                f_streaming_saola.write("after fs using %3d%% %s: "%(percent, alg)+'\n')
-                # run_cross_validation(X[:, eval(indexes)], Y)
-
-                X_fs = X[:, np.array(eval(indexes))-1]
-                f_streaming_saola.write("size of data matrix: "+str(X_fs.shape)+'\n')
-                #clf = svm.SVC(kernel='poly')
-                clf = svm.SVC(kernel='linear')
-                scores = model_selection.cross_val_score(clf, X_fs, Y, cv=5, scoring="accuracy")
-                #print "cross validation scores: ", scores
-                f_streaming_saola.write("cross validation accuracy: "+str(scores.mean())+'\n')
-
-                # print "**"*35
-                f_streaming_saola.write("**"*35+'\n')
-                percent+=10
-            f_streaming_saola.write("DONE")
-            f_streaming_saola.close()
-
-def run_all_Alpha_investing(fname):
-    with open(fname, 'r') as f:
-        alg = f.readline().strip()[:-1]
-        for line in f:
-            dataset_name, indexes_set = line.split(':')
-            dataset_name = dataset_name.strip()
-            f_streaming_Alpha_investing = open("all_result/streaming_Alpha_investing/%s_cls.output_streaming_Alpha_investing"%dataset_name, 'w')
-            print "classify dataset: %s"%dataset_name
-            f_streaming_Alpha_investing.write("classify dataset: %s"%dataset_name+'\n')
-            X, Y = read_data("dataset/%s.mat"%dataset_name)
-            f_streaming_Alpha_investing.write("**"*35+'\n')
-            f_streaming_Alpha_investing.write("origin data: "+'\n')
-            # run_cross_validation(X, Y)
-
-            f_streaming_Alpha_investing.write("size of data matrix: "+str(X.shape)+'\n')
-            #clf = svm.SVC(kernel='poly')
-            clf = svm.SVC(kernel='linear')
-            scores = model_selection.cross_val_score(clf, X, Y, cv=5, scoring="accuracy")
-            #print "cross validation scores: ", scores
-            f_streaming_Alpha_investing.write("cross validation accuracy: "+str(scores.mean())+'\n')
-
-            # print "**"*35
-            f_streaming_Alpha_investing.write("**"*35+'\n')
+            f_streaming.write("**" * 35 + '\n')
 
             indexes_set = eval(indexes_set)
-            if indexes_set.size==0:
+            if indexes_set.size == 0:
                 continue
             n, d = X.shape
-            d_part=(d+9)/10
+            d_part = (d + 9) / 10
             for i in range(1, 11):
-                indexes = indexes_set[indexes_set<d_part*i]
-                percent = i*10
-                f_streaming_Alpha_investing.write("after fs using %3d%% %s: "%(percent, alg)+'\n')
+                indexes = indexes_set[indexes_set < d_part * i]
+                percent = i * 10
+                f_streaming.write(
+                    "after fs using %3d%% %s: " % (percent, alg) + '\n')
                 X_fs = X[:, indexes]
-                f_streaming_Alpha_investing.write("size of data matrix: "+str(X_fs.shape)+'\n')
-                #clf = svm.SVC(kernel='poly')
-                clf = svm.SVC(kernel='linear')
-                scores = model_selection.cross_val_score(clf, X_fs, Y, cv=5, scoring="accuracy")
-                #print "cross validation scores: ", scores
-                f_streaming_Alpha_investing.write("cross validation accuracy: "+str(scores.mean())+'\n')
+                f_streaming.write(
+                    "size of data matrix: " + str(X_fs.shape) + '\n')
+                scores = model_selection.cross_val_score(
+                    clf, X_fs, Y, cv=5, scoring="accuracy")
+                f_streaming.write(
+                    "cross validation accuracy: " + str(scores.mean()) + '\n')
+                f_streaming.write(
+                    "stardard deviation: %s\n" % str(scores.std()))
 
-                # print "**"*35
-                f_streaming_Alpha_investing.write("**"*35+'\n')
-            f_streaming_Alpha_investing.write("DONE")
-            f_streaming_Alpha_investing.close()
+                f_streaming.write("**" * 35 + '\n')
+            f_streaming.write("DONE")
+            f_streaming.close()
+
+
+def main(fname):
+    path, filename = os.path.split(fname)
+
+    run_osfs = run_all_osfs_and_saola
+    run_saola = run_all_osfs_and_saola
+    run_Alpha_investing = run_all_Alpha_investing
+
+    run_l21 = run_grafting_or_l21
+    run_grafting = run_grafting_or_l21
+
+    if filename.startswith("all_"):
+        alg = os.path.splitext(filename)[0][4:]
+    else :
+        alg = path.split('_')[-1]
+
+    # clf = svm.SVC(kernel="linear")
+    clf = tree.DecisionTreeClassifier()
+    write_to_folder = r"all_result_dt/streaming_%s/"%alg
+    print "write to %s\n"%write_to_folder
+    cmd = "run_%s(fname, clf, write_to_folder)"%alg
+    eval(cmd)
 
 
 if __name__ == "__main__":
     import sys
-    run(sys.argv[1])
-    # run_all_osfs(sys.argv[1])
-    # run_all_saola(sys.argv[1])
+    main(sys.argv[1])
     print 'DONE'

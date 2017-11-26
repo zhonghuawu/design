@@ -1,0 +1,58 @@
+classify dataset: Lung_Cancer
+**********************************************************************
+origin data: 
+size of data matrix: (203, 12600)
+cross validation accuracy: 0.846397457713
+stardard deviation: 0.077057106032
+**********************************************************************
+after fs using  10% Alpha_investing : 
+size of data matrix: (203, 36)
+cross validation accuracy: 0.723646465087
+stardard deviation: 0.0526796411798
+**********************************************************************
+after fs using  20% Alpha_investing : 
+size of data matrix: (203, 37)
+cross validation accuracy: 0.732728158587
+stardard deviation: 0.0615251782332
+**********************************************************************
+after fs using  30% Alpha_investing : 
+size of data matrix: (203, 39)
+cross validation accuracy: 0.74327435752
+stardard deviation: 0.0368038947019
+**********************************************************************
+after fs using  40% Alpha_investing : 
+size of data matrix: (203, 39)
+cross validation accuracy: 0.71386084326
+stardard deviation: 0.0286144188223
+**********************************************************************
+after fs using  50% Alpha_investing : 
+size of data matrix: (203, 39)
+cross validation accuracy: 0.733524513868
+stardard deviation: 0.0474518382491
+**********************************************************************
+after fs using  60% Alpha_investing : 
+size of data matrix: (203, 39)
+cross validation accuracy: 0.728518259959
+stardard deviation: 0.026803204644
+**********************************************************************
+after fs using  70% Alpha_investing : 
+size of data matrix: (203, 40)
+cross validation accuracy: 0.787484256148
+stardard deviation: 0.0338892106876
+**********************************************************************
+after fs using  80% Alpha_investing : 
+size of data matrix: (203, 41)
+cross validation accuracy: 0.758059979348
+stardard deviation: 0.050107795348
+**********************************************************************
+after fs using  90% Alpha_investing : 
+size of data matrix: (203, 41)
+cross validation accuracy: 0.743873351077
+stardard deviation: 0.0228655337633
+**********************************************************************
+after fs using 100% Alpha_investing : 
+size of data matrix: (203, 41)
+cross validation accuracy: 0.743053725439
+stardard deviation: 0.0542712626796
+**********************************************************************
+DONE
