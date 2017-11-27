@@ -1,0 +1,58 @@
+classify dataset: Prostate_GE
+**********************************************************************
+origin data: 
+size of data matrix: (102, 5966)
+cross validation accuracy: 0.597619047619
+stardard deviation: 0.144231484387
+**********************************************************************
+after fs using  10% Alpha_investing : 
+size of data matrix: (102, 9)
+cross validation accuracy: 0.635238095238
+stardard deviation: 0.114259917724
+**********************************************************************
+after fs using  20% Alpha_investing : 
+size of data matrix: (102, 9)
+cross validation accuracy: 0.635238095238
+stardard deviation: 0.114259917724
+**********************************************************************
+after fs using  30% Alpha_investing : 
+size of data matrix: (102, 9)
+cross validation accuracy: 0.635238095238
+stardard deviation: 0.114259917724
+**********************************************************************
+after fs using  40% Alpha_investing : 
+size of data matrix: (102, 10)
+cross validation accuracy: 0.802857142857
+stardard deviation: 0.124343172269
+**********************************************************************
+after fs using  50% Alpha_investing : 
+size of data matrix: (102, 11)
+cross validation accuracy: 0.891904761905
+stardard deviation: 0.071215555385
+**********************************************************************
+after fs using  60% Alpha_investing : 
+size of data matrix: (102, 11)
+cross validation accuracy: 0.891904761905
+stardard deviation: 0.071215555385
+**********************************************************************
+after fs using  70% Alpha_investing : 
+size of data matrix: (102, 11)
+cross validation accuracy: 0.891904761905
+stardard deviation: 0.071215555385
+**********************************************************************
+after fs using  80% Alpha_investing : 
+size of data matrix: (102, 11)
+cross validation accuracy: 0.891904761905
+stardard deviation: 0.071215555385
+**********************************************************************
+after fs using  90% Alpha_investing : 
+size of data matrix: (102, 12)
+cross validation accuracy: 0.901904761905
+stardard deviation: 0.0680702584886
+**********************************************************************
+after fs using 100% Alpha_investing : 
+size of data matrix: (102, 12)
+cross validation accuracy: 0.901904761905
+stardard deviation: 0.0680702584886
+**********************************************************************
+DONE

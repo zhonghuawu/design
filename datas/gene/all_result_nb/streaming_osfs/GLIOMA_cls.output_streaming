@@ -1,0 +1,58 @@
+classify dataset: GLIOMA
+**********************************************************************
+origin data: 
+size of data matrix: (50, 4434)
+cross validation accuracy: 0.324090909091
+stardard deviation: 0.0533118069505
+**********************************************************************
+after fs using  10% fast_osfs alpha=0.01: 
+size of data matrix: (50, 3)
+cross validation accuracy: 0.676363636364
+stardard deviation: 0.194009457041
+**********************************************************************
+after fs using  20% fast_osfs alpha=0.01: 
+size of data matrix: (50, 3)
+cross validation accuracy: 0.676363636364
+stardard deviation: 0.194009457041
+**********************************************************************
+after fs using  30% fast_osfs alpha=0.01: 
+size of data matrix: (50, 5)
+cross validation accuracy: 0.646363636364
+stardard deviation: 0.114934404577
+**********************************************************************
+after fs using  40% fast_osfs alpha=0.01: 
+size of data matrix: (50, 5)
+cross validation accuracy: 0.646363636364
+stardard deviation: 0.114934404577
+**********************************************************************
+after fs using  50% fast_osfs alpha=0.01: 
+size of data matrix: (50, 5)
+cross validation accuracy: 0.646363636364
+stardard deviation: 0.114934404577
+**********************************************************************
+after fs using  60% fast_osfs alpha=0.01: 
+size of data matrix: (50, 5)
+cross validation accuracy: 0.646363636364
+stardard deviation: 0.114934404577
+**********************************************************************
+after fs using  70% fast_osfs alpha=0.01: 
+size of data matrix: (50, 5)
+cross validation accuracy: 0.631363636364
+stardard deviation: 0.202486608067
+**********************************************************************
+after fs using  80% fast_osfs alpha=0.01: 
+size of data matrix: (50, 5)
+cross validation accuracy: 0.631363636364
+stardard deviation: 0.202486608067
+**********************************************************************
+after fs using  90% fast_osfs alpha=0.01: 
+size of data matrix: (50, 5)
+cross validation accuracy: 0.631363636364
+stardard deviation: 0.202486608067
+**********************************************************************
+after fs using 100% fast_osfs alpha=0.01: 
+size of data matrix: (50, 5)
+cross validation accuracy: 0.631363636364
+stardard deviation: 0.202486608067
+**********************************************************************
+DONE

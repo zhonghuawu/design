@@ -1,0 +1,58 @@
+classify dataset: Lung_Cancer
+**********************************************************************
+origin data: 
+size of data matrix: (203, 12600)
+cross validation accuracy: 0.885863766598
+standard deviation: 0.0366402260513
+**********************************************************************
+after fs using  10%  grafting  threshold = 0.2, epsilon = 0.1: 
+size of data matrix: (203, 27)
+cross validation accuracy: 0.866834867723
+standard deviation: 0.0258202966911
+**********************************************************************
+after fs using  20%  grafting  threshold = 0.2, epsilon = 0.1: 
+size of data matrix: (203, 28)
+cross validation accuracy: 0.886969326759
+standard deviation: 0.0242091565477
+**********************************************************************
+after fs using  30%  grafting  threshold = 0.2, epsilon = 0.1: 
+size of data matrix: (203, 29)
+cross validation accuracy: 0.90172542432
+standard deviation: 0.0206275383063
+**********************************************************************
+after fs using  40%  grafting  threshold = 0.2, epsilon = 0.1: 
+size of data matrix: (203, 29)
+cross validation accuracy: 0.90172542432
+standard deviation: 0.0206275383063
+**********************************************************************
+after fs using  50%  grafting  threshold = 0.2, epsilon = 0.1: 
+size of data matrix: (203, 29)
+cross validation accuracy: 0.90172542432
+standard deviation: 0.0206275383063
+**********************************************************************
+after fs using  60%  grafting  threshold = 0.2, epsilon = 0.1: 
+size of data matrix: (203, 29)
+cross validation accuracy: 0.90172542432
+standard deviation: 0.0206275383063
+**********************************************************************
+after fs using  70%  grafting  threshold = 0.2, epsilon = 0.1: 
+size of data matrix: (203, 29)
+cross validation accuracy: 0.90172542432
+standard deviation: 0.0206275383063
+**********************************************************************
+after fs using  80%  grafting  threshold = 0.2, epsilon = 0.1: 
+size of data matrix: (203, 29)
+cross validation accuracy: 0.90172542432
+standard deviation: 0.0206275383063
+**********************************************************************
+after fs using  90%  grafting  threshold = 0.2, epsilon = 0.1: 
+size of data matrix: (203, 29)
+cross validation accuracy: 0.90172542432
+standard deviation: 0.0206275383063
+**********************************************************************
+after fs using 100%  grafting  threshold = 0.2, epsilon = 0.1: 
+size of data matrix: (203, 29)
+cross validation accuracy: 0.90172542432
+standard deviation: 0.0206275383063
+**********************************************************************
+DONE

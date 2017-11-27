@@ -9,7 +9,8 @@ from sklearn import svm, tree, ensemble
 from sklearn import tree
 from sklearn import ensemble
 from sklearn import linear_model
-# from sklearn.model_selection import train_test_split
+from sklearn import naive_bayes
+
 
 from sklearn.metrics import confusion_matrix
 from sklearn.metrics import accuracy_score
@@ -224,8 +225,9 @@ def main(fname):
     # clf = tree.DecisionTreeClassifier()
     # clf = ensemble.RandomForestClassifier(oob_score=True)
     # clf = ensemble.AdaBoostClassifier(n_estimators=100)
-    clf = linear_model.SGDClassifier()
-    write_to_folder = r"all_result_sgd/streaming_%s/"%alg
+    # clf = linear_model.SGDClassifier()
+    clf = naive_bayes.GaussianNB()
+    write_to_folder = r"all_result_nb/streaming_%s/"%alg
     print "write to %s"%write_to_folder
     cmd = "run_%s(fname, clf, write_to_folder)"%alg
     eval(cmd)
