@@ -1,0 +1,58 @@
+classify dataset: ALLAML
+**********************************************************************
+origin data: 
+size of data matrix: (72, 7129)
+cross validation accuracy: 0.789523809524
+standard deviation: 0.0920120272134
+**********************************************************************
+after fs using  10%  grafting  threshold = 0.2, epsilon = 0.1: 
+size of data matrix: (72, 8)
+cross validation accuracy: 0.888571428571
+standard deviation: 0.069045976992
+**********************************************************************
+after fs using  20%  grafting  threshold = 0.2, epsilon = 0.1: 
+size of data matrix: (72, 8)
+cross validation accuracy: 0.90380952381
+standard deviation: 0.0519375169693
+**********************************************************************
+after fs using  30%  grafting  threshold = 0.2, epsilon = 0.1: 
+size of data matrix: (72, 9)
+cross validation accuracy: 0.917142857143
+standard deviation: 0.0517801036917
+**********************************************************************
+after fs using  40%  grafting  threshold = 0.2, epsilon = 0.1: 
+size of data matrix: (72, 9)
+cross validation accuracy: 0.917142857143
+standard deviation: 0.0517801036917
+**********************************************************************
+after fs using  50%  grafting  threshold = 0.2, epsilon = 0.1: 
+size of data matrix: (72, 9)
+cross validation accuracy: 0.930476190476
+standard deviation: 0.045235588903
+**********************************************************************
+after fs using  60%  grafting  threshold = 0.2, epsilon = 0.1: 
+size of data matrix: (72, 9)
+cross validation accuracy: 0.930476190476
+standard deviation: 0.0618387926886
+**********************************************************************
+after fs using  70%  grafting  threshold = 0.2, epsilon = 0.1: 
+size of data matrix: (72, 9)
+cross validation accuracy: 0.945714285714
+standard deviation: 0.0501788185612
+**********************************************************************
+after fs using  80%  grafting  threshold = 0.2, epsilon = 0.1: 
+size of data matrix: (72, 9)
+cross validation accuracy: 0.959047619048
+standard deviation: 0.0538411200956
+**********************************************************************
+after fs using  90%  grafting  threshold = 0.2, epsilon = 0.1: 
+size of data matrix: (72, 9)
+cross validation accuracy: 0.930476190476
+standard deviation: 0.045235588903
+**********************************************************************
+after fs using 100%  grafting  threshold = 0.2, epsilon = 0.1: 
+size of data matrix: (72, 9)
+cross validation accuracy: 0.945714285714
+standard deviation: 0.0501788185612
+**********************************************************************
+DONE

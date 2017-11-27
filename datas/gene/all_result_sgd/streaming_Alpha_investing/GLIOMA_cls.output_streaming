@@ -1,0 +1,58 @@
+classify dataset: GLIOMA
+**********************************************************************
+origin data: 
+size of data matrix: (50, 4434)
+cross validation accuracy: 0.340454545455
+stardard deviation: 0.0332906062247
+**********************************************************************
+after fs using  10% Alpha_investing : 
+size of data matrix: (50, 4)
+cross validation accuracy: 0.297272727273
+stardard deviation: 0.0380951397086
+**********************************************************************
+after fs using  20% Alpha_investing : 
+size of data matrix: (50, 4)
+cross validation accuracy: 0.388636363636
+stardard deviation: 0.188326689953
+**********************************************************************
+after fs using  30% Alpha_investing : 
+size of data matrix: (50, 4)
+cross validation accuracy: 0.279090909091
+stardard deviation: 0.0189823754707
+**********************************************************************
+after fs using  40% Alpha_investing : 
+size of data matrix: (50, 4)
+cross validation accuracy: 0.279090909091
+stardard deviation: 0.0189823754707
+**********************************************************************
+after fs using  50% Alpha_investing : 
+size of data matrix: (50, 4)
+cross validation accuracy: 0.368636363636
+stardard deviation: 0.173207466485
+**********************************************************************
+after fs using  60% Alpha_investing : 
+size of data matrix: (50, 4)
+cross validation accuracy: 0.220909090909
+stardard deviation: 0.0720192811649
+**********************************************************************
+after fs using  70% Alpha_investing : 
+size of data matrix: (50, 4)
+cross validation accuracy: 0.362272727273
+stardard deviation: 0.0787768057487
+**********************************************************************
+after fs using  80% Alpha_investing : 
+size of data matrix: (50, 4)
+cross validation accuracy: 0.279090909091
+stardard deviation: 0.0189823754707
+**********************************************************************
+after fs using  90% Alpha_investing : 
+size of data matrix: (50, 4)
+cross validation accuracy: 0.275909090909
+stardard deviation: 0.128400844466
+**********************************************************************
+after fs using 100% Alpha_investing : 
+size of data matrix: (50, 4)
+cross validation accuracy: 0.272272727273
+stardard deviation: 0.0794661942782
+**********************************************************************
+DONE

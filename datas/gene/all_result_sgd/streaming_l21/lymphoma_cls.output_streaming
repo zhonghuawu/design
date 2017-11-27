@@ -1,0 +1,58 @@
+classify dataset: lymphoma
+**********************************************************************
+origin data: 
+size of data matrix: (96, 4026)
+cross validation accuracy: 0.624722222222
+standard deviation: 0.10023275382
+**********************************************************************
+after fs using  10%  grafting l21-norm  threshold = 0.2, epsilon = 0.05: 
+size of data matrix: (96, 7)
+cross validation accuracy: 0.600833333333
+standard deviation: 0.0667106336499
+**********************************************************************
+after fs using  20%  grafting l21-norm  threshold = 0.2, epsilon = 0.05: 
+size of data matrix: (96, 8)
+cross validation accuracy: 0.737222222222
+standard deviation: 0.0707455883544
+**********************************************************************
+after fs using  30%  grafting l21-norm  threshold = 0.2, epsilon = 0.05: 
+size of data matrix: (96, 8)
+cross validation accuracy: 0.694166666667
+standard deviation: 0.106936868419
+**********************************************************************
+after fs using  40%  grafting l21-norm  threshold = 0.2, epsilon = 0.05: 
+size of data matrix: (96, 8)
+cross validation accuracy: 0.778888888889
+standard deviation: 0.10002468831
+**********************************************************************
+after fs using  50%  grafting l21-norm  threshold = 0.2, epsilon = 0.05: 
+size of data matrix: (96, 8)
+cross validation accuracy: 0.6925
+standard deviation: 0.101567954507
+**********************************************************************
+after fs using  60%  grafting l21-norm  threshold = 0.2, epsilon = 0.05: 
+size of data matrix: (96, 8)
+cross validation accuracy: 0.705
+standard deviation: 0.127951572629
+**********************************************************************
+after fs using  70%  grafting l21-norm  threshold = 0.2, epsilon = 0.05: 
+size of data matrix: (96, 8)
+cross validation accuracy: 0.710277777778
+standard deviation: 0.0964237048873
+**********************************************************************
+after fs using  80%  grafting l21-norm  threshold = 0.2, epsilon = 0.05: 
+size of data matrix: (96, 8)
+cross validation accuracy: 0.7075
+standard deviation: 0.108666155418
+**********************************************************************
+after fs using  90%  grafting l21-norm  threshold = 0.2, epsilon = 0.05: 
+size of data matrix: (96, 8)
+cross validation accuracy: 0.711944444444
+standard deviation: 0.126312858695
+**********************************************************************
+after fs using 100%  grafting l21-norm  threshold = 0.2, epsilon = 0.05: 
+size of data matrix: (96, 8)
+cross validation accuracy: 0.758333333333
+standard deviation: 0.103786342735
+**********************************************************************
+DONE

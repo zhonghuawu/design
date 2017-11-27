@@ -1,0 +1,58 @@
+classify dataset: TOX_171
+**********************************************************************
+origin data: 
+size of data matrix: (171, 5748)
+cross validation accuracy: 0.46184364655
+standard deviation: 0.065597416041
+**********************************************************************
+after fs using  10%  grafting l21-norm  threshold = 0.2, epsilon = 0.05: 
+size of data matrix: (171, 17)
+cross validation accuracy: 0.444731347084
+standard deviation: 0.10550421372
+**********************************************************************
+after fs using  20%  grafting l21-norm  threshold = 0.2, epsilon = 0.05: 
+size of data matrix: (171, 17)
+cross validation accuracy: 0.409900687548
+standard deviation: 0.0414092782122
+**********************************************************************
+after fs using  30%  grafting l21-norm  threshold = 0.2, epsilon = 0.05: 
+size of data matrix: (171, 18)
+cross validation accuracy: 0.442592309651
+standard deviation: 0.11773007278
+**********************************************************************
+after fs using  40%  grafting l21-norm  threshold = 0.2, epsilon = 0.05: 
+size of data matrix: (171, 18)
+cross validation accuracy: 0.455574229692
+standard deviation: 0.0752442895682
+**********************************************************************
+after fs using  50%  grafting l21-norm  threshold = 0.2, epsilon = 0.05: 
+size of data matrix: (171, 18)
+cross validation accuracy: 0.467894066718
+standard deviation: 0.0549319915052
+**********************************************************************
+after fs using  60%  grafting l21-norm  threshold = 0.2, epsilon = 0.05: 
+size of data matrix: (171, 19)
+cross validation accuracy: 0.426035141329
+standard deviation: 0.0884693372953
+**********************************************************************
+after fs using  70%  grafting l21-norm  threshold = 0.2, epsilon = 0.05: 
+size of data matrix: (171, 20)
+cross validation accuracy: 0.380656990069
+standard deviation: 0.0419495370939
+**********************************************************************
+after fs using  80%  grafting l21-norm  threshold = 0.2, epsilon = 0.05: 
+size of data matrix: (171, 20)
+cross validation accuracy: 0.44435446906
+standard deviation: 0.0519930960062
+**********************************************************************
+after fs using  90%  grafting l21-norm  threshold = 0.2, epsilon = 0.05: 
+size of data matrix: (171, 20)
+cross validation accuracy: 0.4718767507
+standard deviation: 0.0983293984803
+**********************************************************************
+after fs using 100%  grafting l21-norm  threshold = 0.2, epsilon = 0.05: 
+size of data matrix: (171, 20)
+cross validation accuracy: 0.566065699007
+standard deviation: 0.10641239473
+**********************************************************************
+DONE
