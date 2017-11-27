@@ -84,5 +84,5 @@ def get_cls_nfs_2():
 
 if __name__=='__main__':
     cls, nfs = get_cls_nfs_1()
-    # draw(cls, nfs)
-    draw_vs_others(cls, nfs)
+    draw(cls, nfs)
+    # draw_vs_others(cls, nfs)

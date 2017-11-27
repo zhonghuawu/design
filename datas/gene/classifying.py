@@ -1,8 +1,9 @@
 import os
+import sys
 
 import pandas as pd
 from pandas import DataFrame, Series
-from sklearn import svm, linear_model, tree
+from sklearn import svm, tree, ensemble
 from sklearn import model_selection
 from sklearn.model_selection import train_test_split
 
@@ -216,14 +217,30 @@ def main(fname):
         alg = path.split('_')[-1]
 
     # clf = svm.SVC(kernel="linear")
-    clf = tree.DecisionTreeClassifier()
-    write_to_folder = r"all_result_dt/streaming_%s/"%alg
-    print "write to %s\n"%write_to_folder
+    # clf = tree.DecisionTreeClassifier()
+    # clf = ensemble.RandomForestClassifier(oob_score=True)
+    clf = ensemble.AdaBoostClassifier(n_estimators=100)
+    write_to_folder = r"all_result_ab/streaming_%s/"%alg
+    print "write to %s"%write_to_folder
     cmd = "run_%s(fname, clf, write_to_folder)"%alg
     eval(cmd)
+    print "\n"
+
+def aggr():
+    fnames = (
+        "all_Alpha_investing.ind_streaming",
+        "all_osfs.ind_streaming",
+        "all_saola.ind_streaming",
+        "ind_streaming_grafting/",
+        "ind_streaming_l21/"
+    )
+
+    for fname in fnames:
+        main(fname)
+
 
 
 if __name__ == "__main__":
-    import sys
-    main(sys.argv[1])
+    aggr()
+    # main(sys.argv[1])
     print 'DONE'

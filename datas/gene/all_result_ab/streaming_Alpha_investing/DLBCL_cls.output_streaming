@@ -1,0 +1,7 @@
+classify dataset: DLBCL
+**********************************************************************
+origin data: 
+size of data matrix: (77, 5469)
+cross validation accuracy: 0.9125
+stardard deviation: 0.145773797371
+**********************************************************************
