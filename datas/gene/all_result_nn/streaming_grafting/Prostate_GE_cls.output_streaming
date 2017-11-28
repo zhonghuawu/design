@@ -1,0 +1,58 @@
+classify dataset: Prostate_GE
+**********************************************************************
+origin data: 
+size of data matrix: (102, 5966)
+cross validation accuracy: 0.845238095238
+standard deviation: 0.0959851651425
+**********************************************************************
+after fs using  10%  grafting  threshold = 0.2, epsilon = 0.1: 
+size of data matrix: (102, 5)
+cross validation accuracy: 0.841904761905
+standard deviation: 0.0602827803393
+**********************************************************************
+after fs using  20%  grafting  threshold = 0.2, epsilon = 0.1: 
+size of data matrix: (102, 5)
+cross validation accuracy: 0.822380952381
+standard deviation: 0.0682731608306
+**********************************************************************
+after fs using  30%  grafting  threshold = 0.2, epsilon = 0.1: 
+size of data matrix: (102, 6)
+cross validation accuracy: 0.813333333333
+standard deviation: 0.0386448448862
+**********************************************************************
+after fs using  40%  grafting  threshold = 0.2, epsilon = 0.1: 
+size of data matrix: (102, 6)
+cross validation accuracy: 0.822857142857
+standard deviation: 0.0422335585688
+**********************************************************************
+after fs using  50%  grafting  threshold = 0.2, epsilon = 0.1: 
+size of data matrix: (102, 7)
+cross validation accuracy: 0.890952380952
+standard deviation: 0.0665032009527
+**********************************************************************
+after fs using  60%  grafting  threshold = 0.2, epsilon = 0.1: 
+size of data matrix: (102, 7)
+cross validation accuracy: 0.890952380952
+standard deviation: 0.0665032009527
+**********************************************************************
+after fs using  70%  grafting  threshold = 0.2, epsilon = 0.1: 
+size of data matrix: (102, 7)
+cross validation accuracy: 0.861904761905
+standard deviation: 0.0394692681621
+**********************************************************************
+after fs using  80%  grafting  threshold = 0.2, epsilon = 0.1: 
+size of data matrix: (102, 7)
+cross validation accuracy: 0.900952380952
+standard deviation: 0.0707363281342
+**********************************************************************
+after fs using  90%  grafting  threshold = 0.2, epsilon = 0.1: 
+size of data matrix: (102, 7)
+cross validation accuracy: 0.910952380952
+standard deviation: 0.0581771475656
+**********************************************************************
+after fs using 100%  grafting  threshold = 0.2, epsilon = 0.1: 
+size of data matrix: (102, 7)
+cross validation accuracy: 0.890952380952
+standard deviation: 0.0585036386643
+**********************************************************************
+DONE

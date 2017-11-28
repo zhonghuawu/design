@@ -1,0 +1,58 @@
+classify dataset: SRBCT
+**********************************************************************
+origin data: 
+size of data matrix: (83, 2308)
+cross validation accuracy: 0.977777777778
+stardard deviation: 0.0444444444444
+**********************************************************************
+after fs using  10% Alpha_investing : 
+size of data matrix: (83, 18)
+cross validation accuracy: 0.875261437908
+stardard deviation: 0.076583320068
+**********************************************************************
+after fs using  20% Alpha_investing : 
+size of data matrix: (83, 23)
+cross validation accuracy: 0.911388888889
+stardard deviation: 0.0882983858192
+**********************************************************************
+after fs using  30% Alpha_investing : 
+size of data matrix: (83, 24)
+cross validation accuracy: 0.935
+stardard deviation: 0.0830662386292
+**********************************************************************
+after fs using  40% Alpha_investing : 
+size of data matrix: (83, 25)
+cross validation accuracy: 0.961666666667
+stardard deviation: 0.0504424865014
+**********************************************************************
+after fs using  50% Alpha_investing : 
+size of data matrix: (83, 25)
+cross validation accuracy: 0.923888888889
+stardard deviation: 0.0771322417414
+**********************************************************************
+after fs using  60% Alpha_investing : 
+size of data matrix: (83, 25)
+cross validation accuracy: 0.963055555556
+stardard deviation: 0.0303731931841
+**********************************************************************
+after fs using  70% Alpha_investing : 
+size of data matrix: (83, 25)
+cross validation accuracy: 0.938611111111
+stardard deviation: 0.0551121191664
+**********************************************************************
+after fs using  80% Alpha_investing : 
+size of data matrix: (83, 26)
+cross validation accuracy: 0.938611111111
+stardard deviation: 0.0551121191664
+**********************************************************************
+after fs using  90% Alpha_investing : 
+size of data matrix: (83, 26)
+cross validation accuracy: 0.923888888889
+stardard deviation: 0.0771322417414
+**********************************************************************
+after fs using 100% Alpha_investing : 
+size of data matrix: (83, 26)
+cross validation accuracy: 0.901666666667
+stardard deviation: 0.0837323779139
+**********************************************************************
+DONE

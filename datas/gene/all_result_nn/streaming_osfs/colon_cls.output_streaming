@@ -1,0 +1,58 @@
+classify dataset: colon
+**********************************************************************
+origin data: 
+size of data matrix: (62, 2000)
+cross validation accuracy: 0.775641025641
+stardard deviation: 0.15038849537
+**********************************************************************
+after fs using  10% fast_osfs alpha=0.01: 
+size of data matrix: (62, 2)
+cross validation accuracy: 0.884615384615
+stardard deviation: 0.0855234875906
+**********************************************************************
+after fs using  20% fast_osfs alpha=0.01: 
+size of data matrix: (62, 2)
+cross validation accuracy: 0.884615384615
+stardard deviation: 0.0855234875906
+**********************************************************************
+after fs using  30% fast_osfs alpha=0.01: 
+size of data matrix: (62, 2)
+cross validation accuracy: 0.901282051282
+stardard deviation: 0.0627550679514
+**********************************************************************
+after fs using  40% fast_osfs alpha=0.01: 
+size of data matrix: (62, 2)
+cross validation accuracy: 0.901282051282
+stardard deviation: 0.0627550679514
+**********************************************************************
+after fs using  50% fast_osfs alpha=0.01: 
+size of data matrix: (62, 2)
+cross validation accuracy: 0.901282051282
+stardard deviation: 0.0627550679514
+**********************************************************************
+after fs using  60% fast_osfs alpha=0.01: 
+size of data matrix: (62, 2)
+cross validation accuracy: 0.901282051282
+stardard deviation: 0.0627550679514
+**********************************************************************
+after fs using  70% fast_osfs alpha=0.01: 
+size of data matrix: (62, 2)
+cross validation accuracy: 0.901282051282
+stardard deviation: 0.0627550679514
+**********************************************************************
+after fs using  80% fast_osfs alpha=0.01: 
+size of data matrix: (62, 3)
+cross validation accuracy: 0.835897435897
+stardard deviation: 0.0936511916295
+**********************************************************************
+after fs using  90% fast_osfs alpha=0.01: 
+size of data matrix: (62, 3)
+cross validation accuracy: 0.852564102564
+stardard deviation: 0.0812864999187
+**********************************************************************
+after fs using 100% fast_osfs alpha=0.01: 
+size of data matrix: (62, 3)
+cross validation accuracy: 0.837179487179
+stardard deviation: 0.0549340648349
+**********************************************************************
+DONE

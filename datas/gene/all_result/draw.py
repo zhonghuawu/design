@@ -1,24 +1,23 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-def draw(cls, nfs):
-    #dataset = cls['dataset']
-    #print pd.Series(cls.index, index=range(1,9))
+import count_all
 
+def draw(cls, nfs):
     fig, axes = plt.subplots(2, 1)
 
     # style='o- ^-- s-. +-- x-.'.split(' ')
     style='o- ^-- s-. p: D:'.split(' ')
-    cls.plot(ax=axes[0], style=style, ylim=(0.4, 1.0))
-    nfs.plot(ax=axes[1], style=style, ylim=(0, 60))
+    cls.plot(ax=axes[0], style=style, ylim=(0.0, 1.0))
+    nfs.plot(ax=axes[1], style=style, ylim=(0, 100))
 
     axes[0].set_ylabel('Prediction accuracy')
     axes[1].set_ylabel('The number of selected features')
 
     plt.xlabel("datasets")
     #plt.show()
-    fig.set_size_inches(12, 8)
-    fig.savefig("all_final_add_saola.png", bbox_inches='tight')
+    fig.set_size_inches(16, 12)
+    fig.savefig("all_final.png", bbox_inches='tight')
     plt.close()
 
 def draw_sfs_l21_vs_other(cls, nfs):
@@ -33,50 +32,48 @@ def draw_sfs_l21_vs_other(cls, nfs):
     nfs.plot(ax=ax2, style=style2, ylim=(0, 100))
     plt.xlabel("datasets")
     fig.set_size_inches(12, 8)
-    ax1.legend(loc=0)
-    ax2.legend(loc=7)
+    ax1.legend(loc="upper left")
+    ax2.legend(loc="center right")
     alg1, alg2=cls.columns
     fig.savefig("all_%s_vs_%s.png"%(alg1, alg2), bbox_inches='tight')
     plt.close()
 
 def draw_vs_others(cls, nfs):
-	my_alg = 'sfs_l21'
-	vs_algs = 'grafting osfs Alpha_investing saola'.split()
-	for vs_alg in vs_algs:
-		cls_tmp = cls[[my_alg, vs_alg]]
-		nfs_tmp = nfs[[my_alg, vs_alg]]
-		draw_sfs_l21_vs_other(cls_tmp, nfs_tmp)
+    my_alg = 'sfs_l21'
+    vs_algs = 'grafting osfs Alpha_investing saola'.split()
+    for vs_alg in vs_algs:
+        cls_tmp = cls[[my_alg, vs_alg]]
+        nfs_tmp = nfs[[my_alg, vs_alg]]
+        draw_sfs_l21_vs_other(cls_tmp, nfs_tmp)
 
-def get_cls_nfs_1():
+def get_cls_nfs():
     cls = pd.read_csv('all_cls.csv')
-    if 'origin_data' in cls.columns:
+    try :
         cls = cls.drop('origin_data', axis=1)
+    except :
+        pass
     nfs = pd.read_csv('all_nfs.csv')
-    # remove osfs alpha=0.05 result
-    cls = cls.drop('osfs5', axis=1)
-    nfs = nfs.drop('osfs5', axis=1)
 
-    cls = cls.drop('dataset', axis=1).rename(index=lambda i: i+1)
-    nfs = nfs.drop('dataset', axis=1).rename(index=lambda i: i+1)
+    # remove osfs alpha=0.05 result
+    try:
+        cls = cls.drop('osfs5', axis=1)
+        nfs = nfs.drop('osfs5', axis=1)
+    except :
+        pass
+
+    try :
+        cls = cls.drop('dataset', axis=1).rename(index=lambda i: i+1)
+        nfs = nfs.drop('dataset', axis=1).rename(index=lambda i: i+1)
+    except :
+        pass
+
     return cls, nfs
 
-def get_cls_nfs_2():
-    cls = pd.read_csv('all_cls.csv', index_col=0)
-    if 'origin_data' in cls.columns:
-        cls = cls.drop('origin_data', axis=1)
-    nfs = pd.read_csv('all_nfs.csv', index_col=0)
-    # remove osfs alpha=0.05 result
-    cls = cls.drop('osfs5', axis=1)
-    nfs = nfs.drop('osfs5', axis=1)
-
-    # remove some datasets
-    drop_dataset = "lymphoma SMK_CAN_187 GLI_85 lung".split(" ")
-    cls = cls.drop(drop_dataset)
-    nfs = nfs.drop(drop_dataset)
-
-    return cls, nfs
 
 if __name__=='__main__':
-    cls, nfs = get_cls_nfs_1()
-    # draw(cls, nfs)
+    # generate all_cls.csv and all_nfs.csv
+    # count_all.main()
+
+    cls, nfs = get_cls_nfs()
+    draw(cls, nfs)
     draw_vs_others(cls, nfs)

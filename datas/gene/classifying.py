@@ -5,11 +5,12 @@ import pandas as pd
 from pandas import DataFrame, Series
 
 from sklearn import model_selection
-from sklearn import svm, tree, ensemble
+from sklearn import svm
 from sklearn import tree
 from sklearn import ensemble
 from sklearn import linear_model
 from sklearn import naive_bayes
+from sklearn import neural_network
 
 
 from sklearn.metrics import confusion_matrix
@@ -219,15 +220,16 @@ def main(fname):
     if filename.startswith("all_"):
         alg = os.path.splitext(filename)[0][4:]
     else :
-        alg = path.split('_')[-1]
-
+        alg = path.split('_')[-1] 
     # clf = svm.SVC(kernel="linear")
     # clf = tree.DecisionTreeClassifier()
     # clf = ensemble.RandomForestClassifier(oob_score=True)
     # clf = ensemble.AdaBoostClassifier(n_estimators=100)
     # clf = linear_model.SGDClassifier()
-    clf = naive_bayes.GaussianNB()
-    write_to_folder = r"all_result_nb/streaming_%s/"%alg
+    # clf = naive_bayes.GaussianNB()
+    # clf = neural_network.MLPClassifier(solver='lbfgs')
+    clf = linear_model.LogisticRegressionCV()
+    write_to_folder = r"all_result_lr/streaming_%s/"%alg
     print "write to %s"%write_to_folder
     cmd = "run_%s(fname, clf, write_to_folder)"%alg
     eval(cmd)

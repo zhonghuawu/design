@@ -1,0 +1,58 @@
+classify dataset: Prostate_GE
+**********************************************************************
+origin data: 
+size of data matrix: (102, 5966)
+cross validation accuracy: 0.864285714286
+stardard deviation: 0.0865436070335
+**********************************************************************
+after fs using  10% saola alpha=0.01: 
+size of data matrix: (102, 5)
+cross validation accuracy: 0.79380952381
+stardard deviation: 0.0901447563506
+**********************************************************************
+after fs using  20% saola alpha=0.01: 
+size of data matrix: (102, 5)
+cross validation accuracy: 0.842380952381
+stardard deviation: 0.0732528934211
+**********************************************************************
+after fs using  30% saola alpha=0.01: 
+size of data matrix: (102, 7)
+cross validation accuracy: 0.774285714286
+stardard deviation: 0.0514506125608
+**********************************************************************
+after fs using  40% saola alpha=0.01: 
+size of data matrix: (102, 5)
+cross validation accuracy: 0.892380952381
+stardard deviation: 0.0656797700936
+**********************************************************************
+after fs using  50% saola alpha=0.01: 
+size of data matrix: (102, 10)
+cross validation accuracy: 0.901904761905
+stardard deviation: 0.0625497534394
+**********************************************************************
+after fs using  60% saola alpha=0.01: 
+size of data matrix: (102, 9)
+cross validation accuracy: 0.911904761905
+stardard deviation: 0.0476904226993
+**********************************************************************
+after fs using  70% saola alpha=0.01: 
+size of data matrix: (102, 9)
+cross validation accuracy: 0.912380952381
+stardard deviation: 0.0567326546559
+**********************************************************************
+after fs using  80% saola alpha=0.01: 
+size of data matrix: (102, 9)
+cross validation accuracy: 0.911428571429
+stardard deviation: 0.0585036386643
+**********************************************************************
+after fs using  90% saola alpha=0.01: 
+size of data matrix: (102, 10)
+cross validation accuracy: 0.902380952381
+stardard deviation: 0.0535370259907
+**********************************************************************
+after fs using 100% saola alpha=0.01: 
+size of data matrix: (102, 12)
+cross validation accuracy: 0.912380952381
+stardard deviation: 0.0567326546559
+**********************************************************************
+DONE

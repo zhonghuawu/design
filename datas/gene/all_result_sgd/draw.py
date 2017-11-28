@@ -1,6 +1,8 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
+import count_all
+
 def draw(cls, nfs):
     fig, axes = plt.subplots(2, 1)
 
@@ -37,24 +39,25 @@ def draw_sfs_l21_vs_other(cls, nfs):
     plt.close()
 
 def draw_vs_others(cls, nfs):
-	my_alg = 'sfs_l21'
-	vs_algs = 'grafting osfs Alpha_investing saola'.split()
-	for vs_alg in vs_algs:
-		cls_tmp = cls[[my_alg, vs_alg]]
-		nfs_tmp = nfs[[my_alg, vs_alg]]
-		draw_sfs_l21_vs_other(cls_tmp, nfs_tmp)
+    my_alg = 'sfs_l21'
+    vs_algs = 'grafting osfs Alpha_investing saola'.split()
+    for vs_alg in vs_algs:
+        cls_tmp = cls[[my_alg, vs_alg]]
+        nfs_tmp = nfs[[my_alg, vs_alg]]
+        draw_sfs_l21_vs_other(cls_tmp, nfs_tmp)
 
-def get_cls_nfs_1():
+def get_cls_nfs():
     cls = pd.read_csv('all_cls.csv')
-    if 'origin_data' in cls.columns:
+    try :
         cls = cls.drop('origin_data', axis=1)
+    except :
+        pass
     nfs = pd.read_csv('all_nfs.csv')
 
     # remove osfs alpha=0.05 result
     try:
         cls = cls.drop('osfs5', axis=1)
         nfs = nfs.drop('osfs5', axis=1)
-
     except :
         pass
 
@@ -66,23 +69,11 @@ def get_cls_nfs_1():
 
     return cls, nfs
 
-def get_cls_nfs_2():
-    cls = pd.read_csv('all_cls.csv', index_col=0)
-    if 'origin_data' in cls.columns:
-        cls = cls.drop('origin_data', axis=1)
-    nfs = pd.read_csv('all_nfs.csv', index_col=0)
-    # remove osfs alpha=0.05 result
-    cls = cls.drop('osfs5', axis=1)
-    nfs = nfs.drop('osfs5', axis=1)
-
-    # remove some datasets
-    drop_dataset = "lymphoma SMK_CAN_187 GLI_85 lung".split(" ")
-    cls = cls.drop(drop_dataset)
-    nfs = nfs.drop(drop_dataset)
-
-    return cls, nfs
 
 if __name__=='__main__':
-    cls, nfs = get_cls_nfs_1()
+    # generate all_cls.csv and all_nfs.csv
+    count_all.main()
+
+    cls, nfs = get_cls_nfs()
     draw(cls, nfs)
     draw_vs_others(cls, nfs)

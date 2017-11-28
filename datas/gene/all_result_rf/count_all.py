@@ -16,6 +16,8 @@ def read_output_streaming_cls_nfs_one_dataset(alg):
     res_nfs = pd.Series(())
     datasets_name = get_datasets_name()
     for dataset_name in datasets_name:
+        if alg == "Alpha_investing" and dataset_name == "DLBCL":
+             continue
         with open("streaming_%s/%s_cls.output_streaming"%(alg, dataset_name), 'r') as f:
             for line in f:
                 line_list = line.split()
