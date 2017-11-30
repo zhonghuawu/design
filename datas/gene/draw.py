@@ -82,10 +82,27 @@ def get_cls_nfs(from_folder):
     return cls.reindex(datasets_order), nfs.reindex(datasets_order)
 
 
-if __name__ == '__main__':
-    from_folder = sys.argv[1]
+def draw_compactness(nfs):
+    fig, ax = plt.subplots(1, 1)
+    style = 'o- ^-- s-. p-- D:'.split(' ')
+    nfs.plot(ax=ax, style=style, ylim=(0, 50), rot=30)
+    ax.set_ylabel('The number of selected features')
+    ax.set_xticks(range(12))
+    ax.set_xticklabels(nfs.index)
+    ax.set_title("Compactness")
+
+    fig.set_size_inches(12, 6)
+    fig.savefig('all_result/all_nfs.png', bbox_inches='tight')
+    plt.close()
+
+
+def main(from_folder):
     clses, nfses = get_cls_nfs(from_folder)
-    print clses
     print nfses
-    draw_vs_others(clses, nfses, from_folder)
-    draw(clses, nfses, "all", from_folder)
+    # draw_vs_others(clses, nfses, from_folder)
+    # draw(clses, nfses, "all", from_folder)
+    draw_compactness(nfses)
+
+
+if __name__ == '__main__':
+    main(sys.argv[1])

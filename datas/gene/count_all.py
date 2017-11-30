@@ -5,12 +5,11 @@ import pandas as pd
 
 def get_datasets_name():
     datasets_name = []
-    with open('dataset/all_attribute.csv', 'r') as f:
-        f.readline()
+    with open('datasets_order.txt', 'r') as f:
         for line in f:
             if line.startswith('#'):
                 continue
-            datasets_name.append(line.split(',')[0])
+            datasets_name.append(line.strip())
     return datasets_name
 
 def read_output_streaming_cls_nfs_one_dataset(folder, alg):
@@ -26,10 +25,10 @@ def read_output_streaming_cls_nfs_one_dataset(folder, alg):
                 if line_list[0]=='size' and line_list[2] == 'data':
                     res_nfs[dataset_name] = long(line_list[-1][:-1])
                 if line_list[0]=='cross':
-                    res_cls[dataset_name] = float(line_list[-1])
+                    res_cls[dataset_name] = "%.2f"%float(line_list[-1])
     res_cls.name = alg
     res_nfs.name = alg
-    return res_cls, res_nfs
+    return res_cls.reindex(datasets_name), res_nfs.reindex(datasets_name)
     
 
 def main(folder):

@@ -1,0 +1,58 @@
+classify dataset: Prostate_GE
+**********************************************************************
+origin data: 
+size of data matrix: (102, 5966)
+cross validation accuracy: 0.832380952381
+stardard deviation: 0.042421061812
+**********************************************************************
+after fs using  10% fast_osfs alpha=0.01: 
+size of data matrix: (102, 3)
+cross validation accuracy: 0.782857142857
+stardard deviation: 0.0831821758336
+**********************************************************************
+after fs using  20% fast_osfs alpha=0.01: 
+size of data matrix: (102, 3)
+cross validation accuracy: 0.792380952381
+stardard deviation: 0.0980004164922
+**********************************************************************
+after fs using  30% fast_osfs alpha=0.01: 
+size of data matrix: (102, 4)
+cross validation accuracy: 0.824285714286
+stardard deviation: 0.0875258303306
+**********************************************************************
+after fs using  40% fast_osfs alpha=0.01: 
+size of data matrix: (102, 5)
+cross validation accuracy: 0.893333333333
+stardard deviation: 0.0823052225552
+**********************************************************************
+after fs using  50% fast_osfs alpha=0.01: 
+size of data matrix: (102, 3)
+cross validation accuracy: 0.86380952381
+stardard deviation: 0.0766267272484
+**********************************************************************
+after fs using  60% fast_osfs alpha=0.01: 
+size of data matrix: (102, 3)
+cross validation accuracy: 0.85380952381
+stardard deviation: 0.0674377179699
+**********************************************************************
+after fs using  70% fast_osfs alpha=0.01: 
+size of data matrix: (102, 3)
+cross validation accuracy: 0.863333333333
+stardard deviation: 0.0562146840509
+**********************************************************************
+after fs using  80% fast_osfs alpha=0.01: 
+size of data matrix: (102, 3)
+cross validation accuracy: 0.892380952381
+stardard deviation: 0.0575658944128
+**********************************************************************
+after fs using  90% fast_osfs alpha=0.01: 
+size of data matrix: (102, 4)
+cross validation accuracy: 0.902857142857
+stardard deviation: 0.0610453160549
+**********************************************************************
+after fs using 100% fast_osfs alpha=0.01: 
+size of data matrix: (102, 4)
+cross validation accuracy: 0.902857142857
+stardard deviation: 0.0610453160549
+**********************************************************************
+DONE

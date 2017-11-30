@@ -228,8 +228,9 @@ def main(fname):
     # clf = linear_model.SGDClassifier()
     # clf = naive_bayes.GaussianNB()
     # clf = neural_network.MLPClassifier(solver='lbfgs')
-    clf = linear_model.LogisticRegressionCV()
-    write_to_folder = r"all_result_lr/streaming_%s/"%alg
+    # clf = linear_model.LogisticRegressionCV()
+    clf = ensemble.GradientBoostingClassifier()
+    write_to_folder = r"all_result_gb/streaming_%s/"%alg
     print "write to %s"%write_to_folder
     cmd = "run_%s(fname, clf, write_to_folder)"%alg
     eval(cmd)

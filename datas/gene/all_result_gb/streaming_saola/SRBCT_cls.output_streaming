@@ -1,0 +1,58 @@
+classify dataset: SRBCT
+**********************************************************************
+origin data: 
+size of data matrix: (83, 2308)
+cross validation accuracy: 0.847450980392
+stardard deviation: 0.107456705157
+**********************************************************************
+after fs using  10% saola alpha=0.01: 
+size of data matrix: (83, 12)
+cross validation accuracy: 0.820147058824
+stardard deviation: 0.13306132144
+**********************************************************************
+after fs using  20% saola alpha=0.01: 
+size of data matrix: (83, 13)
+cross validation accuracy: 0.831911764706
+stardard deviation: 0.113146812047
+**********************************************************************
+after fs using  30% saola alpha=0.01: 
+size of data matrix: (83, 17)
+cross validation accuracy: 0.843676470588
+stardard deviation: 0.0589068853846
+**********************************************************************
+after fs using  40% saola alpha=0.01: 
+size of data matrix: (83, 18)
+cross validation accuracy: 0.840800653595
+stardard deviation: 0.0643811502273
+**********************************************************************
+after fs using  50% saola alpha=0.01: 
+size of data matrix: (83, 16)
+cross validation accuracy: 0.840800653595
+stardard deviation: 0.0643811502273
+**********************************************************************
+after fs using  60% saola alpha=0.01: 
+size of data matrix: (83, 18)
+cross validation accuracy: 0.878218954248
+stardard deviation: 0.0577942724067
+**********************************************************************
+after fs using  70% saola alpha=0.01: 
+size of data matrix: (83, 15)
+cross validation accuracy: 0.831993464052
+stardard deviation: 0.0667301056614
+**********************************************************************
+after fs using  80% saola alpha=0.01: 
+size of data matrix: (83, 17)
+cross validation accuracy: 0.831993464052
+stardard deviation: 0.0667301056614
+**********************************************************************
+after fs using  90% saola alpha=0.01: 
+size of data matrix: (83, 19)
+cross validation accuracy: 0.902663398693
+stardard deviation: 0.0318748761891
+**********************************************************************
+after fs using 100% saola alpha=0.01: 
+size of data matrix: (83, 17)
+cross validation accuracy: 0.886192810458
+stardard deviation: 0.115917409699
+**********************************************************************
+DONE
