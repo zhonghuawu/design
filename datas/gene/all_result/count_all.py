@@ -3,7 +3,7 @@ import os
 
 def get_datasets_name():
     datasets_name = []
-    with open('all_attribute.csv', 'r') as f:
+    with open('../dataset/all_attribute.csv', 'r') as f:
         f.readline()
         for line in f:
             if line.startswith('#'):
@@ -41,6 +41,8 @@ def main():
         cls_tmp, nfs_tmp = read_output_streaming_cls_nfs_one_dataset(alg)
         cls = pd.concat((cls, cls_tmp), axis=1)
         nfs = pd.concat((nfs, nfs_tmp), axis=1)
+    cls.index.name="dataset"
+    nfs.index.name="dataset"
     cls.to_csv("all_cls.csv")
     nfs.to_csv("all_nfs.csv")
     print cls
