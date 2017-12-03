@@ -42,6 +42,19 @@ def draw_sfs_l21_vs_other(cls, nfs, write_to_folder):
     ax1.legend(loc="upper left")
     ax2.legend(loc="center right")
     alg1, alg2 = cls.columns
+    classifiers = {
+        "result":"SVM",
+        "ab":"AdaBoost",
+        "dt":"Decision Tree", 
+        "gb":"Gradient Boosting",
+        "lr":"Logistics Regression", 
+        "nb":"Naive Bayes",
+        "nn":"Neural Network",
+        "rf":"Random Forest",
+        "sgd":"Stochastic Gradient Descent"
+    }
+    clf = write_to_folder.split('_')[-1]
+    ax1.set_title("%s vs %s(%s)"%(alg1, alg2, classifiers[clf]))
     fig.savefig("%s/all_%s_vs_%s.png" %
                 (write_to_folder, alg1, alg2), bbox_inches='tight')
     plt.close()
@@ -98,10 +111,10 @@ def draw_compactness(nfs):
 
 def main(from_folder):
     clses, nfses = get_cls_nfs(from_folder)
-    print nfses
-    # draw_vs_others(clses, nfses, from_folder)
+    draw_vs_others(clses, nfses, from_folder)
     # draw(clses, nfses, "all", from_folder)
-    draw_compactness(nfses)
+    # print nfses
+    # draw_compactness(nfses)
 
 
 if __name__ == '__main__':
