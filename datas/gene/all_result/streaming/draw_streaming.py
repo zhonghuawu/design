@@ -1,6 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
+import aggr_6_png
 
 def get_datasets_name():
     datasets_name = []
@@ -68,7 +69,7 @@ def draw(cls, fname):
     ax.set_xlabel('The percentage of features streaming in (%)')
     ax.set_title(fname)
 
-    fig.set_size_inches(12, 8)
+    fig.set_size_inches(8, 6)
     fig.savefig('%s.png' % fname, bbox_inches='tight')
     plt.close()
 
@@ -81,6 +82,8 @@ def main():
         cls.to_csv("csvs/%s.csv" % dataset_name)
         draw(cls, dataset_name)
         print "finish %s" % dataset_name
+
+    aggr_6_png.main()
 
 
 if __name__ == '__main__':

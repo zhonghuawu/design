@@ -1,6 +1,6 @@
 ## aggregate six picture in one 
 <center >
-<img src="https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/streaming/aggr.png">
+<img src="https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/streaming/aggr_vertical.png">
 </center>
 
 ## streaming features selection procedure comparsion
