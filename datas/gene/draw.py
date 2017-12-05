@@ -36,7 +36,7 @@ def draw_sfs_l21_vs_other(cls, nfs, write_to_folder):
     style1 = 'bo- gs--'.split()
     style2 = 'b^- g*--'.split()
     cls.plot(ax=ax1, style=style1, ylim=(0.0, 1.0), rot=30)
-    nfs.plot(ax=ax2, style=style2, ylim=(0, 200))  # , kind='bar')
+    nfs.plot(ax=ax2, style=style2, ylim=(0, 100))  # , kind='bar')
     plt.xlabel("datasets")
     fig.set_size_inches(12, 8)
     ax1.legend(loc="upper left")
@@ -112,7 +112,7 @@ def draw_compactness(nfs):
 def main(from_folder):
     clses, nfses = get_cls_nfs(from_folder)
     draw_vs_others(clses, nfses, from_folder)
-    # draw(clses, nfses, "all", from_folder)
+    draw(clses, nfses, "all", from_folder)
     # print nfses
     # draw_compactness(nfses)
 
