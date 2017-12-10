@@ -49,7 +49,7 @@
         12          DLBCL
 
 ### Result record on 12 datasets
-* [dataset attribute](https://github.com/zhonghuawu/design/blob/master/datas/gene/all_result/all_attribute.csv) <br>
+* [dataset attribute](https://github.com/zhonghuawu/design/blob/master/datas/gene/dataset/all_attribute.csv) <br>
 * [Prediction accuracy](https://github.com/zhonghuawu/design/blob/master/datas/gene/all_result/all_cls.csv) <br>
 * [The number of selected features](https://github.com/zhonghuawu/design/blob/master/datas/gene/all_result/all_nfs.csv)
 
