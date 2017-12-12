@@ -32,7 +32,11 @@
 
 
 ## 1. Result figure on 12 datasets
+### 1.1 SVM
 ![image](https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result/all.png)
+
+### 1.2 Logistics Regression
+![image](https://github.com/zhonghuawu/design/raw/master/datas/gene/all_result_lr/all.png)
 
 ### datasets
         1         TOX_171
@@ -50,7 +54,8 @@
 
 ### Result record on 12 datasets
 * [dataset attribute](https://github.com/zhonghuawu/design/blob/master/datas/gene/dataset/all_attribute.csv) <br>
-* [Prediction accuracy](https://github.com/zhonghuawu/design/blob/master/datas/gene/all_result/all_cls.csv) <br>
+* [Prediction accuracy(SVM)](https://github.com/zhonghuawu/design/blob/master/datas/gene/all_result/all_cls.csv) <br>
+* [Prediction accuracy(Logistics Regression)](https://github.com/zhonghuawu/design/blob/master/datas/gene/all_result_lr/all_cls.csv) <br>
 * [The number of selected features](https://github.com/zhonghuawu/design/blob/master/datas/gene/all_result/all_nfs.csv)
 
 ## 2. parameter [epsilon](https://github.com/zhonghuawu/design/tree/master/datas/gene/all_result/epsilon) effect to algorithm
