@@ -1,4 +1,4 @@
-from grafting_l21 import sfs_l21_norm
+from sfs_l21 import sfs_l21_norm
 from util import read_data
 import numpy as np
 
