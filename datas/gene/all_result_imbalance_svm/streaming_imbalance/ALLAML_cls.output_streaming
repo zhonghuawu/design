@@ -1,0 +1,58 @@
+classify dataset: ALLAML
+**********************************************************************
+origin data: 
+size of data matrix: (72, 7129)
+cross validation accuracy: 0.942857142857
+standard deviation: 0.0832993127835
+**********************************************************************
+after fs using  10%  sfs l21-norm  threshold = 0.2, epsilon = 0.1: 
+size of data matrix: (72, 10)
+cross validation accuracy: 0.872380952381
+standard deviation: 0.083971704553
+**********************************************************************
+after fs using  20%  sfs l21-norm  threshold = 0.2, epsilon = 0.1: 
+size of data matrix: (72, 11)
+cross validation accuracy: 0.914285714286
+standard deviation: 0.0832993127835
+**********************************************************************
+after fs using  30%  sfs l21-norm  threshold = 0.2, epsilon = 0.1: 
+size of data matrix: (72, 11)
+cross validation accuracy: 0.914285714286
+standard deviation: 0.0832993127835
+**********************************************************************
+after fs using  40%  sfs l21-norm  threshold = 0.2, epsilon = 0.1: 
+size of data matrix: (72, 11)
+cross validation accuracy: 0.914285714286
+standard deviation: 0.0832993127835
+**********************************************************************
+after fs using  50%  sfs l21-norm  threshold = 0.2, epsilon = 0.1: 
+size of data matrix: (72, 11)
+cross validation accuracy: 0.914285714286
+standard deviation: 0.0832993127835
+**********************************************************************
+after fs using  60%  sfs l21-norm  threshold = 0.2, epsilon = 0.1: 
+size of data matrix: (72, 11)
+cross validation accuracy: 0.914285714286
+standard deviation: 0.0832993127835
+**********************************************************************
+after fs using  70%  sfs l21-norm  threshold = 0.2, epsilon = 0.1: 
+size of data matrix: (72, 12)
+cross validation accuracy: 0.94380952381
+standard deviation: 0.0532311947142
+**********************************************************************
+after fs using  80%  sfs l21-norm  threshold = 0.2, epsilon = 0.1: 
+size of data matrix: (72, 12)
+cross validation accuracy: 0.94380952381
+standard deviation: 0.0532311947142
+**********************************************************************
+after fs using  90%  sfs l21-norm  threshold = 0.2, epsilon = 0.1: 
+size of data matrix: (72, 12)
+cross validation accuracy: 0.94380952381
+standard deviation: 0.0532311947142
+**********************************************************************
+after fs using 100%  sfs l21-norm  threshold = 0.2, epsilon = 0.1: 
+size of data matrix: (72, 12)
+cross validation accuracy: 0.94380952381
+standard deviation: 0.0532311947142
+**********************************************************************
+DONE

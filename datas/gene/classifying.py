@@ -217,11 +217,13 @@ def main(fname):
     run_l21 = run_grafting_or_l21
     run_grafting = run_grafting_or_l21
 
+    run_imbalance = run_one_grafting_or_l21
+
     if filename.startswith("all_"):
         alg = os.path.splitext(filename)[0][4:]
     else :
         alg = path.split('_')[-1] 
-    # clf = svm.SVC(kernel="linear")
+    clf = svm.SVC(kernel="linear")
     # clf = tree.DecisionTreeClassifier()
     # clf = ensemble.RandomForestClassifier(oob_score=True)
     # clf = ensemble.AdaBoostClassifier(n_estimators=100)
@@ -229,8 +231,8 @@ def main(fname):
     # clf = naive_bayes.GaussianNB()
     # clf = neural_network.MLPClassifier(solver='lbfgs')
     # clf = linear_model.LogisticRegressionCV()
-    clf = ensemble.GradientBoostingClassifier()
-    write_to_folder = r"all_result_gb/streaming_%s/"%alg
+    # clf = ensemble.GradientBoostingClassifier()
+    write_to_folder = r"all_result_imbalance_svm/streaming_%s/"%alg
     print "write to %s"%write_to_folder
     cmd = "run_%s(fname, clf, write_to_folder)"%alg
     eval(cmd)
@@ -251,6 +253,6 @@ def aggr():
 
 
 if __name__ == "__main__":
-    aggr()
-    # main(sys.argv[1])
+    # aggr()
+    main(sys.argv[1])
     print 'DONE'

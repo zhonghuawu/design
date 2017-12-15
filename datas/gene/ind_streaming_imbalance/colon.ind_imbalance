@@ -1,0 +1,12 @@
+ 10%  sfs l21-norm  threshold = 0.2, epsilon = 0.1:  [2, 8, 11, 12, 13, 14, 63, 95, 142]
+ 20%  sfs l21-norm  threshold = 0.2, epsilon = 0.1:  [2, 8, 11, 12, 13, 14, 63, 95, 142]
+ 30%  sfs l21-norm  threshold = 0.2, epsilon = 0.1:  [2, 8, 11, 12, 13, 14, 63, 95, 142]
+ 40%  sfs l21-norm  threshold = 0.2, epsilon = 0.1:  [2, 8, 11, 12, 13, 14, 63, 95, 142]
+ 50%  sfs l21-norm  threshold = 0.2, epsilon = 0.1:  [2, 8, 11, 12, 13, 14, 63, 95, 142]
+ 60%  sfs l21-norm  threshold = 0.2, epsilon = 0.1:  [2, 8, 11, 12, 13, 14, 63, 95, 142]
+ 70%  sfs l21-norm  threshold = 0.2, epsilon = 0.1:  [2, 8, 11, 12, 13, 14, 63, 95, 142]
+ 80%  sfs l21-norm  threshold = 0.2, epsilon = 0.1:  [2, 8, 11, 12, 13, 14, 63, 95, 142, 1472]
+ 90%  sfs l21-norm  threshold = 0.2, epsilon = 0.1:  [2, 8, 11, 12, 13, 14, 63, 95, 142, 1472]
+100%  sfs l21-norm  threshold = 0.2, epsilon = 0.1:  [2, 8, 11, 12, 13, 14, 63, 95, 142, 1472]
+100%  sfs l21-norm  threshold = 0.2, epsilon = 0.1:  [2, 8, 11, 12, 13, 14, 63, 95, 142, 1472]
+4.7990
