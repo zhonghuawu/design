@@ -1,5 +1,6 @@
 
 from sklearn import svm
+from sklearn import linear_model
 from sklearn import metrics
 from sklearn import model_selection
 from sklearn.model_selection import train_test_split
@@ -77,7 +78,8 @@ def run(fname, indexes, indexes_imbalance, clf, test_size=0.5):
 
 
 def main():
-    clf = svm.SVC(kernel='linear')  # , probability=True)
+    # clf = svm.SVC(kernel='linear')
+    clf = linear_model.LogisticRegressionCV()
     fname = "ALLAML"
     indexes_imbalance = [3, 48, 87, 148, 156, 167, 172,
                          207, 210, 1290, 1368, 1927, 2362]  # imbalance
@@ -97,7 +99,7 @@ def main():
                          44, 51, 65, 96, 143, 242, 291, 440, 684, 1326]
     indexes_imbalance = [0, 5, 10, 11, 51, 143, 1258]
     indexes = [5, 11, 12, 51, 305, 452]
-    # run(fname, indexes, indexes_imbalance, clf)
+    run(fname, indexes, indexes_imbalance, clf)
 
     fname = "GLI_85"
     # indexes = [1, 2, 5, 15, 19, 21, 26, 32, 34, 49, 60, 63, 79, 96, 104, 186, 271, 359, 519, 1281, 2375, 2945, 6936, 8517] # imbalance
@@ -105,7 +107,7 @@ def main():
                          257, 475, 520, 674, 802, 884, 1599, 10367, 15699, 17233]
     indexes = [1, 2, 5, 12, 15, 19, 21, 23, 27, 28, 49, 50, 79,
                96, 98, 104, 113, 213, 389, 405, 551, 1990, 4132, 6034]
-    run(fname, indexes, indexes_imbalance, clf)
+    # run(fname, indexes, indexes_imbalance, clf)
 
 
 if __name__ == "__main__":

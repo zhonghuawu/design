@@ -1,0 +1,28 @@
+classifying dataset: ../datas/gene/dataset/DLBCL.mat
+origin (6):
+y_true: [0 0 0 0 0 1 1 0 0 0 1 0 0 1 0 0 0 0 0 1 0 1 0 0 1 0 0 0 0 0 1 0 0 1 0 1 0
+ 0 0]
+y_pred: [0 0 0 0 0 1 1 0 0 1 1 0 0 1 0 0 0 0 0 1 0 1 0 0 1 1 0 0 0 0 1 0 0 1 1 1 0
+ 0 0]
+confusion_matrix:
+[[26  3]
+ [ 0 10]]
+accuray: 0.923076923077
+mattews_corrceof: 0.830454798537
+recall_score: 1.0
+pression_score: 0.769230769231
+f1_score: 0.869565217391
+
+imbalance (7):
+y_true: [0 0 0 0 0 1 1 0 0 0 1 0 0 1 0 0 0 0 0 1 0 1 0 0 1 0 0 0 0 0 1 0 0 1 0 1 0
+ 0 0]
+y_pred: [0 0 0 0 0 1 1 0 0 0 0 0 0 1 0 0 0 0 0 1 0 1 0 0 1 0 0 0 0 0 1 0 0 1 0 1 0
+ 1 0]
+confusion_matrix:
+[[28  1]
+ [ 1  9]]
+accuray: 0.948717948718
+mattews_corrceof: 0.865517241379
+recall_score: 0.9
+pression_score: 0.9
+f1_score: 0.9
