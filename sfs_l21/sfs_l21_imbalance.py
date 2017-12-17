@@ -57,9 +57,10 @@ def over_sample_smote(x, n, k):
         # choose x_i randomly
         index = random.choice(range(minority))
         # k-neighbor
-        x_mean = tree.query(x[index, 0], k)[0].mean()
+        k_neighbor = tree.query(x[index, 0], k)
+        x_mean = k_neighbor[1].mean()
         # gene a new x xigma* (k-neighbor mean)
-        new_x_one = x[index, 0] + random.random() * x_mean
+        new_x_one = x[index, 0] + random.random() * (x_mean-x[index, 0])
         new_x.append(new_x_one)
     new_x = np.matrix(new_x).T
     return new_x

@@ -1,0 +1,28 @@
+classifying dataset: ../datas/gene/dataset/GLI_85.mat
+origin (24):
+y_true: [0 1 0 0 0 0 0 0 1 0 1 1 0 0 0 0 1 1 0 0 0 0 1 1 0 0 0 0 1 0 0 1 0 0 0 0 1
+ 1 0 0 0 0 0]
+y_pred: [0 1 0 0 0 1 0 0 1 0 1 1 0 0 0 0 1 0 0 0 0 1 1 1 1 0 0 0 1 0 1 1 0 0 0 0 1
+ 0 0 0 0 0 0]
+confusion_matrix:
+[[27  4]
+ [ 2 10]]
+accuray: 0.860465116279
+mattews_corrceof: 0.674165935561
+recall_score: 0.833333333333
+pression_score: 0.714285714286
+f1_score: 0.769230769231
+
+imbalance (20):
+y_true: [0 1 0 0 0 0 0 0 1 0 1 1 0 0 0 0 1 1 0 0 0 0 1 1 0 0 0 0 1 0 0 1 0 0 0 0 1
+ 1 0 0 0 0 0]
+y_pred: [0 1 0 0 0 0 0 0 1 0 1 1 0 1 0 0 1 1 0 0 0 0 1 1 0 0 1 0 1 0 0 0 0 0 0 0 1
+ 1 0 0 0 0 0]
+confusion_matrix:
+[[29  2]
+ [ 1 11]]
+accuray: 0.93023255814
+mattews_corrceof: 0.832253228891
+recall_score: 0.916666666667
+pression_score: 0.846153846154
+f1_score: 0.88
