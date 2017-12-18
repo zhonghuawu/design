@@ -1,5 +1,65 @@
 classifying dataset: ../datas/gene/dataset/DLBCL.mat
 origin (6):
+y_true: [0 0 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 0 1 0 0 1 0 1 0 0 1 0 1 1 0 0 1 0 0
+ 0 1]
+y_pred: [0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 1 1 0 0 0 1 0 0 1 0 1 1 0 0 1 0 0
+ 0 1]
+confusion_matrix:
+[[26  1]
+ [ 3  9]]
+accuray: 0.897435897436
+recall_score: 0.75
+pression_score: 0.9
+f1_score: 0.818181818182
+mattews_corrceof: 0.753599281711
+
+imbalance (9):
+y_true: [0 0 0 0 0 1 0 0 1 1 0 0 0 0 0 0 1 0 0 0 1 0 0 1 0 1 0 0 1 0 1 1 0 0 1 0 0
+ 0 1]
+y_pred: [0 0 0 0 0 0 0 0 1 1 1 0 0 0 0 0 1 0 0 0 1 0 0 0 0 1 0 0 1 0 1 1 0 0 1 0 0
+ 0 1]
+confusion_matrix:
+[[26  1]
+ [ 2 10]]
+accuray: 0.923076923077
+recall_score: 0.833333333333
+pression_score: 0.909090909091
+f1_score: 0.869565217391
+mattews_corrceof: 0.816717464627
+
+# next
+classifying dataset: ../datas/gene/dataset/DLBCL.mat
+origin (6):
+y_true: [0 1 0 0 0 0 0 0 1 0 0 0 0 1 0 0 0 1 1 0 0 0 0 0 1 0 1 1 0 0 1 1 0 0 0 1 1
+ 0 0]
+y_pred: [0 0 0 0 0 1 0 0 1 0 0 0 0 1 0 0 0 1 1 0 0 0 0 0 1 0 1 1 0 0 1 0 0 0 0 1 1
+ 0 1]
+confusion_matrix:
+[[25  2]
+ [ 2 10]]
+accuray: 0.897435897436
+recall_score: 0.833333333333
+pression_score: 0.833333333333
+f1_score: 0.833333333333
+mattews_corrceof: 0.759259259259
+
+imbalance (7):
+y_true: [0 1 0 0 0 0 0 0 1 0 0 0 0 1 0 0 0 1 1 0 0 0 0 0 1 0 1 1 0 0 1 1 0 0 0 1 1
+ 0 0]
+y_pred: [1 1 0 0 0 0 0 0 1 0 0 0 0 1 0 0 0 1 1 0 0 0 0 0 1 0 1 1 0 0 1 1 0 0 0 0 1
+ 0 0]
+confusion_matrix:
+[[26  1]
+ [ 1 11]]
+accuray: 0.948717948718
+recall_score: 0.916666666667
+pression_score: 0.916666666667
+f1_score: 0.916666666667
+mattews_corrceof: 0.87962962963
+
+# next
+classifying dataset: ../datas/gene/dataset/DLBCL.mat
+origin (6):
 y_true: [1 0 1 0 0 0 1 0 0 1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 0 1 1 0
  1 0]
 y_pred: [1 0 1 1 0 0 1 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 0 0 0 1 0 0

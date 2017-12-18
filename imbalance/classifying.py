@@ -93,11 +93,9 @@ def main():
 
     fname = "DLBCL"
     indexes_imbalance = [2, 13, 14, 16, 69, 1259, 1643]  # imbalance
-    indexes_imbalance = [0, 5, 11, 51, 583]
-    indexes_imbalance = [0, 2, 5, 11, 51, 583]
-    indexes_imbalance = [0, 5, 8, 11, 15, 26, 27, 31, 39,
-                         44, 51, 65, 96, 143, 242, 291, 440, 684, 1326]
     indexes_imbalance = [0, 5, 10, 11, 51, 143, 1258]
+    indexes_imbalance = [0, 5, 11, 51, 583, 1070]
+    indexes_imbalance = [0, 5, 10, 11, 51, 143, 735, 1258, 1375]
     indexes = [5, 11, 12, 51, 305, 452]
     run(fname, indexes, indexes_imbalance, clf)
 
