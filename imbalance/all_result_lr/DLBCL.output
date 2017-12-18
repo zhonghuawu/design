@@ -26,3 +26,33 @@ mattews_corrceof: 0.865517241379
 recall_score: 0.9
 pression_score: 0.9
 f1_score: 0.9
+
+# other
+classifying dataset: ../datas/gene/dataset/DLBCL.mat
+origin (6):
+y_true: [0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 1 0
+ 0 1]
+y_pred: [0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 0 0 0 1 1 0 0 0 0 1 0
+ 0 1]
+confusion_matrix:
+[[31  2]
+ [ 0  6]]
+accuray: 0.948717948718
+mattews_corrceof: 0.839372059665
+recall_score: 1.0
+pression_score: 0.75
+f1_score: 0.857142857143
+
+imbalance (7):
+y_true: [0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 1 0
+ 0 1]
+y_pred: [0 0 0 1 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 1 0
+ 0 1]
+confusion_matrix:
+[[32  1]
+ [ 0  6]]
+accuray: 0.974358974359
+mattews_corrceof: 0.911684611677
+recall_score: 1.0
+pression_score: 0.857142857143
+f1_score: 0.923076923077
