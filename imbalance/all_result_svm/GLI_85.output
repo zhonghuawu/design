@@ -1,5 +1,36 @@
 classifying dataset: ../datas/gene/dataset/GLI_85.mat
 origin (24):
+y_true: [0 0 0 1 1 1 0 1 0 0 0 0 1 0 1 0 0 0 1 0 0 0 0 0 1 0 0 1 0 1 1 1 0 0 0 0 0
+ 1 1 0 0 0 1]
+y_pred: [0 0 0 0 0 1 0 1 0 0 0 0 1 0 1 0 0 0 0 0 0 0 1 0 0 0 0 1 0 1 1 1 0 0 0 0 1
+ 1 1 0 0 0 1]
+confusion_matrix:
+[[26  2]
+ [ 4 11]]
+accuray: 0.860465116279
+recall_score: 0.733333333333
+pression_score: 0.846153846154
+f1_score: 0.785714285714
+mattews_corrceof: 0.686891033439
+
+imbalance (20):
+y_true: [0 0 0 1 1 1 0 1 0 0 0 0 1 0 1 0 0 0 1 0 0 0 0 0 1 0 0 1 0 1 1 1 0 0 0 0 0
+ 1 1 0 0 0 1]
+y_pred: [0 0 1 1 1 1 0 1 0 0 0 0 1 0 1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 1 1 1 0 0 0 0 0
+ 1 1 0 0 0 1]
+confusion_matrix:
+[[26  2]
+ [ 0 15]]
+accuray: 0.953488372093
+recall_score: 1.0
+pression_score: 0.882352941176
+f1_score: 0.9375
+mattews_corrceof: 0.905167239295
+
+
+# next
+classifying dataset: ../datas/gene/dataset/GLI_85.mat
+origin (24):
 y_true: [0 1 0 0 0 0 0 0 1 0 1 1 0 0 0 0 1 1 0 0 0 0 1 1 0 0 0 0 1 0 0 1 0 0 0 0 1
  1 0 0 0 0 0]
 y_pred: [0 1 0 0 0 1 0 0 1 0 1 1 0 0 0 0 1 0 0 0 0 1 1 1 1 0 0 0 1 0 1 1 0 0 0 0 1

@@ -49,10 +49,10 @@ def run_train_test_split(X_train, X_test, y_train, y_true, clf):
     print "y_pred: {}".format(y_pred)
     print "confusion_matrix: \n{}".format(confusion_matrix(y_true, y_pred))
     print "accuray: {}".format(accuracy_score(y_true, y_pred))
-    print "mattews_corrceof: {}".format(matthews_corrcoef(y_true, y_pred))
     print "recall_score: {}".format(recall_score(y_true, y_pred))
     print "pression_score: {}".format(precision_score(y_true, y_pred))
     print "f1_score: {}".format(f1_score(y_true, y_pred))
+    print "mattews_corrceof: {}".format(matthews_corrcoef(y_true, y_pred))
 
     # plotRUC(y_true, y_pred)
 

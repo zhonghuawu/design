@@ -1,5 +1,32 @@
 classifying dataset: ../datas/gene/dataset/colon.mat
 origin (6):
+y_true: [0 1 0 0 0 0 1 1 0 0 0 0 1 0 1 1 0 0 0 0 1 1 0 0 0 0 1 0 0 0 1]
+y_pred: [0 1 0 0 0 1 1 1 1 0 0 0 1 0 1 1 0 1 0 0 1 1 0 0 0 0 0 1 0 0 1]
+confusion_matrix:
+[[17  4]
+ [ 1  9]]
+accuray: 0.838709677419
+recall_score: 0.9
+pression_score: 0.692307692308
+f1_score: 0.782608695652
+mattews_corrceof: 0.672153852768
+
+imbalance (7):
+y_true: [0 1 0 0 0 0 1 1 0 0 0 0 1 0 1 1 0 0 0 0 1 1 0 0 0 0 1 0 0 0 1]
+y_pred: [0 1 0 0 0 0 1 1 1 0 0 0 1 0 1 1 0 1 0 0 1 1 0 0 0 0 1 0 0 0 1]
+confusion_matrix:
+[[19  2]
+ [ 0 10]]
+accuray: 0.935483870968
+recall_score: 1.0
+pression_score: 0.833333333333
+f1_score: 0.909090909091
+mattews_corrceof: 0.868313453753
+
+
+# next
+classifying dataset: ../datas/gene/dataset/colon.mat
+origin (6):
 y_true: [1 0 0 1 0 1 0 1 1 0 0 0 0 1 1 0 0 1 0 0 0 0 0 0 1 0 1 1 0 1 0]
 y_pred: [1 0 0 1 0 1 0 0 1 0 0 0 1 1 0 1 0 1 0 0 1 0 0 0 0 0 1 1 0 0 0]
 confusion_matrix:
